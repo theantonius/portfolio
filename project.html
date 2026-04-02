@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work by Antonius Wiriadjaja</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="section.css" />
+    <link rel="stylesheet" href="project.css" />
+  </head>
+  <body class="section-page">
+
+    <div class="section-container">
+
+      <!-- SIDEBAR -->
+      <div class="sidebar">
+        <div>
+          <a href="index.html" class="name">antoni.us/wiriadjaja</a>
+          <p class="tagline">making things think.</p>
+        </div>
+
+        <div class="about">
+          <p>I'm an artist, creative technologist and educator based in New York.</p>
+        </div>
+
+        <nav class="section-links">
+          <a href="art.html" class="section-link" data-section="art">/art</a>
+          <a href="tech.html" class="section-link" data-section="tech">/tech</a>
+          <a href="education.html" class="section-link" data-section="education">/education</a>
+          <a href="about.html" class="section-link" data-section="about">/about</a>
+        </nav>
+
+        <div class="contact-links">
+          <a href="mailto:hi@antoni.us">Email</a>
+          <a href="https://linkedin.com/in/theantonius" target="_blank">LinkedIn</a>
+          <a href="https://github.com/theantonius" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <!-- MAIN CONTENT -->
+      <main class="section-content">
+        <div class="project-detail" id="project-detail">
+          <!-- Populated by JS -->
+        </div>
+      </main>
+
+    </div>
+
+    <script>
+      const sectionColors = {
+        art:       '#f0c030',
+        tech:      '#c880e8',
+        education: '#70d882',
+        about:     '#cccccc'
+      };
+
+      async function loadProject() {
+        const params = new URLSearchParams(window.location.search);
+        const section = params.get('section');
+        const id = params.get('id');
+
+        if (!section || !id) {
+          document.getElementById('project-detail').innerHTML = '<p style="color:#888">Project not found.</p>';
+          return;
+        }
+
+        const res = await fetch('projects.json');
+        const data = await res.json();
+        const projects = data[section] || [];
+        const project = projects.find(p => p.id === id);
+
+        if (!project) {
+          document.getElementById('project-detail').innerHTML = '<p style="color:#888">Project not found.</p>';
+          return;
+        }
+
+        const color = sectionColors[section] || '#fff';
+
+        // Highlight sidebar link
+        document.querySelectorAll('.section-link').forEach(link => {
+          if (link.dataset.section === section) link.style.color = color;
+        });
+
+        document.title = `Antoni.us — ${project.title}`;
+
+        // Back link
+        const backHtml = `<a href="${section}.html" class="project-back" style="color:${color}">← /${section}</a>`;
+
+        // Hero image
+        const heroHtml = project.hero
+          ? `<img src="${project.hero}" alt="${project.title}" class="project-hero" />`
+          : '';
+
+        // Description
+        const descHtml = project.description
+          ? `<p class="project-detail-desc">${project.description}</p>`
+          : '';
+
+        // Bulleted list
+        const listHtml = project['list'] && project['list'].length ? `
+          <div class="project-detail-section">
+            ${project['list-title'] ? `<h4 class="project-detail-label" style="color:${color}">${project['list-title']}</h4>` : ''}
+            <ul class="project-detail-list">
+              ${project['list'].map(item => `<li>${item}</li>`).join('')}
+            </ul>
+          </div>
+        ` : '';
+
+        // Exhibitions
+        const exhibitionsHtml = project.exhibitions && project.exhibitions.length ? `
+          <div class="project-detail-section">
+            <h4 class="project-detail-label" style="color:${color}">Exhibited at</h4>
+            <ul class="project-detail-list">
+              ${project.exhibitions.map(e => `<li>${e}</li>`).join('')}
+            </ul>
+          </div>
+        ` : '';
+
+        // Press
+        const pressHtml = project.press && project.press.length ? `
+          <div class="project-detail-section">
+            <h4 class="project-detail-label" style="color:${color}">Press</h4>
+            <ul class="project-detail-list">
+              ${project.press.map(p => `
+                <li><a href="${p.url}" target="_blank" style="color:${color}">${p.title}</a> — ${p.publication}</li>
+              `).join('')}
+            </ul>
+          </div>
+        ` : '';
+
+        // Gallery grid
+        const galleryHtml = project.gallery && project.gallery.length ? `
+          <div class="project-gallery">
+            ${project.gallery.map(src => `
+              <img src="${src}" alt="${project.title}" class="project-gallery-img" />
+            `).join('')}
+          </div>
+        ` : '';
+
+        // External link
+        const linkHtml = project.link
+          ? `<a href="${project.link}" target="_blank" class="project-ext-link" style="color:${color}">View project ↗</a>`
+          : '';
+
+        document.getElementById('project-detail').innerHTML = `
+          ${backHtml}
+          ${heroHtml}
+          <h1 class="project-detail-title" style="color:${color}">${project.title}</h1>
+          <p class="project-detail-meta">${project.year} — ${project.medium}</p>
+          ${descHtml}
+          ${listHtml}
+          ${exhibitionsHtml}
+          ${pressHtml}
+          ${galleryHtml}
+          ${linkHtml}
+        `;
+      }
+
+      loadProject();
+    </script>
+
+  </body>
+</html>

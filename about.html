@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antoni.us — /about</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="section.css" />
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body class="section-page">
+
+    <div class="section-container">
+
+      <!-- SIDEBAR -->
+      <div class="sidebar">
+        <div>
+          <a href="index.html" class="name">antoni.us/wiriadjaja</a>
+          <p class="tagline">making things think.</p>
+        </div>
+
+        <div class="about">
+          <p>I'm an artist, creative technologist and educator based in New York.</p>
+        </div>
+
+                <nav class="section-links">
+          <a href="art.html" class="section-link">/art</a>
+          <a href="tech.html" class="section-link">/tech</a>
+          <a href="education.html" class="section-link">/education</a>
+          <a href="about.html" class="section-link" style="color: #cccccc;">/about</a>
+        </nav>
+
+        <div class="contact-links">
+          <a href="mailto:hi@antoni.us">Email</a>
+          <a href="https://linkedin.com/in/theantonius" target="_blank">LinkedIn</a>
+          <a href="https://github.com/theantonius" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <!-- MAIN CONTENT -->
+      <main class="section-content">
+        <div class="about-detail" id="about-detail">
+          <!-- Populated by JS -->
+        </div>
+      </main>
+
+    </div>
+
+    <script>
+      async function loadAbout() {
+        const res = await fetch('about.json');
+        const data = await res.json();
+
+        // Pronunciation
+        const pronunciationHtml = `
+          <div class="about-block">
+            <h4 class="about-label">How to say my name</h4>
+            <p class="about-pronunciation">${data.pronunciation.name}</p>
+            <p class="about-pronunciation-guide">${data.pronunciation.guide}</p>
+          </div>
+        `;
+
+        // Bio
+        const bioHtml = `
+          <div class="about-block">
+            <h4 class="about-label">Bio</h4>
+            <div class="about-bio">
+              ${data.bio.map(p => `<p>${p}</p>`).join('')}
+            </div>
+          </div>
+        `;
+
+        // CV sections
+        const cvSections = [
+          { key: 'education',  label: 'Education' },
+          { key: 'certification',  label: 'Certifications' },
+          { key: 'solo',       label: 'Solo Exhibitions' },
+          { key: 'group',      label: 'Group Exhibitions' },
+          { key: 'teaching',   label: 'Teaching' },
+          { key: 'awards',     label: 'Awards & Residencies' },
+          { key: 'press',      label: 'Press' }
+        ];
+
+        const cvHtml = cvSections.map(({ key, label }) => {
+          const items = data.cv[key];
+          if (!items || items.length === 0) return '';
+
+          const rows = items.map(item => {
+            const entryHtml = item.url
+              ? `<a href="${item.url}" target="_blank">${item.entry}</a>${item.publication ? ` — ${item.publication}` : ''}`
+              : item.entry;
+            return `<li><span class="cv-year">${item.year}</span>${entryHtml}</li>`;
+          }).join('');
+
+          return `
+            <div class="cv-section">
+              <h5 class="cv-heading">${label}</h5>
+              <ul class="cv-list">${rows}</ul>
+            </div>
+          `;
+        }).join('');
+
+        // Contact
+        const contactHtml = `
+          <div class="about-block">
+            <h4 class="about-label">Contact</h4>
+            <p class="about-contact">
+              <a href="mailto:${data.contact.email}">${data.contact.email}</a>
+            </p>
+          </div>
+        `;
+
+        document.getElementById('about-detail').innerHTML = `
+          <h2 class="section-title" style="--section-color: #cccccc;">/about</h2>
+          ${pronunciationHtml}
+          ${bioHtml}
+          <div class="about-block">
+            <h4 class="about-label">CV</h4>
+            ${cvHtml}
+          </div>
+          ${contactHtml}
+        `;
+      }
+
+      loadAbout();
+    </script>
+
+  </body>
+</html>

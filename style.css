@@ -1,0 +1,337 @@
+/* =============================
+   ROOT VARIABLES
+   ============================= */
+:root {
+    --sidebar-width: 300px;
+    --bg: #f9f9f9;
+    --sidebar-bg: #1f1f1f;
+    --sidebar-text: #f0f0f0;
+    --accent: #e05c00;
+    --content-bg: #ffffff;
+    --text: #222;
+    --muted: #888;
+    --font: 'Roboto', Arial, sans-serif;
+    --font-heading: 'Raleway', Arial, sans-serif;
+}
+
+/* =============================
+   RESET & BASE
+   ============================= */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    height: 100vh;
+    overflow: hidden;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* =============================
+   LAYOUT
+   ============================= */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* =============================
+   SIDEBAR (LEFT COLUMN)
+   ============================= */
+.sidebar {
+    width: var(--sidebar-width);
+    min-width: var(--sidebar-width);
+    background: var(--sidebar-bg);
+    color: var(--sidebar-text);
+    display: flex;
+    flex-direction: column;
+    padding: 40px 24px;
+    gap: 40px;
+    overflow-y: auto;
+}
+
+.name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: var(--font-heading);
+    letter-spacing: -0.5px;
+    color: #fff;
+}
+
+.tagline {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 6px;
+    line-height: 1.5;
+}
+
+/* =============================
+   PROJECT TABS
+   ============================= */
+.project-tabs ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.tab {
+    padding: 10px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: var(--muted);
+    transition: background 0.2s, color 0.2s;
+}
+
+.tab:hover {
+    background: #222;
+    color: #fff;
+}
+
+.tab.active {
+    background: var(--accent);
+    color: #fff;
+    font-weight: 600;
+}
+
+/* =============================
+   SIDEBAR LINKS
+   ============================= */
+.sidebar-links {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar-links a {
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+.sidebar-links a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* =============================
+   CONTENT (RIGHT COLUMN)
+   ============================= */
+.content {
+    flex: 1;
+    overflow-y: auto;
+    background: var(--content-bg);
+    padding: 60px;
+}
+
+/* =============================
+   PROJECT PANELS
+   ============================= */
+.project {
+    display: none;
+    max-width: 800px;
+}
+
+.project.active {
+    display: block;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 28px;
+    display: block;
+}
+
+.project h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: var(--font-heading);
+    margin-bottom: 16px;
+    color: var(--text);
+}
+
+.project p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #444;
+}
+
+/* =============================
+   RESPONSIVE (mobile)
+   ============================= */
+@media (max-width: 640px) {
+    body {
+        overflow: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-width: unset;
+        padding: 24px;
+        gap: 24px;
+    }
+
+    .project-tabs ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .content {
+        padding: 24px;
+    }
+}
+
+/* =============================
+   LANDING PAGE
+   ============================= */
+body.landing {
+    overflow: hidden;
+}
+
+.landing-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* LEFT — hero image */
+.hero {
+    flex: 1;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* RIGHT — text panel */
+.landing-panel {
+    width: var(--sidebar-width);
+    min-width: var(--sidebar-width);
+    max-width: var(--sidebar-width);
+    background: var(--sidebar-bg);
+    color: var(--sidebar-text);
+    display: flex;
+    flex-direction: column;
+    padding: 40px 24px;
+    gap: 36px;
+}
+
+.landing-panel .tagline {
+    font-size: 1rem;
+    color: #ccc;
+    margin-top: 8px;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.about p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: #aaa;
+}
+
+/* SECTION NAV LINKS */
+.section-links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.section-link {
+    display: block;
+    padding: 10px 0;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    color: var(--muted);
+    transition: background 0.2s, color 0.2s;
+}
+
+.section-link:hover {
+    background: #222;
+    text-decoration: none;
+}
+
+.section-link[href="art.html"]:hover       { color: #f0c030; }
+.section-link[href="tech.html"]:hover      { color: #c880e8; }
+.section-link[href="education.html"]:hover { color: #70d882; }
+.section-link[href="about.html"]:hover     { color: #cccccc; }
+
+/* CONTACT LINKS */
+.contact-links {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-links a {
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+.contact-links a:hover {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+/* LANDING RESPONSIVE */
+@media (max-width: 640px) {
+    body.landing {
+        overflow: auto;
+    }
+
+    .landing-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero {
+        height: 50vw;
+        min-height: 240px;
+    }
+
+    .landing-panel {
+        width: 100%;
+        max-width: 100%;
+        padding: 32px 24px;
+    }
+
+    .hero {
+        order: -1;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .hero .hero-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 75%;
+    }
+}

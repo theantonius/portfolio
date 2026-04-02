@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education and Class Materials by Antonius Wiriadjaja</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="section.css" />
+  </head>
+  <body class="section-page">
+
+    <div class="section-container">
+
+      <!-- SIDEBAR -->
+      <div class="sidebar">
+        <div>
+          <a href="index.html" class="name">antoni.us/wiriadjaja</a>
+          <p class="tagline">making things think.</p>
+        </div>
+
+        <div class="about">
+          <p>I'm an artist, creative technologist and educator based in New York.</p>
+        </div>
+
+        <nav class="section-links">
+          <a href="art.html" class="section-link">/art</a>
+          <a href="tech.html" class="section-link">/tech</a>
+          <a href="education.html" class="section-link" style="color: #70d882;">/education</a>
+          <a href="about.html" class="section-link">/about</a>
+        </nav>
+
+        <div class="contact-links">
+          <a href="mailto:hi@antoni.us">Email</a>
+          <a href="https://linkedin.com/in/theantonius" target="_blank">LinkedIn</a>
+          <a href="https://github.com/theantonius" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <!-- MAIN CONTENT -->
+      <main class="section-content">
+        <h2 class="section-title" style="--section-color: #70d882;">/education</h2>
+        <div class="project-grid" id="project-grid"></div>
+      </main>
+
+    </div>
+
+    <script>
+      async function loadProjects() {
+        const res = await fetch('projects.json');
+        const data = await res.json();
+        const projects = data['education'] || [];
+        const grid = document.getElementById('project-grid');
+        grid.innerHTML = projects.map(p => `
+          <a href="project.html?section=education&id=${p.id}" class="project-card">
+            <div class="card-thumb">
+              <img src="${p.thumbnail || p.hero}" alt="${p.title}" />
+            </div>
+            <div class="card-info">
+              <h3>${p.title}</h3>
+              <p>${p.year} — ${p.medium}</p>
+            </div>
+          </a>
+        `).join('');
+      }
+      loadProjects();
+    </script>
+
+  </body>
+</html>

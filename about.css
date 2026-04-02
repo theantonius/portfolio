@@ -1,0 +1,121 @@
+/* =============================
+   ABOUT PAGE
+   ============================= */
+.about-detail {
+    max-width: 680px;
+}
+
+.about-block {
+    margin-bottom: 56px;
+}
+
+/* Section labels — e.g. "Bio", "CV", "Contact" */
+.about-label {
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #777;
+    margin-bottom: 16px;
+}
+
+/* PRONUNCIATION */
+.about-pronunciation {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 6px;
+}
+
+.about-pronunciation-guide {
+    font-size: 0.95rem;
+    color: #555;
+    font-style: italic;
+}
+
+/* BIO */
+.about-bio p {
+    font-size: 1rem;
+    line-height: 1.85;
+    color: #222;
+    margin-bottom: 16px;
+}
+
+.about-bio p:last-child {
+    margin-bottom: 0;
+}
+
+/* CONTACT */
+.about-contact a {
+    font-size: 1rem;
+    color: #222;
+    text-decoration: none;
+    border-bottom: 1px solid #888;
+    padding-bottom: 2px;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.about-contact a:hover {
+    color: #000;
+    border-color: #222;
+    text-decoration: none;
+}
+
+/* =============================
+   CV
+   ============================= */
+.cv-section {
+    margin-bottom: 32px;
+}
+
+/* CV subheadings — e.g. "Education", "Teaching" */
+.cv-heading {
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+    margin-bottom: 12px;
+}
+
+.cv-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* CV entry text */
+.cv-list li {
+    font-size: 0.9rem;
+    color: #222;
+    line-height: 1.5;
+    display: flex;
+    gap: 16px;
+}
+
+/* Year column — slightly muted vs entry text */
+.cv-year {
+    color: #777;
+    min-width: 80px;
+    flex-shrink: 0;
+    font-size: 0.85rem;
+}
+
+.cv-list a {
+    color: #222;
+    text-decoration: none;
+    border-bottom: 1px solid #999;
+    padding-bottom: 1px;
+}
+
+.cv-list a:hover {
+    color: #000;
+    border-bottom-color: #333;
+    text-decoration: none;
+}
