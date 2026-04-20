@@ -1,0 +1,41 @@
+---
+pronunciation_name: Antonius Wiriadjaja
+pronunciation_guide: "an-toh-nee-US · wee-ree-ya-ja-YAH"
+contact_email: hi@antoni.us
+cv:
+  education:
+    - year: "2010–2012"
+      entry: "Master's — Interactive Telecommunications Program (ITP), NYU Tisch School of the Arts, New York, NY"
+    - year: "2001–2005"
+      entry: "B.A. — Cognitive Science, Hampshire College, Amherst, MA"
+    - year: "1995–2001"
+      entry: "High School Diploma, Boston Latin School, Boston, MA"
+  certification:
+    - year: "2025-2028"
+      entry: "Adobe Certified Professional in Graphic Design and Illustration Using Adobe Illustrator"
+  solo: []
+  group: []
+  teaching:
+    - year: "2025–present"
+      entry: "Program Associate & Instructor, NYC FIRST STEM Centers, New York, NY"
+    - year: "2014–present"
+      entry: "Adjunct Faculty, CUNY BMCC and Queens College, New York, NY"
+    - year: "2012–2018"
+      entry: "Assistant Arts Professor & Assistant Director of Operations of Interactive Media Arts, NYU Tisch ITP and NYU Shanghai, Shanghai, China"
+  awards:
+    - year: "2018–2019"
+      entry: "Fulbright U.S. Scholar Teaching Award"
+    - year: "2012"
+      entry: "Sony Electronics Scholarship, NYU Tisch"
+    - year: "2005"
+      entry: "Culture, Brain & Development Grant, Hampshire College"
+    - year: "2001–2005"
+      entry: "Carol DiMaiti Stuart Scholarship"
+    - year: "2001"
+      entry: "Class of 1937 Award, Boston Latin School"
+  press: []
+---
+
+Antonius Wiriadjaja is an artist, creative technologist, and educator based in New York City. His medium includes performance art, digital fabrication, and interactive media. His work explores identity, embodiment, and trauma with added levity.
+
+He has taught at NYU in New York, NYU in Berlin, NYU Shanghai, CUNY BMCC, and CUNY Queens College. He works with NYC FIRST STEM Centers across the boroughs. As a Fulbright U.S. Scholar, he taught new media to traditional artists in Solo, Java, Indonesia.
