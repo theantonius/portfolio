@@ -147,11 +147,6 @@ body.section-page {
         gap: 24px;
     }
 
-    .section-links {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
     .section-content {
         padding: 24px;
         order: -1;

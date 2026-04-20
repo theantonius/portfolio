@@ -4,55 +4,76 @@ Personal portfolio site for Antonius Wiriadjaja — artist, creative technologis
 
 ## Structure
 
-A static HTML/CSS/JS portfolio with three sections plus an about page. All content is driven by JSON files — no HTML editing needed to add projects or update bio/CV.
+A static HTML/CSS/JS portfolio with three sections plus an about page. Content is authored in Markdown and compiled to JSON — no HTML editing needed to add projects or update bio/CV.
 
 ```
 portfolio/
-  index.html          — Landing page with looping hero video
-  art.html            — Art projects
-  tech.html           — Creative tech work
-  education.html      — Teaching areas
-  about.html          — Bio, CV, pronunciation, contact
-  project.html        — Universal project detail page (URL param driven)
-  projects.json       — All project data
-  about.json          — Bio, CV, and contact data
-  style.css           — Global styles
-  section.css         — Section page styles
-  project.css         — Project detail styles
-  about.css           — About page styles
-  script.js           — Tagline cycling
-  videos/             — Hero video files (MP4)
-  images/             — Local fallback images
+  index.html              — Landing page with looping hero video
+  art.html                — Art projects
+  tech.html               — Creative tech work
+  education.html          — Teaching areas
+  about.html              — Bio, CV, pronunciation, contact
+  project.html            — Universal project detail page (URL param driven)
+  projects.json           — Compiled project data (do not edit directly)
+  about.json              — Compiled about page data (do not edit directly)
+  css/
+    style.css             — Global styles and variables
+    section.css           — Section page styles (sidebar, grid, cards)
+    project.css           — Project detail page styles
+    about.css             — About page styles
+  js/
+    script.js             — Tagline cycling
+  content/
+    about.md              — Bio, CV, and contact source
+    art/                  — Art project markdown files
+    tech/                 — Tech project markdown files
+    education/            — Education project markdown files
+  scripts/
+    build.js              — Compiles content/*.md → projects.json + about.json
+  videos/                 — Hero video files (MP4)
+  images/                 — Local fallback images
 ```
 
 ## Adding a Project
 
-Open `projects.json` and add an entry to `art`, `tech`, or `education`:
+Create a new `.md` file in the appropriate `content/` subfolder (e.g. `content/art/06-myproject.md`):
 
-```json
-{
-  "id": "my-project",
-  "title": "Project Title",
-  "year": "2025",
-  "medium": "Medium / Format",
-  "thumbnail": "https://...r2.dev/my-project/thumb.jpg",
-  "hero": "https://...r2.dev/my-project/hero.jpg",
-  "description": "A short description.",
-  "list-title": "Heading for bulleted list",
-  "list": ["Item one", "Item two"],
-  "gallery": ["https://...r2.dev/my-project/01.jpg"],
-  "exhibitions": ["Venue, City — Year"],
-  "press": [
-    { "title": "Article", "publication": "Publication", "url": "https://..." }
-  ]
-}
+```markdown
+---
+id: my-project
+title: Project Title
+year: "2025"
+medium: Medium / Format
+thumbnail: https://...r2.dev/my-project/thumb.jpg
+hero: https://...r2.dev/my-project/hero.jpg
+list-title: Heading for bulleted list
+list:
+  - Item one
+  - Item two
+gallery:
+  - https://...r2.dev/my-project/01.jpg
+exhibitions:
+  - Venue, City — Year
+press:
+  - title: Article
+    publication: Publication
+    url: https://...
+---
+
+A short description of the project goes here.
+```
+
+Then run the build script to compile to JSON:
+
+```bash
+npm run build
 ```
 
 The project will automatically appear in the section grid and get its own detail page. Empty fields are hidden automatically.
 
 ## Image Hosting
 
-Images are hosted on Cloudflare R2 and hotlinked directly in `projects.json`.
+Images are hosted on Cloudflare R2 and hotlinked directly in the markdown frontmatter.
 
 Recommended sizes:
 - **Thumbnail**: 800 × 600px (4:3) — JPG
@@ -61,11 +82,7 @@ Recommended sizes:
 
 ## Updating the About Page
 
-Edit `about.json` directly — no HTML needed. Fields:
-- `bio` — array of paragraphs
-- `pronunciation` — name and phonetic guide
-- `contact` — email address
-- `cv` — education, certifications, solo/group exhibitions, teaching, awards, press
+Edit `content/about.md` — no HTML or JSON editing needed. The YAML frontmatter holds pronunciation, CV, and contact; the markdown body becomes the bio paragraphs. Run `npm run build` after saving.
 
 CV sections with no entries are automatically hidden.
 

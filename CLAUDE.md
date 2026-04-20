@@ -16,23 +16,33 @@ Tagline cycles through: think / teach / weird / grow / provocative / connect / m
 
 ```
 portfolio/
-  index.html          — Landing page with looping hero video
-  art.html            — /art section (project grid)
-  tech.html           — /tech section (project grid)
-  education.html      — /education section (project grid)
-  about.html          — /about page (bio, CV, pronunciation, contact)
-  project.html        — Universal project detail template (reads URL params)
-  projects.json       — Single source of truth for ALL project data
-  about.json          — All about page data (bio, CV, contact, pronunciation)
-  style.css           — Global styles (variables, landing page, shared)
-  section.css         — Section page styles (sidebar, grid, cards)
-  project.css         — Project detail page styles
-  about.css           — About page styles
-  script.js           — Tagline cycling
-  videos/             — Store MP4 files here for hero cycling
-  images/             — Local fallback images (most images now on Cloudflare R2)
-  CLAUDE.md           — This file
-  README.md           — GitHub README
+  index.html              — Landing page with looping hero video
+  art.html                — /art section (project grid)
+  tech.html               — /tech section (project grid)
+  education.html          — /education section (project grid)
+  about.html              — /about page (bio, CV, pronunciation, contact)
+  project.html            — Universal project detail template (reads URL params)
+  projects.json           — Compiled project data (do not edit directly)
+  about.json              — Compiled about page data (do not edit directly)
+  css/
+    style.css             — Global styles (variables, landing page, shared)
+    section.css           — Section page styles (sidebar, grid, cards)
+    project.css           — Project detail page styles
+    about.css             — About page styles
+  js/
+    script.js             — Tagline cycling
+  content/
+    about.md              — About page source (YAML frontmatter + markdown body)
+    art/                  — Art project markdown files (01-foodmasku.md, etc.)
+    tech/                 — Tech project markdown files
+    education/            — Education project markdown files
+  scripts/
+    build.js              — Node.js build script: compiles content/*.md → projects.json + about.json
+  videos/                 — Store MP4 files here for hero cycling
+  images/                 — Local fallback images (most images now on Cloudflare R2)
+  CLAUDE.md               — This file
+  README.md               — GitHub README
+  package.json            — npm scripts (npm run build)
 ```
 
 ---
@@ -91,30 +101,43 @@ Three main sections plus about:
 
 ---
 
-## Project Data System
+## Content Authoring System
 
-All project data lives in `projects.json`. Sections: art, tech, education.
+Content is written in Markdown and compiled to JSON via `npm run build`. Never edit `projects.json` or `about.json` directly — they are generated files.
 
-### Each project supports these fields:
-```json
-{
-  "id": "my-project",
-  "title": "Project Title",
-  "year": "2024",
-  "medium": "Medium / Format",
-  "thumbnail": "https://...r2.dev/project/thumb.jpg",
-  "hero": "https://...r2.dev/project/hero.jpg",
-  "description": "A paragraph of text.",
-  "list-title": "Heading for bulleted list",
-  "list": ["Bullet one", "Bullet two"],
-  "gallery": ["https://...r2.dev/project/01.jpg", "https://...r2.dev/project/02.jpg"],
-  "exhibitions": ["Venue, City — Year"],
-  "press": [
-    { "title": "Article Title", "publication": "Publication", "url": "https://..." }
-  ],
-  "link": "https://optional-external-link.com"
-}
+### Adding or editing a project
+
+Create or edit a `.md` file in `content/art/`, `content/tech/`, or `content/education/`. Files are numbered for ordering (e.g. `01-foodmasku.md`).
+
+```markdown
+---
+id: my-project
+title: Project Title
+year: "2025"
+medium: Medium / Format
+thumbnail: https://...r2.dev/project/thumb.jpg
+hero: https://...r2.dev/project/hero.jpg
+list-title: Heading for bulleted list
+list:
+  - Bullet one
+  - Bullet two
+gallery:
+  - https://...r2.dev/project/01.jpg
+exhibitions:
+  - Venue, City — Year
+press:
+  - title: Article Title
+    publication: Publication
+    url: https://...
+link: https://optional-external-link.com
+---
+
+Description text goes here as the markdown body.
 ```
+
+Run `npm run build` after saving. No new HTML needed ever.
+Card thumbnail falls back to `hero` if `thumbnail` is not set.
+Empty fields are automatically hidden on the project page.
 
 ### Project page layout (top to bottom):
 1. Back link (← /section)
@@ -127,37 +150,45 @@ All project data lives in `projects.json`. Sections: art, tech, education.
 8. Gallery grid (square crops)
 9. External link (if present)
 
-### To add a project:
-Add an entry to `projects.json` in the relevant section. No new HTML needed ever.
-Card thumbnail falls back to `hero` if `thumbnail` is not set.
-Empty fields are automatically hidden on the project page.
-
 ---
 
 ## About Page Data System
 
-All about page content lives in `about.json`:
-```json
-{
-  "pronunciation": { "name": "...", "guide": "..." },
-  "bio": ["Paragraph one", "Paragraph two"],
-  "contact": { "email": "hi@antoni.us" },
-  "cv": {
-    "education": [{ "year": "...", "entry": "..." }],
-    "certification": [...],
-    "solo": [...],
-    "group": [...],
-    "teaching": [...],
-    "awards": [...],
-    "press": [{ "year": "...", "entry": "...", "publication": "...", "url": "..." }]
-  }
-}
+All about page content lives in `content/about.md`. YAML frontmatter holds structured data; the markdown body becomes the bio paragraphs. Run `npm run build` after editing.
+
+```markdown
+---
+pronunciation:
+  name: "..."
+  guide: "..."
+contact:
+  email: hi@antoni.us
+cv:
+  education:
+    - year: "..."
+      entry: "..."
+  certification: [...]
+  solo: [...]
+  group: [...]
+  teaching: [...]
+  awards: [...]
+  press:
+    - year: "..."
+      entry: "..."
+      publication: "..."
+      url: "..."
+---
+
+Bio paragraph one.
+
+Bio paragraph two.
 ```
+
 CV sections with no entries are automatically hidden.
 
 ---
 
-## Current Projects in projects.json
+## Current Projects (content/)
 
 ### /art
 - foodmasku (2020–2025) — Performance, Photography, Video and Food
@@ -182,16 +213,17 @@ CV sections with no entries are automatically hidden.
 - Physical Computing
 - Digital Fabrication
 - Thesis & Concept
+- Robotics
 
 ---
 
 ## Things Still To Do
 
-- [ ] Fill in descriptions, lists, and gallery images in projects.json
+- [ ] Fill in descriptions, lists, and gallery images in content/*.md files
 - [ ] Add more Cloudflare R2 images for tech and education projects
 - [ ] Add more videos to videos/ folder and build crossfade cycling JS
 - [ ] Confirm LinkedIn URL (currently linkedin.com/in/theantonius)
-- [ ] Fill in real CV data in about.json (solo/group exhibitions, certifications, press)
+- [ ] Fill in real CV data in content/about.md (solo/group exhibitions, certifications, press)
 - [ ] Consider adding CV download link on about page
 - [ ] Test on real mobile devices
 - [ ] Future: build modal overlay for project detail (discussed, deferred)
