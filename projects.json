@@ -4,40 +4,89 @@
       "id": "foodmasku",
       "title": "foodmasku",
       "year": "2020-2025",
-      "medium": "Performance, Photography, Video and Food",
+      "medium": "Performance, Photography, Video, NFT and Food",
       "thumbnail": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/foodmasku/foodmasku-thumb.jpg",
       "hero": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/foodmasku/foodmasku-hero.jpg",
-      "description": "A series exploring identity, transformation, and the performance of food and self.",
-      "list-title": "Exhibited at",
+      "list-title": "Highlights",
       "list": [
-        "SXSW, Austin, TX — 2024",
-        "Paris Show, Paris, France — 2023"
+        "Began April 2020 during COVID lockdown, after a faulty Zoom pickle-face filter inspired the artist to create a kale salad mask.",
+        "\"foodmasku\" is a bilingual pun — \"food + mask + u\" in English; in Bahasa Indonesia/Javanese it reads as \"food of my brother\"",
+        "Named by The New York Times as one of five Instagram art accounts to follow (2020)",
+        "\"Farm-to-Face\" was commissioned for the UN SDG Action Campaign's UNITE TO ACT digital exhibition and unveiled at the 2023 UN SDG Action Awards, on the margins of the UN Food Systems Summit",
+        "The \"Dining In\" performance — two guests eating a meal off the artist's face — went viral multiple times across TikTok and Instagram, accumulating tens of millions of views and later featured on MTV's Ridiculousness"
       ],
       "gallery": [
         "images/art-mask-01.jpg",
         "images/art-mask-02.jpg"
       ],
       "exhibitions": [
-        "SXSW, Austin, TX — 2024",
-        "Paris Show, Paris, France — 2023"
+        "SXSW, NFT Gallery, Austin, TX — Livestream in Your Head (live performance with William Cobbing) — 2022",
+        "The Invisible Dog Art Center, Brooklyn, NY — Nafas (Dining In performance) — September 10 – October 15, 2022",
+        "Galerie Iham, Paris — What We Eat, Who We Are (solo show, Mangemasku series) — May 16, 2023",
+        "UN SDG Action Awards, UN Food Systems Summit — Farm-to-Face (UNITE TO ACT digital exhibition) — 2023",
+        "Essex Art Center, Lawrence, MA — Salon Show 2024 (group show, curated by Mariana Martins; featuring Good Luck Has Arrived, 2023) — July 13 – August 10, 2024",
+        "ArtVerse Gallery, Paris — All & Every (duo show with Tommy Hollenstein, presented during the Paris Olympics and Paralympics) — July 25 – September 8, 2024",
+        "TIMEPieces × KnownOrigin — curated drop (with work by foodmasku) — year tbd"
       ],
       "press": [
-        { "title": "Article Title Here", "publication": "Hyperallergic", "url": "https://hyperallergic.com" },
-        { "title": "Article Title Here", "publication": "The New York Times", "url": "https://nytimes.com" }
-      ]
+        {
+          "title": "5 Instagram Art Accounts to Follow",
+          "publication": "The New York Times",
+          "url": "https://www.nytimes.com"
+        },
+        {
+          "title": "Why this N.Y. artist is spending the pandemic turning his meals into face masks",
+          "publication": "CBC Radio — As It Happens",
+          "url": "https://www.cbc.ca/radio/asithappens/as-it-happens-the-friday-edition-1.5828644/why-this-n-y-artist-is-spending-the-pandemic-turning-his-meals-into-face-masks-1.5829046"
+        },
+        {
+          "title": "The Instagram-Favorite Artist Who Makes Masks Out of Food Is the Star of a New Show About the Intersection of Art and Cuisine",
+          "publication": "Artnet News",
+          "url": "https://news.artnet.com/art-world/foodmasku-2171435"
+        },
+        {
+          "title": "Q&A: Foodmasku on channeling emotions into food mask art",
+          "publication": "Washington Square News",
+          "url": "https://nyunews.com/arts/2022/12/09/foodmasku-artist-instagram-q-and-a"
+        },
+        {
+          "title": "From Farm to Face: How Foodmasku's Art Unites Creativity and Sustainable Food Systems",
+          "publication": "UN SDG Action Campaign (Medium)",
+          "url": "https://medium.com/unite-to-act-blog-series/from-farm-to-table-how-foodmaskus-art-unites-creativity-and-sustainable-food-systems-2c98cdd91b77"
+        },
+        {
+          "title": "The internet thought allowing people to eat off your face was a job",
+          "publication": "Jacaranda FM",
+          "url": "https://www.jacarandafm.com/shows/workzone-2/internet-thought-allowing-people-eat-your-face-was-job/"
+        }
+      ],
+      "link": "https://www.foodmasku.com",
+      "description": "foodmasku is an ongoing performance, photography, and video series in which meals become masks — worn first, then eaten. It began in April 2020, during the early weeks of COVID lockdown, when a colleague's stuck pickle filter on a Zoom call prompted me to put kale on my face. The laughter that followed was the first I'd heard in weeks, and a daily practice was born.\n\nOver the years the project has grown into a body of work at the intersection of food waste, responsible consumption, and sustainable food systems — using the face as a site for meditating on how food reaches our tables, and what we choose to do with it when it arrives. The work found a particular home in the UN SDG Action Campaign, where a commissioned piece, Farm-to-Face, was unveiled at the 2023 UN SDG Action Awards alongside the UN Food Systems Summit.\n\nThe series has also lived an unruly second life online. A performance staged at The Invisible Dog Art Center where two guests quietly eating dinner off the artist's face was cut, recaptioned, and recirculated across TikTok and Instagram, racking up tens of millions of views and a segment on MTV's Ridiculousness. The runaway clip is frequently paired with fabricated captions about a \"restaurant paying $10,000 a month for rich people to eat off your face,\" a viral rumor the artist has publicly debunked. The real piece is about labor, food inequality, and who gets to be seen at the table."
     },
     {
       "id": "postpapa",
       "title": "Post Papa",
       "year": "2025",
-      "medium": "Medium / Format",
+      "medium": "Drawing / Sketch",
       "thumbnail": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-thumb.jpg",
       "hero": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-hero.jpg",
-      "description": "Description of this work goes here.",
-      "list-title": "",
+      "gallery": [
+        "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-01.png",
+        "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-02.png",
+        "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-03.png",
+        "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-04.png",
+        "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-05.png",
+        "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-06.png",
+        "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-07.png",
+        "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-08.png",
+        "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-09.png"
+      ],
+      "exhibitions": [
+        "Essex Art Center, Lawrence, MA — Post Papa (on view) — through September 13, 2025"
+      ],
+      "link": "https://www.facebook.com/p/Post-Papa-61577335592296/",
+      "description": "Post Papa is a sketch series that began on Instagram at @postpapasketch — [one-line description of what the work is about, in your own words: grief, the figure of the father, memory, daily drawing practice, etc.].\n\n[A second paragraph on form: what the drawings look like, how the series unfolds, anything that's been true about making them day to day. The work was exhibited at Essex Art Center in Lawrence, MA through September 13, 2025, with half of all proceeds supporting the center, a non-profit arts community in the Merrimack Valley.]",
       "list": [],
-      "gallery": ["https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-01.png","https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-02.png","https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-03.png","https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-04.png","https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-05.png","https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-06.png","https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-07.png","https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-08.png","https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-09.png"],
-      "exhibitions": [],
       "press": []
     },
     {
@@ -48,7 +97,6 @@
       "thumbnail": "images/art-shooting-thumb.jpg",
       "hero": "images/art-shooting-hero.jpg",
       "description": "Description of this work goes here.",
-      "list-title": "",
       "list": [],
       "gallery": [],
       "exhibitions": [],
@@ -56,17 +104,40 @@
     },
     {
       "id": "xyz",
-      "title": "We Become XYZ",
+      "title": "If We Were XYZ",
       "year": "2019",
-      "medium": "Performance / Video",
+      "medium": "Performance, EEG Data, Sound, Video",
       "thumbnail": "images/art-archives-thumb.jpg",
       "hero": "images/art-archives-hero.jpg",
-      "description": "Description of this work goes here.",
-      "list-title": "",
-      "list": [],
-      "gallery": [],
-      "exhibitions": [],
-      "press": []
+      "list-title": "Credits",
+      "list": [
+        "Performance by Melati Suryodarmo",
+        "Sound and vocal composition by Jessika Kenney",
+        "EEG data, custom sleep-lab instrumentation, and sonification / visualization by Antonius Oki Wiriadjaja",
+        "Commissioned by Asia Society Museum for Creative Common Ground"
+      ],
+      "exhibitions": [
+        "Asia Society Museum, New York — If We Were XYZ (premiere, commissioned by Creative Common Ground) — October 18–19, 2019"
+      ],
+      "press": [
+        {
+          "title": "A Performer Uses Brain-Mapping Technology to Scan Her Dreams",
+          "publication": "Hyperallergic",
+          "url": "https://hyperallergic.com/521598/melati-suryodarmo-if-we-were-xyz/"
+        },
+        {
+          "title": "If We Were XYZ",
+          "publication": "Asia Society",
+          "url": "https://asiasociety.org/new-york/events/if-we-were-xyz"
+        },
+        {
+          "title": "If We Were XYZ: Artistic Process",
+          "publication": "Asia Society — Creative Common Ground",
+          "url": "https://asiasociety.org/creative-common-ground/if-we-were-xyz-artistic-process"
+        }
+      ],
+      "description": "If We Were XYZ is a three-hour durational performance by Indonesian artist Melati Suryodarmo, premiered at Asia Society Museum in October 2019 as part of the museum's interdisciplinary program Creative Common Ground. I served as the piece's artist-technologist: I built a self-devised sleep laboratory around Melati, recording EEG data while she slept, and then translated that raw neural data into the musical scores and visual systems that structured the performance. Vocalist and composer Jessika Kenney used the same dataset to write the piece's seven-part score — one movement for each dream.\n\nThe work sits at the intersection of Javanese mysticism, neuroscience, and Freudian psychology, asking what it means when the subconscious is made material. It was, in many ways, a question about intimacy: what do you owe a collaborator who has handed you the raw signal of their dreaming mind, and what kind of translation is faithful to that trust?",
+      "gallery": []
     },
     {
       "id": "archives",
@@ -76,7 +147,6 @@
       "thumbnail": "images/art-archives-thumb.jpg",
       "hero": "images/art-archives-hero.jpg",
       "description": "Description of this work goes here.",
-      "list-title": "",
       "list": [],
       "gallery": [],
       "exhibitions": [],
@@ -91,10 +161,14 @@
       "medium": "Computerized Embroidery, Community Outreach",
       "thumbnail": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/embroidery/embroidery-thumb.jpg",
       "hero": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/embroidery/embroidery-hero.jpg",
-      "description": "Description of this work goes here.",
       "list-title": "What I've made with it",
+      "gallery": [
+        "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/embroidery/embroidery-01.jpg",
+        "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/embroidery/embroidery-02.jpg",
+        "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/embroidery/embroidery-03.jpg"
+      ],
+      "description": "Description of this work goes here.",
       "list": [],
-      "gallery": ["https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/embroidery/embroidery-01.jpg","https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/embroidery/embroidery-02.jpg","https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/embroidery/embroidery-03.jpg"],
       "exhibitions": [],
       "press": []
     },
@@ -105,8 +179,8 @@
       "medium": "Digital Fabrication",
       "thumbnail": "images/tech-3d-thumb.jpg",
       "hero": "images/tech-3d-hero.jpg",
-      "description": "Description of this work goes here.",
       "list-title": "What I've made with it",
+      "description": "Description of this work goes here.",
       "list": [],
       "gallery": [],
       "exhibitions": [],
@@ -119,8 +193,8 @@
       "medium": "Digital Fabrication",
       "thumbnail": "images/tech-cnc-thumb.jpg",
       "hero": "images/tech-cnc-hero.jpg",
-      "description": "Description of this work goes here.",
       "list-title": "What I've made with it",
+      "description": "Description of this work goes here.",
       "list": [],
       "gallery": [],
       "exhibitions": [],
@@ -133,8 +207,8 @@
       "medium": "Digital Fabrication",
       "thumbnail": "images/tech-cnc-thumb.jpg",
       "hero": "images/tech-cnc-hero.jpg",
-      "description": "Description of this work goes here.",
       "list-title": "What I've made with it",
+      "description": "Description of this work goes here.",
       "list": [],
       "gallery": [],
       "exhibitions": [],
@@ -147,8 +221,8 @@
       "medium": "Digital Fabrication",
       "thumbnail": "images/tech-vinyl-thumb.jpg",
       "hero": "images/tech-vinyl-hero.jpg",
-      "description": "Description of this work goes here.",
       "list-title": "What I've made with it",
+      "description": "Description of this work goes here.",
       "list": [],
       "gallery": [],
       "exhibitions": [],
@@ -161,8 +235,8 @@
       "medium": "Digital Fabrication",
       "thumbnail": "images/tech-laser-thumb.jpg",
       "hero": "images/tech-laser-hero.jpg",
-      "description": "Description of this work goes here.",
       "list-title": "What I've made with it",
+      "description": "Description of this work goes here.",
       "list": [],
       "gallery": [],
       "exhibitions": [],
@@ -175,8 +249,8 @@
       "medium": "Digital Fabrication",
       "thumbnail": "images/tech-electronics-thumb.jpg",
       "hero": "images/tech-electronics-hero.jpg",
-      "description": "Description of this work goes here.",
       "list-title": "What I've made with it",
+      "description": "Description of this work goes here.",
       "list": [],
       "gallery": [],
       "exhibitions": [],
@@ -189,8 +263,8 @@
       "medium": "Digital Fabrication",
       "thumbnail": "images/tech-textiles-thumb.jpg",
       "hero": "images/tech-textiles-hero.jpg",
-      "description": "Description of this work goes here.",
       "list-title": "What I've made with it",
+      "description": "Description of this work goes here.",
       "list": [],
       "gallery": [],
       "exhibitions": [],
@@ -203,8 +277,8 @@
       "medium": "Digital Fabrication",
       "thumbnail": "images/tech-textiles-thumb.jpg",
       "hero": "images/tech-textiles-hero.jpg",
-      "description": "Description of this work goes here.",
       "list-title": "What I've made with it",
+      "description": "Description of this work goes here.",
       "list": [],
       "gallery": [],
       "exhibitions": [],
@@ -219,12 +293,12 @@
       "medium": "p5.js, openFrameworks, Unity",
       "thumbnail": "images/edu-code-thumb.jpg",
       "hero": "images/edu-code-hero.jpg",
-      "description": "Description of this area of teaching goes here.",
       "list-title": "Courses Taught",
       "list": [
         "Creative Coding — NYU Tisch ITP, 2012–2018",
         "Web Design — CUNY BMCC, 2014–present"
       ],
+      "description": "Description of this area of teaching goes here.",
       "gallery": [],
       "exhibitions": [],
       "press": []
@@ -236,11 +310,11 @@
       "medium": "Arduino, Python, Sensors",
       "thumbnail": "images/edu-phys-thumb.jpg",
       "hero": "images/edu-phys-hero.jpg",
-      "description": "Description of this area of teaching goes here.",
       "list-title": "Courses Taught",
       "list": [
         "Physical Computing — NYU Tisch ITP, 2012–2018"
       ],
+      "description": "Description of this area of teaching goes here.",
       "gallery": [],
       "exhibitions": [],
       "press": []
@@ -252,12 +326,12 @@
       "medium": "3D Printing, Laser Cutting, CNC, Textiles",
       "thumbnail": "images/edu-fab-thumb.jpg",
       "hero": "images/edu-fab-hero.jpg",
-      "description": "Description of this area of teaching goes here.",
       "list-title": "Courses Taught",
       "list": [
         "Textiles — NYU Tisch ITP, 2012–2018",
         "3D Printing — NYC FIRST STEM Centers, 2025–present"
       ],
+      "description": "Description of this area of teaching goes here.",
       "gallery": [],
       "exhibitions": [],
       "press": []
@@ -269,12 +343,12 @@
       "medium": "Multimedia Art, Critique, Theory",
       "thumbnail": "images/edu-art-thumb.jpg",
       "hero": "images/edu-art-hero.jpg",
-      "description": "Description of this area of teaching goes here.",
       "list-title": "Courses Taught",
       "list": [
         "Multimedia Art — CUNY BMCC, 2014–present",
         "Art & Technology — CUNY Queens College, 2014–present"
       ],
+      "description": "Description of this area of teaching goes here.",
       "gallery": [],
       "exhibitions": [],
       "press": []
@@ -286,12 +360,12 @@
       "medium": "Android, Arduino, Python, Sensors",
       "thumbnail": "images/edu-phys-thumb.jpg",
       "hero": "images/edu-phys-hero.jpg",
-      "description": "Description of this area of teaching goes here.",
       "list-title": "Courses Taught",
       "list": [
         "Multimedia Art — CUNY BMCC, 2014–present",
         "Art & Technology — CUNY Queens College, 2014–present"
       ],
+      "description": "Description of this area of teaching goes here.",
       "gallery": [],
       "exhibitions": [],
       "press": []

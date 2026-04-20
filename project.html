@@ -92,9 +92,12 @@
           ? `<img src="${project.hero}" alt="${project.title}" class="project-hero" />`
           : '';
 
-        // Description
+        // Description — split on blank lines so paragraphs render separately
         const descHtml = project.description
-          ? `<p class="project-detail-desc">${project.description}</p>`
+          ? project.description
+              .split(/\n\n+/)
+              .map(para => `<p class="project-detail-desc">${para}</p>`)
+              .join('')
           : '';
 
         // Bulleted list
@@ -160,5 +163,4 @@
       loadProject();
     </script>
 
-  </body>
-</html>
+  </body
