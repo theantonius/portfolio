@@ -7,6 +7,60 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/section.css" />
+    <style>
+      /* TECH CATEGORY TABS */
+      .tech-tabs {
+        display: flex;
+        gap: 8px;
+        position: sticky;
+        top: 0;
+        background: #fafafa;
+        padding: 16px 0 20px;
+        z-index: 10;
+        border-bottom: 1px solid #e8e8e8;
+        margin-bottom: 48px;
+      }
+
+      .tech-tab {
+        display: inline-block;
+        padding: 8px 16px;
+        font-size: 0.8rem;
+        font-family: var(--font-heading);
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #888;
+        text-decoration: none;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        transition: color 0.2s, border-color 0.2s, background 0.2s;
+      }
+
+      .tech-tab:hover {
+        color: #c880e8;
+        border-color: #c880e8;
+        text-decoration: none;
+        background: transparent;
+      }
+
+      /* CATEGORY SECTION */
+      .tech-section {
+        margin-bottom: 64px;
+        scroll-margin-top: 80px;
+      }
+
+      .tech-section-title {
+        font-family: var(--font-heading);
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #c880e8;
+        margin-bottom: 24px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #c880e8;
+      }
+    </style>
   </head>
   <body class="section-page">
 
@@ -40,7 +94,32 @@
       <!-- MAIN CONTENT -->
       <main class="section-content">
         <h2 class="section-title" style="--section-color: #c880e8;">/tech</h2>
-        <div class="project-grid" id="project-grid"></div>
+
+        <!-- CATEGORY TABS -->
+        <nav class="tech-tabs">
+          <a href="#fabrication" class="tech-tab">Fabrication</a>
+          <a href="#code" class="tech-tab">Code &amp; Creative Tools</a>
+          <a href="#design" class="tech-tab">Design &amp; Media</a>
+        </nav>
+
+        <!-- FABRICATION -->
+        <section class="tech-section" id="fabrication">
+          <h3 class="tech-section-title">Fabrication</h3>
+          <div class="project-grid" id="grid-fabrication"></div>
+        </section>
+
+        <!-- CODE & CREATIVE TOOLS -->
+        <section class="tech-section" id="code">
+          <h3 class="tech-section-title">Code &amp; Creative Tools</h3>
+          <div class="project-grid" id="grid-code"></div>
+        </section>
+
+        <!-- DESIGN & MEDIA -->
+        <section class="tech-section" id="design">
+          <h3 class="tech-section-title">Design &amp; Media</h3>
+          <div class="project-grid" id="grid-design"></div>
+        </section>
+
       </main>
 
     </div>
@@ -50,19 +129,31 @@
         const res = await fetch('projects.json');
         const data = await res.json();
         const projects = data['tech'] || [];
-        const grid = document.getElementById('project-grid');
-        grid.innerHTML = projects.map(p => `
-          <a href="project.html?section=tech&id=${p.id}" class="project-card">
-            <div class="card-thumb">
-              <img src="${p.thumbnail || p.hero}" alt="${p.title}" />
-            </div>
-            <div class="card-info">
-              <h3>${p.title}</h3>
-              <p>${p.year} — ${p.medium}</p>
-            </div>
-          </a>
-        `).join('');
+
+        const categories = {
+          fabrication: document.getElementById('grid-fabrication'),
+          code:        document.getElementById('grid-code'),
+          design:      document.getElementById('grid-design'),
+        };
+
+        projects.forEach(p => {
+          const grid = categories[p.category];
+          if (!grid) return;
+          const card = `
+            <a href="project.html?section=tech&id=${p.id}" class="project-card">
+              <div class="card-thumb">
+                <img src="${p.thumbnail || p.hero}" alt="${p.title}" />
+              </div>
+              <div class="card-info">
+                <h3>${p.title}</h3>
+                <p>${p.year ? p.year + ' — ' : ''}${p.medium}</p>
+              </div>
+            </a>
+          `;
+          grid.innerHTML += card;
+        });
       }
+
       loadProjects();
     </script>
 

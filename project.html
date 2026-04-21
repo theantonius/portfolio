@@ -214,7 +214,7 @@
           ${backHtml}
           ${heroHtml}
           <h1 class="project-detail-title" style="color:${color}">${project.title}</h1>
-          <p class="project-detail-meta">${project.year} — ${project.medium}</p>
+          <p class="project-detail-meta">${project.year ? project.year + ' — ' : ''}${project.medium}</p>
           ${descHtml}
           ${listHtml}
           ${exhibitionsHtml}

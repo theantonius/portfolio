@@ -1,8 +1,8 @@
 ---
 id: laser
 title: Laser Cutter
-year: Ongoing
-medium: Digital Fabrication
+medium: Epilog, Illustrator
+category: fabrication
 thumbnail: images/tech-laser-thumb.jpg
 hero: images/tech-laser-hero.jpg
 list-title: What I've made with it

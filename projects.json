@@ -189,8 +189,8 @@
     {
       "id": "embroidery",
       "title": "Computerized Embroidery",
-      "year": "2026",
-      "medium": "Computerized Embroidery, Community Outreach",
+      "medium": "Brother Machines, Singer Machines, Embroidery Digitization",
+      "category": "fabrication",
       "thumbnail": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/embroidery/embroidery-thumb.jpg",
       "hero": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/embroidery/embroidery-hero.jpg",
       "list-title": "What I've made with it",
@@ -207,8 +207,8 @@
     {
       "id": "3d-printing",
       "title": "3D Printing",
-      "year": "Ongoing",
-      "medium": "Digital Fabrication",
+      "medium": "FDM, SLA",
+      "category": "fabrication",
       "thumbnail": "images/tech-3d-thumb.jpg",
       "hero": "images/tech-3d-hero.jpg",
       "list-title": "What I've made with it",
@@ -221,22 +221,8 @@
     {
       "id": "cnc",
       "title": "Computer Numerical Control (CNC) Router",
-      "year": "Ongoing",
-      "medium": "Digital Fabrication",
-      "thumbnail": "images/tech-cnc-thumb.jpg",
-      "hero": "images/tech-cnc-hero.jpg",
-      "list-title": "What I've made with it",
-      "description": "Description of this work goes here.",
-      "list": [],
-      "gallery": [],
-      "exhibitions": [],
-      "press": []
-    },
-    {
-      "id": "bigscreens",
-      "title": "Big Screens",
-      "year": "Ongoing",
-      "medium": "Digital Fabrication",
+      "medium": "ShopBot, Fusion 360",
+      "category": "fabrication",
       "thumbnail": "images/tech-cnc-thumb.jpg",
       "hero": "images/tech-cnc-hero.jpg",
       "list-title": "What I've made with it",
@@ -249,8 +235,8 @@
     {
       "id": "vinyl",
       "title": "Vinyl Cutter",
-      "year": "Ongoing",
-      "medium": "Digital Fabrication",
+      "medium": "Cricut, Adobe Illustrator",
+      "category": "fabrication",
       "thumbnail": "images/tech-vinyl-thumb.jpg",
       "hero": "images/tech-vinyl-hero.jpg",
       "list-title": "What I've made with it",
@@ -263,8 +249,8 @@
     {
       "id": "laser",
       "title": "Laser Cutter",
-      "year": "Ongoing",
-      "medium": "Digital Fabrication",
+      "medium": "Epilog, Illustrator",
+      "category": "fabrication",
       "thumbnail": "images/tech-laser-thumb.jpg",
       "hero": "images/tech-laser-hero.jpg",
       "list-title": "What I've made with it",
@@ -277,8 +263,8 @@
     {
       "id": "electronics",
       "title": "Electronics Prototyping",
-      "year": "Ongoing",
-      "medium": "Digital Fabrication",
+      "medium": "Breadboarding, Soldering, Arduino",
+      "category": "code",
       "thumbnail": "images/tech-electronics-thumb.jpg",
       "hero": "images/tech-electronics-hero.jpg",
       "list-title": "What I've made with it",
@@ -291,8 +277,8 @@
     {
       "id": "textiles",
       "title": "Sewing and E-Textiles",
-      "year": "Ongoing",
-      "medium": "Digital Fabrication",
+      "medium": "Soft Circuits, Smart Fabrics",
+      "category": "fabrication",
       "thumbnail": "images/tech-textiles-thumb.jpg",
       "hero": "images/tech-textiles-hero.jpg",
       "list-title": "What I've made with it",
@@ -303,15 +289,261 @@
       "press": []
     },
     {
-      "id": "cad",
-      "title": "Computer-Aided Design (CAD)",
-      "year": "Ongoing",
-      "medium": "Digital Fabrication",
-      "thumbnail": "images/tech-textiles-thumb.jpg",
-      "hero": "images/tech-textiles-hero.jpg",
-      "list-title": "What I've made with it",
+      "id": "pcomp",
+      "title": "Physical Computing",
+      "medium": "Arduino, Raspberry Pi, Sensors",
+      "category": "code",
+      "thumbnail": "images/tech-physical-thumb.jpg",
+      "hero": "images/tech-physical-hero.jpg",
+      "list-title": "Tools & platforms",
+      "list": [
+        "Arduino (including custom boards)",
+        "Raspberry Pi with Python & Viam",
+        "Sensor wiring and integration",
+        "Breadboarding and soldering"
+      ],
       "description": "Description of this work goes here.",
-      "list": [],
+      "gallery": [],
+      "exhibitions": [],
+      "press": []
+    },
+    {
+      "id": "creative-coding",
+      "title": "Creative Coding",
+      "medium": "JavaScript, p5.js, Three.js",
+      "category": "code",
+      "thumbnail": "images/tech-p5js-thumb.jpg",
+      "hero": "images/tech-p5js-hero.jpg",
+      "list-title": "What I use it for",
+      "list": [
+        "Generative visuals and dailies",
+        "Teaching creative coding",
+        "Interactive browser-based art"
+      ],
+      "description": "Description of this work goes here.",
+      "gallery": [],
+      "exhibitions": [],
+      "press": []
+    },
+    {
+      "id": "web",
+      "title": "Web Development",
+      "medium": "HTML, CSS, JavaScript",
+      "category": "code",
+      "thumbnail": "images/tech-web-thumb.jpg",
+      "hero": "images/tech-web-hero.jpg",
+      "list-title": "What I build with it",
+      "list": [
+        "HTML & CSS (highly proficient)",
+        "JavaScript (p5.js, Three.js)",
+        "Teaching web development"
+      ],
+      "description": "Description of this work goes here.",
+      "gallery": [],
+      "exhibitions": [],
+      "press": []
+    },
+    {
+      "id": "bigscreens",
+      "title": "Big Screens",
+      "medium": "Large Format Video, openFrameworks",
+      "category": "code",
+      "thumbnail": "images/tech-screens-thumb.jpg",
+      "hero": "images/tech-screens-hero.jpg",
+      "list-title": "Formats & tools",
+      "list": [
+        "Times Square and Rockefeller Center displays",
+        "IAC Building — world's largest screen at the time",
+        "Synchronized multi-screen video output",
+        "openFrameworks for custom sync frameworks",
+        "Export for billboard and cinema-scale formats"
+      ],
+      "description": "Description of this work goes here.",
+      "gallery": [],
+      "exhibitions": [],
+      "press": []
+    },
+    {
+      "id": "automation",
+      "title": "Workflow Automation",
+      "medium": "n8n, Monday.com, Webflow, Eventbrite",
+      "category": "code",
+      "thumbnail": "images/tech-automation-thumb.jpg",
+      "hero": "images/tech-automation-hero.jpg",
+      "list-title": "Workflows I've built",
+      "list": [
+        "Monday.com → Webflow (live open/closed center status)",
+        "Monday.com → Eventbrite (data sync)",
+        "Eventbrite → Webflow (event publishing pipeline)"
+      ],
+      "description": "Description of this work goes here.",
+      "gallery": [],
+      "exhibitions": [],
+      "press": []
+    },
+    {
+      "id": "cad",
+      "title": "CAD",
+      "medium": "Autodesk Fusion 360, Onshape",
+      "category": "design",
+      "thumbnail": "images/tech-cad-thumb.jpg",
+      "hero": "images/tech-cad-hero.jpg",
+      "list-title": "Tools",
+      "list": [
+        "Autodesk Fusion 360 (primary)",
+        "Onshape (teaching)",
+        "Designing for CNC, 3D print, and laser output"
+      ],
+      "description": "Description of this work goes here.",
+      "gallery": [],
+      "exhibitions": [],
+      "press": []
+    },
+    {
+      "id": "adobe",
+      "title": "Adobe Suite",
+      "medium": "Illustrator, Premiere, After Effects, Express",
+      "category": "design",
+      "thumbnail": "images/tech-adobe-thumb.jpg",
+      "hero": "images/tech-adobe-hero.jpg",
+      "list-title": "Tools",
+      "list": [
+        "Adobe Illustrator — Adobe Certified Professional",
+        "Adobe Premiere — video editing",
+        "Adobe After Effects — motion graphics",
+        "Adobe Express — teaching tool"
+      ],
+      "description": "Description of this work goes here.",
+      "gallery": [],
+      "exhibitions": [],
+      "press": []
+    },
+    {
+      "id": "figma",
+      "title": "Figma & UI Design",
+      "medium": "Figma, Prototyping, Wireframing",
+      "category": "design",
+      "thumbnail": "images/tech-figma-thumb.jpg",
+      "hero": "images/tech-figma-hero.jpg",
+      "list-title": "What I use it for",
+      "list": [
+        "Interface and product design",
+        "Prototyping and wireframing",
+        "Teaching Figma to students"
+      ],
+      "description": "Description of this work goes here.",
+      "gallery": [],
+      "exhibitions": [],
+      "press": []
+    },
+    {
+      "id": "photography",
+      "title": "Photography & Lighting",
+      "medium": "DSLR, Studio Lighting",
+      "category": "design",
+      "thumbnail": "images/tech-photo-thumb.jpg",
+      "hero": "images/tech-photo-hero.jpg",
+      "list-title": "What I can do",
+      "list": [
+        "DSLR camera operation",
+        "Studio lighting setup",
+        "Portrait and documentation photography"
+      ],
+      "description": "Description of this work goes here.",
+      "gallery": [],
+      "exhibitions": [],
+      "press": []
+    },
+    {
+      "id": "ai-tools",
+      "title": "AI Tools & Workflows",
+      "medium": "Claude, ChatGPT, Flora, Generative Image Tools",
+      "category": "code",
+      "thumbnail": "images/tech-ai-thumb.jpg",
+      "hero": "images/tech-ai-hero.jpg",
+      "list-title": "Tools & platforms",
+      "list": [
+        "Large language models (Claude, ChatGPT, etc.)",
+        "Generative image and video tools",
+        "AI-assisted coding and prototyping",
+        "Prompt engineering and workflow integration"
+      ],
+      "description": "Description of this work goes here.",
+      "gallery": [],
+      "exhibitions": [],
+      "press": []
+    },
+    {
+      "id": "video-editing",
+      "title": "Video Editing & Production",
+      "medium": "Adobe Premiere, After Effects",
+      "category": "design",
+      "thumbnail": "images/tech-video-thumb.jpg",
+      "hero": "images/tech-video-hero.jpg",
+      "list-title": "Tools & skills",
+      "list": [
+        "Adobe Premiere Pro",
+        "Adobe After Effects",
+        "Video production for art documentation and events",
+        "Export for large format and synchronized screen output"
+      ],
+      "description": "Description of this work goes here.",
+      "gallery": [],
+      "exhibitions": [],
+      "press": []
+    },
+    {
+      "id": "git",
+      "title": "Git & Version Control",
+      "medium": "Git, GitHub",
+      "category": "code",
+      "thumbnail": "images/tech-git-thumb.jpg",
+      "hero": "images/tech-git-hero.jpg",
+      "list-title": "What I use it for",
+      "list": [
+        "Git for version control",
+        "GitHub for project hosting and collaboration",
+        "Managing code across projects and with students"
+      ],
+      "description": "Description of this work goes here.",
+      "gallery": [],
+      "exhibitions": [],
+      "press": []
+    },
+    {
+      "id": "teaching",
+      "title": "Teaching & Curriculum Design",
+      "medium": "Hands-on Technical Education",
+      "category": "design",
+      "thumbnail": "images/tech-teaching-thumb.jpg",
+      "hero": "images/tech-teaching-hero.jpg",
+      "list-title": "What I teach",
+      "list": [
+        "Creative coding (p5.js)",
+        "Physical computing and electronics",
+        "Digital fabrication",
+        "Figma and web development",
+        "Curriculum design for hands-on technical education"
+      ],
+      "description": "Description of this work goes here.",
+      "gallery": [],
+      "exhibitions": [],
+      "press": []
+    },
+    {
+      "id": "maxmsp",
+      "title": "Max/MSP",
+      "medium": "MIDI, Interactive Audio, Max/MSP",
+      "category": "code",
+      "thumbnail": "images/tech-maxmsp-thumb.jpg",
+      "hero": "images/tech-maxmsp-hero.jpg",
+      "list-title": "What I use it for",
+      "list": [
+        "Interactive audio and MIDI control",
+        "Real-time media processing",
+        "Connecting physical sensors to sound and visuals"
+      ],
+      "description": "Description of this work goes here.",
       "gallery": [],
       "exhibitions": [],
       "press": []
@@ -319,85 +551,143 @@
   ],
   "education": [
     {
-      "id": "creative-code",
-      "title": "Creative Code",
-      "year": "Ongoing",
-      "medium": "p5.js, openFrameworks, Unity",
-      "thumbnail": "images/edu-code-thumb.jpg",
-      "hero": "images/edu-code-hero.jpg",
-      "list-title": "Courses Taught",
+      "id": "fulbright",
+      "title": "Fulbright Scholar",
+      "medium": "New Media, Traditional Arts, Indonesia",
+      "thumbnail": "images/edu-fulbright-thumb.jpg",
+      "hero": "images/edu-fulbright-hero.jpg",
+      "list-title": "About the program",
       "list": [
-        "Creative Coding — NYU Tisch ITP, 2012–2018",
-        "Web Design — CUNY BMCC, 2014–present"
+        "Fulbright U.S. Scholar Program, 2018–2019",
+        "Solo, Java, Indonesia",
+        "Teaching new media tools and practices to traditional Javanese artists"
       ],
-      "description": "Description of this area of teaching goes here.",
+      "description": "Description goes here.",
       "gallery": [],
       "exhibitions": [],
       "press": []
     },
     {
-      "id": "physical-computing",
-      "title": "Physical Computing",
-      "year": "Ongoing",
-      "medium": "Arduino, Python, Sensors",
-      "thumbnail": "images/edu-phys-thumb.jpg",
-      "hero": "images/edu-phys-hero.jpg",
-      "list-title": "Courses Taught",
+      "id": "talking-fabrics",
+      "title": "Talking Fabrics",
+      "medium": "Graduate Course, ITP NYU / NYU Shanghai",
+      "thumbnail": "images/edu-talking-fabrics-thumb.jpg",
+      "hero": "images/edu-talking-fabrics-hero.jpg",
+      "list-title": "Where taught",
       "list": [
-        "Physical Computing — NYU Tisch ITP, 2012–2018"
+        "ITP, NYU — taught twice",
+        "NYU Shanghai — taught three times",
+        "2015–2018"
       ],
-      "description": "Description of this area of teaching goes here.",
+      "description": "Description goes here.",
       "gallery": [],
       "exhibitions": [],
       "press": []
     },
     {
-      "id": "digital-fabrication",
-      "title": "Digital Fabrication",
-      "year": "Ongoing",
-      "medium": "3D Printing, Laser Cutting, CNC, Textiles",
-      "thumbnail": "images/edu-fab-thumb.jpg",
-      "hero": "images/edu-fab-hero.jpg",
-      "list-title": "Courses Taught",
+      "id": "nime",
+      "title": "New Interfaces in Musical Expression",
+      "medium": "Graduate Course, NYU Shanghai",
+      "thumbnail": "images/edu-nime-thumb.jpg",
+      "hero": "images/edu-nime-hero.jpg",
+      "list-title": "Where taught",
       "list": [
-        "Textiles — NYU Tisch ITP, 2012–2018",
-        "3D Printing — NYC FIRST STEM Centers, 2025–present"
+        "NYU Shanghai — taught twice",
+        "2015–2018"
       ],
-      "description": "Description of this area of teaching goes here.",
+      "description": "Description goes here.",
       "gallery": [],
       "exhibitions": [],
       "press": []
     },
     {
-      "id": "thesis",
-      "title": "Thesis & Concept",
-      "year": "Ongoing",
-      "medium": "Multimedia Art, Critique, Theory",
-      "thumbnail": "images/edu-art-thumb.jpg",
-      "hero": "images/edu-art-hero.jpg",
-      "list-title": "Courses Taught",
+      "id": "interaction-lab",
+      "title": "Interaction Lab",
+      "medium": "Undergraduate Course, NYU Shanghai",
+      "thumbnail": "images/edu-interaction-lab-thumb.jpg",
+      "hero": "images/edu-interaction-lab-hero.jpg",
+      "list-title": "Where taught",
       "list": [
-        "Multimedia Art — CUNY BMCC, 2014–present",
-        "Art & Technology — CUNY Queens College, 2014–present"
+        "NYU Shanghai, 2015–2018"
       ],
-      "description": "Description of this area of teaching goes here.",
+      "description": "Description goes here.",
       "gallery": [],
       "exhibitions": [],
       "press": []
     },
     {
-      "id": "robotics",
-      "title": "Robotics",
-      "year": "Ongoing",
-      "medium": "Android, Arduino, Python, Sensors",
-      "thumbnail": "images/edu-phys-thumb.jpg",
-      "hero": "images/edu-phys-hero.jpg",
-      "list-title": "Courses Taught",
+      "id": "comms-lab",
+      "title": "Communications Lab",
+      "medium": "Graduate Course, ITP NYU",
+      "thumbnail": "images/edu-comms-lab-thumb.jpg",
+      "hero": "images/edu-comms-lab-hero.jpg",
+      "list-title": "Where taught",
       "list": [
-        "Multimedia Art — CUNY BMCC, 2014–present",
-        "Art & Technology — CUNY Queens College, 2014–present"
+        "ITP, NYU"
       ],
-      "description": "Description of this area of teaching goes here.",
+      "description": "Description goes here.",
+      "gallery": [],
+      "exhibitions": [],
+      "press": []
+    },
+    {
+      "id": "creative-coding-edu",
+      "title": "Creative Coding",
+      "medium": "Undergraduate Course, Queens College CUNY",
+      "thumbnail": "images/edu-creative-coding-thumb.jpg",
+      "hero": "images/edu-creative-coding-hero.jpg",
+      "list-title": "Where taught",
+      "list": [
+        "Queens College, CUNY"
+      ],
+      "description": "Description goes here.",
+      "gallery": [],
+      "exhibitions": [],
+      "press": []
+    },
+    {
+      "id": "web-dev-edu",
+      "title": "Web Development",
+      "medium": "Undergraduate Course, Queens College / BMCC",
+      "thumbnail": "images/edu-web-dev-thumb.jpg",
+      "hero": "images/edu-web-dev-hero.jpg",
+      "list-title": "Where taught",
+      "list": [
+        "Web Development — Queens College, CUNY",
+        "Web Development — Borough of Manhattan Community College (BMCC)",
+        "Advanced Web Development — Borough of Manhattan Community College (BMCC)"
+      ],
+      "description": "Description goes here.",
+      "gallery": [],
+      "exhibitions": [],
+      "press": []
+    },
+    {
+      "id": "multimedia-programming",
+      "title": "Multimedia Programming",
+      "medium": "Undergraduate Course, BMCC",
+      "thumbnail": "images/edu-multimedia-thumb.jpg",
+      "hero": "images/edu-multimedia-hero.jpg",
+      "list-title": "Where taught",
+      "list": [
+        "Borough of Manhattan Community College (BMCC)"
+      ],
+      "description": "Description goes here.",
+      "gallery": [],
+      "exhibitions": [],
+      "press": []
+    },
+    {
+      "id": "thesis-edu",
+      "title": "Thesis",
+      "medium": "Undergraduate Course, Queens College CUNY",
+      "thumbnail": "images/edu-thesis-thumb.jpg",
+      "hero": "images/edu-thesis-hero.jpg",
+      "list-title": "Where taught",
+      "list": [
+        "Queens College, CUNY"
+      ],
+      "description": "Description goes here.",
       "gallery": [],
       "exhibitions": [],
       "press": []

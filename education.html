@@ -58,7 +58,7 @@
             </div>
             <div class="card-info">
               <h3>${p.title}</h3>
-              <p>${p.year} — ${p.medium}</p>
+              <p>${p.year ? p.year + ' — ' : ''}${p.medium}</p>
             </div>
           </a>
         `).join('');
