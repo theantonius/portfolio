@@ -47,7 +47,66 @@
 
     </div>
 
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightbox-close">✕</button>
+      <button class="lightbox-prev" id="lightbox-prev">&#8592;</button>
+      <img class="lightbox-img" id="lightbox-img" src="" alt="" />
+      <button class="lightbox-next" id="lightbox-next">&#8594;</button>
+      <div class="lightbox-counter" id="lightbox-counter"></div>
+    </div>
+
     <script>
+      // Lightbox
+      let galleryImages = [];
+      let currentIndex = 0;
+
+      function openLightbox(images, index) {
+        galleryImages = images;
+        currentIndex = index;
+        showLightboxImage();
+        document.getElementById('lightbox').classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox() {
+        document.getElementById('lightbox').classList.remove('open');
+        document.body.style.overflow = '';
+      }
+
+      function showLightboxImage() {
+        document.getElementById('lightbox-img').src = galleryImages[currentIndex];
+        document.getElementById('lightbox-counter').textContent =
+          `${currentIndex + 1} / ${galleryImages.length}`;
+        document.getElementById('lightbox-prev').style.display = galleryImages.length > 1 ? '' : 'none';
+        document.getElementById('lightbox-next').style.display = galleryImages.length > 1 ? '' : 'none';
+      }
+
+      document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+      document.getElementById('lightbox').addEventListener('click', e => {
+        if (e.target === document.getElementById('lightbox')) closeLightbox();
+      });
+      document.getElementById('lightbox-prev').addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+        showLightboxImage();
+      });
+      document.getElementById('lightbox-next').addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % galleryImages.length;
+        showLightboxImage();
+      });
+      document.addEventListener('keydown', e => {
+        if (!document.getElementById('lightbox').classList.contains('open')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') {
+          currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+          showLightboxImage();
+        }
+        if (e.key === 'ArrowRight') {
+          currentIndex = (currentIndex + 1) % galleryImages.length;
+          showLightboxImage();
+        }
+      });
+
       const sectionColors = {
         art:       '#f0c030',
         tech:      '#c880e8',
@@ -132,12 +191,17 @@
           </div>
         ` : '';
 
-        // Gallery grid
+        // Gallery grid — each item can be a string URL or { thumb, full }
+        const galleryFullUrls = project.gallery && project.gallery.length
+          ? project.gallery.map(item => typeof item === 'string' ? item : (item.full || item.thumb))
+          : [];
+
         const galleryHtml = project.gallery && project.gallery.length ? `
           <div class="project-gallery">
-            ${project.gallery.map(src => `
-              <img src="${src}" alt="${project.title}" class="project-gallery-img" />
-            `).join('')}
+            ${project.gallery.map((item, i) => {
+              const thumbSrc = typeof item === 'string' ? item : item.thumb;
+              return `<img src="${thumbSrc}" alt="${project.title}" class="project-gallery-img" data-index="${i}" />`;
+            }).join('')}
           </div>
         ` : '';
 
@@ -158,6 +222,13 @@
           ${galleryHtml}
           ${linkHtml}
         `;
+
+        // Attach lightbox click handlers now that images are in the DOM
+        document.querySelectorAll('.project-gallery-img').forEach(img => {
+          img.addEventListener('click', () => {
+            openLightbox(galleryFullUrls, parseInt(img.dataset.index));
+          });
+        });
       }
 
       loadProject();

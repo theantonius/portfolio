@@ -122,7 +122,8 @@ list:
   - Bullet one
   - Bullet two
 gallery:
-  - https://...r2.dev/project/01.jpg
+  - thumb: https://...r2.dev/project/01_thumb.jpg
+    full: https://...r2.dev/project/01_full.jpg
 exhibitions:
   - Venue, City — Year
 press:
