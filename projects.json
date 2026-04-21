@@ -25,8 +25,7 @@
         "Galerie Iham, Paris — What We Eat, Who We Are (solo show, Mangemasku series) — May 16, 2023",
         "UN SDG Action Awards, UN Food Systems Summit — Farm-to-Face (UNITE TO ACT digital exhibition) — 2023",
         "Essex Art Center, Lawrence, MA — Salon Show 2024 (group show, curated by Mariana Martins; featuring Good Luck Has Arrived, 2023) — July 13 – August 10, 2024",
-        "ArtVerse Gallery, Paris — All & Every (duo show with Tommy Hollenstein, presented during the Paris Olympics and Paralympics) — July 25 – September 8, 2024",
-        "TIMEPieces × KnownOrigin — curated drop (with work by foodmasku) — year tbd"
+        "ArtVerse Gallery, Paris — All & Every (duo show with Tommy Hollenstein, presented during the Paris Olympics and Paralympics) — July 25 – September 8, 2024"
       ],
       "press": [
         {
@@ -61,13 +60,13 @@
         }
       ],
       "link": "https://www.foodmasku.com",
-      "description": "foodmasku is an ongoing performance, photography, and video series in which meals become masks — worn first, then eaten. It began in April 2020, during the early weeks of COVID lockdown, when a colleague's stuck pickle filter on a Zoom call prompted me to put kale on my face. The laughter that followed was the first I'd heard in weeks, and a daily practice was born.\n\nOver the years the project has grown into a body of work at the intersection of food waste, responsible consumption, and sustainable food systems — using the face as a site for meditating on how food reaches our tables, and what we choose to do with it when it arrives. The work found a particular home in the UN SDG Action Campaign, where a commissioned piece, Farm-to-Face, was unveiled at the 2023 UN SDG Action Awards alongside the UN Food Systems Summit.\n\nThe series has also lived an unruly second life online. A performance staged at The Invisible Dog Art Center where two guests quietly eating dinner off the artist's face was cut, recaptioned, and recirculated across TikTok and Instagram, racking up tens of millions of views and a segment on MTV's Ridiculousness. The runaway clip is frequently paired with fabricated captions about a \"restaurant paying $10,000 a month for rich people to eat off your face,\" a viral rumor the artist has publicly debunked. The real piece is about labor, food inequality, and who gets to be seen at the table."
+      "description": "foodmasku is an ongoing performance, photography, and video series in which I make meals into masks and then eat them. It began in April 2020, during the early weeks of COVID lockdown, when a colleague's stuck pickle filter on a Zoom call prompted me to put kale on my face. It was the first I'd heard laughter in weeks. I felt it was important to find joy through art again. And so, a daily art practice was born.\n\nOver the years the project has grown into a body of work at the intersection of trauma, food waste, and responsible consumption. The UN commissioned me to make a series on sustainable food systems, using the face as a site for meditating on how food reaches our tables, and what we choose to do with it when it arrives. Farm-to-Face was unveiled at the 2023 UN SDG Action Awards alongside the UN Food Systems Summit.\n\nThe series has also lived an unruly second life online. A performance staged at The Invisible Dog Art Center where two guests quietly eating dinner off my face was cut, recaptioned, and recirculated across TikTok and Instagram, racking up tens of millions of views and a segment on MTV's Ridiculousness. The runaway clip is frequently paired with fabricated captions about a \"restaurant paying $10,000 a month for rich people to eat off your face,\" a viral rumor I continue to publicly debunk. The real piece is about labor, food inequality, and who gets to be seen at the table."
     },
     {
       "id": "postpapa",
       "title": "Post Papa",
       "year": "2025",
-      "medium": "Drawing / Sketch",
+      "medium": "Drawing / Sketch, Post-Its",
       "thumbnail": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-thumb.jpg",
       "hero": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-hero.jpg",
       "gallery": [
@@ -85,22 +84,55 @@
         "Essex Art Center, Lawrence, MA — Post Papa (on view) — through September 13, 2025"
       ],
       "link": "https://www.facebook.com/p/Post-Papa-61577335592296/",
-      "description": "Post Papa is a sketch series that began on Instagram at @postpapasketch — [one-line description of what the work is about, in your own words: grief, the figure of the father, memory, daily drawing practice, etc.].\n\n[A second paragraph on form: what the drawings look like, how the series unfolds, anything that's been true about making them day to day. The work was exhibited at Essex Art Center in Lawrence, MA through September 13, 2025, with half of all proceeds supporting the center, a non-profit arts community in the Merrimack Valley.]",
+      "description": "Post Papa is a sketch series that I drew on Post-its while sitting beside my father in hospice.\n\nThe work was exhibited at Essex Art Center in Lawrence, MA through September 13, 2025, with half of all proceeds supporting the center, a non-profit arts community in the Merrimack Valley.",
       "list": [],
       "press": []
     },
     {
       "id": "shooting",
       "title": "Since the Shooting",
-      "year": "2023",
-      "medium": "Medium / Format",
+      "year": "2013-present",
+      "medium": "Photography, Writing",
       "thumbnail": "images/art-shooting-thumb.jpg",
       "hero": "images/art-shooting-hero.jpg",
-      "description": "Description of this work goes here.",
-      "list": [],
+      "list-title": "Background",
+      "list": [
+        "On July 5, 2013, I was shot by a stranger on a Brooklyn street while walking to the subway from my apartment in Bedford-Stuyvesant. The bullet was meant for someone else; it passed between two ribs, narrowly missed my heart, and lodged in my stomach.",
+        "Three strangers kept me alive until the ambulance arrived — a local barber who applied pressure to the wound, a woman from the neighborhood who kept me awake by yelling at me, and a man on his way to a job interview who fanned me with his résumé.",
+        "I spent four days in a sedated coma at Kings County Hospital, followed by seven months of physical therapy.",
+        "I was the first person Kathy Shorr photographed for her series SHOT 101 Survivors of Gun Violence in America, and have worked with Mayors Against Illegal Guns (now Everytown for Gun Safety), Moms Demand Action, Gays Against Guns, Teachers Unify to End Gun Violence, and many other organizations on gun-violence prevention."
+      ],
+      "press": [
+        {
+          "title": "America's Gun Violence Epidemic",
+          "publication": "Rolling Stone",
+          "url": "https://www.rollingstone.com/interactive/feature-gun-control-survivor-detail-antonius-wiriadjaja/"
+        },
+        {
+          "title": "Gunshot Victim Takes A Selfie A Day To Document His Healing",
+          "publication": "Fast Company",
+          "url": "https://www.fastcompany.com/3036653/gun-shooting-victim-takes-a-selfie-a-day-to-document-his-healing"
+        },
+        {
+          "title": "This is what gun violence looks like, for those who survive",
+          "publication": "PBS NewsHour / WNYC",
+          "url": "https://www.wnyc.org/story/this-is-what-gun-violence-looks-like-for-those-who-survive/"
+        },
+        {
+          "title": "Bed-Stuy Shooting Victim Meets the Man Who Saved His Life",
+          "publication": "DNAinfo",
+          "url": "https://www.dnainfo.com/new-york/20140520/bed-stuy/bed-stuy-shooting-victim-meets-man-who-saved-his-life/"
+        },
+        {
+          "title": "101 Unflinching Portraits of Survivors of US Gun Violence",
+          "publication": "Hyperallergic",
+          "url": "https://hyperallergic.com/372690/101-unflinching-portraits-of-survivors-of-us-gun-violence/"
+        }
+      ],
+      "link": "https://gunsurvivor.antoni.us/",
+      "description": "Since the Shooting was an ongoing photographic practice of daily self-portraits featuring scars that run across my body from a bullet to the chest. It began the day I was released from Kings County Hospital in July 2013 and continued until the day of my shooter's trial.\n\nOn July 5, 2013 — the morning after the Fourth of July — a stranger came out of a passing car to shoot ata pregnant woman on my street in Bedford-Stuyvesant. The woman was shot in the leg, and the bullet that would have gone through her head hit me instead. The bullet went through me, between two ribs, narrowly missed my heart, and lodged itself in my stomach. I spent four days in a sedated coma and seven months in physical therapy. Three strangers kept me alive until the ambulance came: a barber who applied pressure to the wound, a neighbor who kept me awake by yelling at me, and a man on his way to a job interview who fanned me with his résumé.\n\nThe series began as a way to show my healing, one photograph a day, as a slow act of witnessing recovery from trauma. I carried the camera with me into hospital visits, onto planes, and into every apartment of every city I moved to. The scar became a reason to keep going. I continued the daily practice from the day I left the hospital through the day of my shooter's trial, and have continued making work in and around the series in the years since. I was also the first person photographed by Kathy Shorr for SHOT: 101 Survivors of Gun Violence in America.",
       "gallery": [],
-      "exhibitions": [],
-      "press": []
+      "exhibitions": []
     },
     {
       "id": "xyz",
