@@ -1,4 +1,5 @@
 ---
+photo: images/placeholder-photo.jpg
 pronunciation_name: Antonius Wiriadjaja
 pronunciation_guide: "an-toh-nee-US · wee-ree-ya-ja-YAH"
 contact_email: hi@antoni.us
@@ -36,6 +37,6 @@ cv:
   press: []
 ---
 
-Antonius Wiriadjaja is an artist, creative technologist, and educator based in New York City. His medium includes performance art, digital fabrication, and interactive media. His work explores identity, embodiment, and trauma with added levity.
+Antonius Wiriadjaja is an artist, creative technologist, and educator based in New York City. His medium includes performance art, digital fabrication, and interactive media. His work explores identity, embodiment, and surviving trauma with humor.
 
 He has taught at NYU in New York, NYU in Berlin, NYU Shanghai, CUNY BMCC, and CUNY Queens College. He works with NYC FIRST STEM Centers across the boroughs. As a Fulbright U.S. Scholar, he taught new media to traditional artists in Solo, Java, Indonesia.

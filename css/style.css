@@ -263,24 +263,46 @@ body.landing {
     gap: 6px;
 }
 
-.section-link {
-    display: block;
-    padding: 10px 0;
+.section-nav-item {
+    display: flex;
+    align-items: center;
     border-radius: 6px;
-    font-size: 0.95rem;
-    color: var(--muted);
-    transition: background 0.2s, color 0.2s;
+    transition: background 0.2s;
 }
 
-.section-link:hover {
+.section-nav-item:hover {
     background: #222;
+}
+
+.nav-domain {
+    font-size: 0.95rem;
+    color: var(--muted);
+    padding: 10px 0 10px 0;
+    text-decoration: none;
+    transition: color 0.2s;
+    white-space: nowrap;
+}
+
+.nav-domain:hover {
+    color: #fff;
     text-decoration: none;
 }
 
-.section-link[href="art.html"]:hover       { color: #f0c030; }
-.section-link[href="tech.html"]:hover      { color: #c880e8; }
-.section-link[href="education.html"]:hover { color: #70d882; }
-.section-link[href="about.html"]:hover     { color: #cccccc; }
+.section-link {
+    font-size: 0.95rem;
+    color: var(--muted);
+    padding: 10px 8px 10px 0;
+    transition: color 0.2s;
+}
+
+.section-link:hover {
+    text-decoration: none;
+}
+
+.section-nav-item:has(.section-link[href="art.html"]):hover       .section-link { color: #f0c030; }
+.section-nav-item:has(.section-link[href="tech.html"]):hover      .section-link { color: #c880e8; }
+.section-nav-item:has(.section-link[href="education.html"]):hover .section-link { color: #70d882; }
+.section-nav-item:has(.section-link[href="about.html"]):hover     .section-link { color: #cccccc; }
 
 /* CONTACT LINKS */
 .contact-links {
@@ -306,26 +328,33 @@ body.landing {
         gap: 8px;
     }
 
-    .section-link {
-        display: flex;
-        align-items: center;
+    .section-nav-item {
         min-height: 48px;
-        padding: 12px 16px;
+        padding: 0 16px;
         border: 1px solid #333;
         border-left: 3px solid #444;
         border-radius: 4px;
-        font-size: 1.05rem;
-        letter-spacing: 0.02em;
     }
 
-    .section-link[href="art.html"]       { border-left-color: #f0c030; }
-    .section-link[href="tech.html"]      { border-left-color: #c880e8; }
-    .section-link[href="education.html"] { border-left-color: #70d882; }
-    .section-link[href="about.html"]     { border-left-color: #cccccc; }
+    .section-nav-item:has(.section-link[href="art.html"])       { border-left-color: #f0c030; }
+    .section-nav-item:has(.section-link[href="tech.html"])      { border-left-color: #c880e8; }
+    .section-nav-item:has(.section-link[href="education.html"]) { border-left-color: #70d882; }
+    .section-nav-item:has(.section-link[href="about.html"])     { border-left-color: #cccccc; }
 
-    .section-link:hover,
-    .section-link:active {
+    .section-nav-item:hover,
+    .section-nav-item:active {
         background: #2a2a2a;
+    }
+
+    .nav-domain,
+    .section-link {
+        font-size: 1.05rem;
+        letter-spacing: 0.02em;
+        padding: 12px 0;
+    }
+
+    .section-link {
+        padding: 12px 0 12px 0;
     }
 }
 

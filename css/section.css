@@ -72,6 +72,18 @@ body.section-page {
     margin-bottom: 40px;
 }
 
+.section-title-domain {
+    color: var(--section-color, var(--accent));
+    opacity: 0.4;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.section-title-domain:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
 /* =============================
    PROJECT GRID
    ============================= */

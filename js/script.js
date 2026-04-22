@@ -19,33 +19,62 @@ tabs.forEach((tab) => {
 // ================================
 const endings = [
   "think.",
-  "teach.",
+  "that teach.",
   "weird.",
-  "grow.",
   "provocative.",
-  "connect.",
+  "for connection.",
   "matter.",
   "learn.",
+  "feel.",
+  "move.",
+  "see.",
+  "glow.",
+  "strange.",
+  "listen.",
+  "remember.",
+  "talk back.",
+  "for people.",
+  "with purpose.",
+  "for change.",
+  "that resist.",
+  "that breathe.",
+  "ask questions.",
+  "cringe.",
+  "for bodies.",
+  "uncomfortable.",
+  "linger.",
+  "with care.",
+  "that confuse.",
+  "perform.",
+  "eat.",
+  "edible.",
+  "for survival.",
+  "love.",
+  "make love.",
+  "queer.",
+  "for joy.",
+  "for fun.",
 ];
 
 const cycleEl = document.getElementById("tagline-cycle");
 
 if (cycleEl) {
-  let i = 0;
+  let last = -1;
 
-  const cycle = () => {
-    // Fade out
+  const showNext = () => {
     cycleEl.style.opacity = 0;
-
     setTimeout(() => {
-      // Swap text
-      i = (i + 1) % endings.length;
-      cycleEl.textContent = endings[i];
-
-      // Fade in
+      let next;
+      do { next = Math.floor(Math.random() * endings.length); } while (next === last);
+      last = next;
+      cycleEl.textContent = endings[next];
       cycleEl.style.opacity = 1;
-    }, 500); // wait for fade out to finish
+    }, 500);
   };
 
-  setInterval(cycle, 3000); // change every 3 seconds
+  // First word fades in after a beat, then cycles every 3s
+  setTimeout(() => {
+    showNext();
+    setInterval(showNext, 3000);
+  }, 1200); // change every 3 seconds
 }

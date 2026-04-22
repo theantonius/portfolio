@@ -12,4 +12,4 @@ gallery:
   - https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/embroidery/embroidery-03.jpg
 ---
 
-Description of this work goes here.
+Computerized embroidery sits at the intersection of craft and code. I work with Brother and Singer machines, converting vector artwork into stitch files through digitization software, controlling density, direction, and layering to get the texture and finish each piece demands. I run workshops on machine embroidery for institutions including New Inc, and I'm comfortable taking a design from Illustrator all the way through to a finished piece on fabric.

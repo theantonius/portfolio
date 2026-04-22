@@ -46,7 +46,13 @@
       /* CATEGORY SECTION */
       .tech-section {
         margin-bottom: 64px;
-        scroll-margin-top: 80px;
+        scroll-margin-top: 180px;
+      }
+
+      @media (max-width: 640px) {
+        .tech-section {
+          scroll-margin-top: 80px;
+        }
       }
 
       .tech-section-title {
@@ -70,7 +76,7 @@
       <div class="sidebar">
         <div>
           <a href="index.html" class="name">antoni.us/wiriadjaja</a>
-          <p class="tagline">making things think.</p>
+          <p class="tagline">making things <span id="tagline-cycle" style="transition: opacity 0.5s ease;"></span></p>
         </div>
 
         <div class="about">
@@ -93,7 +99,7 @@
 
       <!-- MAIN CONTENT -->
       <main class="section-content">
-        <h2 class="section-title" style="--section-color: #c880e8;">/tech</h2>
+        <h2 class="section-title" style="--section-color: #c880e8;"><a href="index.html" class="section-title-domain">antoni.us</a>/tech</h2>
 
         <!-- CATEGORY TABS -->
         <nav class="tech-tabs">
@@ -157,5 +163,6 @@
       loadProjects();
     </script>
 
+    <script src="js/script.js"></script>
   </body>
 </html>

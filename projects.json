@@ -121,8 +121,8 @@
       "title": "Since the Shooting",
       "year": "2013-present",
       "medium": "Photography, Writing",
-      "thumbnail": "images/art-shooting-thumb.jpg",
-      "hero": "images/art-shooting-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "Background",
       "list": [
         "On July 5, 2013, I was shot by a stranger on a Brooklyn street while walking to the subway from my apartment in Bedford-Stuyvesant. The bullet was meant for someone else; it passed between two ribs, narrowly missed my heart, and lodged in my stomach.",
@@ -158,8 +158,21 @@
         }
       ],
       "link": "https://gunsurvivor.antoni.us/",
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
       "description": "Since the Shooting was an ongoing photographic practice of daily self-portraits featuring scars that run across my body from a bullet to the chest. It began the day I was released from Kings County Hospital in July 2013 and continued until the day of my shooter's trial.\n\nOn July 5, 2013 — the morning after the Fourth of July — a stranger came out of a passing car to shoot ata pregnant woman on my street in Bedford-Stuyvesant. The woman was shot in the leg, and the bullet that would have gone through her head hit me instead. The bullet went through me, between two ribs, narrowly missed my heart, and lodged itself in my stomach. I spent four days in a sedated coma and seven months in physical therapy. Three strangers kept me alive until the ambulance came: a barber who applied pressure to the wound, a neighbor who kept me awake by yelling at me, and a man on his way to a job interview who fanned me with his résumé.\n\nThe series began as a way to show my healing, one photograph a day, as a slow act of witnessing recovery from trauma. I carried the camera with me into hospital visits, onto planes, and into every apartment of every city I moved to. The scar became a reason to keep going. I continued the daily practice from the day I left the hospital through the day of my shooter's trial, and have continued making work in and around the series in the years since. I was also the first person photographed by Kathy Shorr for SHOT: 101 Survivors of Gun Violence in America.",
-      "gallery": [],
       "exhibitions": []
     },
     {
@@ -167,8 +180,8 @@
       "title": "If We Were XYZ",
       "year": "2019",
       "medium": "Performance, EEG Data, Sound, Video",
-      "thumbnail": "images/art-archives-thumb.jpg",
-      "hero": "images/art-archives-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "Credits",
       "list": [
         "Performance by Melati Suryodarmo",
@@ -196,19 +209,45 @@
           "url": "https://asiasociety.org/creative-common-ground/if-we-were-xyz-artistic-process"
         }
       ],
-      "description": "If We Were XYZ is a three-hour durational performance by Indonesian artist Melati Suryodarmo, premiered at Asia Society Museum in October 2019 as part of the museum's interdisciplinary program Creative Common Ground. I served as the piece's artist-technologist: I built a self-devised sleep laboratory around Melati, recording EEG data while she slept, and then translated that raw neural data into the musical scores and visual systems that structured the performance. Vocalist and composer Jessika Kenney used the same dataset to write the piece's seven-part score — one movement for each dream.\n\nThe work sits at the intersection of Javanese mysticism, neuroscience, and Freudian psychology, asking what it means when the subconscious is made material. It was, in many ways, a question about intimacy: what do you owe a collaborator who has handed you the raw signal of their dreaming mind, and what kind of translation is faithful to that trust?",
-      "gallery": []
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
+      "description": "If We Were XYZ is a three-hour durational performance by Indonesian artist Melati Suryodarmo, premiered at Asia Society Museum in October 2019 as part of the museum's interdisciplinary program Creative Common Ground. I served as the piece's artist-technologist: I built a self-devised sleep laboratory around Melati, recording EEG data while she slept, and then translated that raw neural data into the musical scores and visual systems that structured the performance. Vocalist and composer Jessika Kenney used the same dataset to write the piece's seven-part score — one movement for each dream.\n\nThe work sits at the intersection of Javanese mysticism, neuroscience, and Freudian psychology, asking what it means when the subconscious is made material. It was, in many ways, a question about intimacy: what do you owe a collaborator who has handed you the raw signal of their dreaming mind, and what kind of translation is faithful to that trust?"
     },
     {
       "id": "archives",
       "title": "Other Work",
       "year": "2009-2019",
       "medium": "Medium / Format",
-      "thumbnail": "images/art-archives-thumb.jpg",
-      "hero": "images/art-archives-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
       "description": "Description of this work goes here.",
       "list": [],
-      "gallery": [],
       "exhibitions": [],
       "press": []
     }
@@ -227,7 +266,7 @@
         "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/embroidery/embroidery-02.jpg",
         "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/embroidery/embroidery-03.jpg"
       ],
-      "description": "Description of this work goes here.",
+      "description": "Computerized embroidery sits at the intersection of craft and code. I work with Brother and Singer machines, converting vector artwork into stitch files through digitization software, controlling density, direction, and layering to get the texture and finish each piece demands. I run workshops on machine embroidery for institutions including New Inc, and I'm comfortable taking a design from Illustrator all the way through to a finished piece on fabric.",
       "list": [],
       "exhibitions": [],
       "press": []
@@ -237,12 +276,25 @@
       "title": "3D Printing",
       "medium": "FDM, SLA",
       "category": "fabrication",
-      "thumbnail": "images/tech-3d-thumb.jpg",
-      "hero": "images/tech-3d-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "What I've made with it",
-      "description": "Description of this work goes here.",
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
+      "description": "I work with both FDM (fused deposition modeling) and SLA (resin) printing depending on what a project demands — FDM for structural parts and fast iteration, SLA for fine detail and smooth surfaces. I model for print in Fusion 360 and Onshape, dialing in tolerances, supports, and infill settings, and troubleshooting failed prints along the way. 3D printing is a core part of how I prototype and fabricate custom components for art and technology projects.",
       "list": [],
-      "gallery": [],
       "exhibitions": [],
       "press": []
     },
@@ -251,12 +303,25 @@
       "title": "Computer Numerical Control (CNC) Router",
       "medium": "ShopBot, Fusion 360",
       "category": "fabrication",
-      "thumbnail": "images/tech-cnc-thumb.jpg",
-      "hero": "images/tech-cnc-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "What I've made with it",
-      "description": "Description of this work goes here.",
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
+      "description": "I operate ShopBot CNC routers for cutting, carving, and milling wood and other sheet materials. My workflow runs from design in Fusion 360 through CAM toolpath generation and into the machine, where I manage feeds, speeds, bit selection, and fixturing. CNC routing lets me work at a scale and precision that's impossible by hand, and I use it for everything from structural fabrication to decorative surface work.",
       "list": [],
-      "gallery": [],
       "exhibitions": [],
       "press": []
     },
@@ -265,12 +330,25 @@
       "title": "Vinyl Cutter",
       "medium": "Cricut, Adobe Illustrator",
       "category": "fabrication",
-      "thumbnail": "images/tech-vinyl-thumb.jpg",
-      "hero": "images/tech-vinyl-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "What I've made with it",
-      "description": "Description of this work goes here.",
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
+      "description": "I use Cricut and professional vinyl cutters for signage, stickers, iron-on transfers, stencils, and custom decals. I prepare files in Adobe Illustrator, handling node cleanup and path optimization to ensure clean cuts. It's a fast, versatile tool I reach for whenever a project needs sharp graphics on a physical surface.",
       "list": [],
-      "gallery": [],
       "exhibitions": [],
       "press": []
     },
@@ -279,12 +357,25 @@
       "title": "Laser Cutter",
       "medium": "Epilog, Illustrator",
       "category": "fabrication",
-      "thumbnail": "images/tech-laser-thumb.jpg",
-      "hero": "images/tech-laser-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "What I've made with it",
-      "description": "Description of this work goes here.",
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
+      "description": "I work on Epilog laser cutters for cutting and engraving across wood, acrylic, leather, fabric, and paper. I prepare files in Illustrator, managing cut versus engrave layers, power and speed settings, and kerf compensation for tight-fitting assemblies. Laser cutting is one of my most-used fabrication tools: precise, repeatable, and fast, and I apply it to everything from product prototyping to art installations.",
       "list": [],
-      "gallery": [],
       "exhibitions": [],
       "press": []
     },
@@ -293,12 +384,25 @@
       "title": "Electronics Prototyping",
       "medium": "Breadboarding, Soldering, Arduino",
       "category": "code",
-      "thumbnail": "images/tech-electronics-thumb.jpg",
-      "hero": "images/tech-electronics-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "What I've made with it",
-      "description": "Description of this work goes here.",
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
+      "description": "I'm comfortable moving from schematic to working circuit, breadboarding, soldering, and debugging electronics for interactive and wearable projects. I work with Arduino-based microcontrollers, select and wire sensors, design for power constraints, and solder everything from through-hole components to surface-mount repairs. Electronics prototyping is how my physical computing and e-textile projects come alive.",
       "list": [],
-      "gallery": [],
       "exhibitions": [],
       "press": []
     },
@@ -307,12 +411,25 @@
       "title": "Sewing and E-Textiles",
       "medium": "Soft Circuits, Smart Fabrics",
       "category": "fabrication",
-      "thumbnail": "images/tech-textiles-thumb.jpg",
-      "hero": "images/tech-textiles-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "What I've made with it",
-      "description": "Description of this work goes here.",
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
+      "description": "I design and build e-textiles, garments and soft objects that incorporate electronics, sensors, and conductive materials. I sew by hand and machine, construct soft circuits using conductive thread and fabric sensors, and integrate microcontrollers into wearable form factors. The course <a href=\"project.html?section=education&id=talking-fabrics\">Talking Fabrics</a>, which I built and taught at ITP and NYU Shanghai, grew directly out of this practice, exploring what happens when traditional craft meets programmable systems.",
       "list": [],
-      "gallery": [],
       "exhibitions": [],
       "press": []
     },
@@ -321,8 +438,8 @@
       "title": "Physical Computing",
       "medium": "Arduino, Raspberry Pi, Sensors",
       "category": "code",
-      "thumbnail": "images/tech-physical-thumb.jpg",
-      "hero": "images/tech-physical-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "Tools & platforms",
       "list": [
         "Arduino (including custom boards)",
@@ -330,8 +447,21 @@
         "Sensor wiring and integration",
         "Breadboarding and soldering"
       ],
-      "description": "Description of this work goes here.",
-      "gallery": [],
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
+      "description": "Physical computing is the practice of building systems that sense and respond to the physical world, and it's been central to my work for over a decade. I design and build with Arduino, Raspberry Pi, and a range of sensors, connecting the digital and physical through hardware I wire, solder, and code myself. I taught physical computing at NYU Shanghai and work with students at all levels, from first breadboard to finished interactive installation.",
       "exhibitions": [],
       "press": []
     },
@@ -340,16 +470,29 @@
       "title": "Creative Coding",
       "medium": "JavaScript, p5.js, Three.js",
       "category": "code",
-      "thumbnail": "images/tech-p5js-thumb.jpg",
-      "hero": "images/tech-p5js-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "What I use it for",
       "list": [
         "Generative visuals and dailies",
         "Teaching creative coding",
         "Interactive browser-based art"
       ],
-      "description": "Description of this work goes here.",
-      "gallery": [],
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
+      "description": "I write code as an artistic medium. Using JavaScript, p5.js, and Three.js, I build generative visuals, interactive browser-based experiences, and real-time graphics. I teach <a href=\"project.html?section=education&id=creative-coding-edu\">Creative Coding</a> at Queens College CUNY, and my own practice uses code to explore pattern, motion, and emergent behavior. I'm comfortable with both structured programming and the looser, exploratory approach that generative work demands.",
       "exhibitions": [],
       "press": []
     },
@@ -358,16 +501,29 @@
       "title": "Web Development",
       "medium": "HTML, CSS, JavaScript",
       "category": "code",
-      "thumbnail": "images/tech-web-thumb.jpg",
-      "hero": "images/tech-web-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "What I build with it",
       "list": [
         "HTML & CSS (highly proficient)",
         "JavaScript (p5.js, Three.js)",
         "Teaching web development"
       ],
-      "description": "Description of this work goes here.",
-      "gallery": [],
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
+      "description": "I build websites and web applications from scratch in HTML, CSS, and JavaScript, without reaching for frameworks when they're not needed. I understand layout, performance, responsive design, and accessibility, and I'm equally comfortable building a polished static site or a more complex data-driven interface. I teach <a href=\"project.html?section=education&id=web-dev-edu\">Web Development</a> at Queens College and BMCC, and this portfolio itself is hand-coded.",
       "exhibitions": [],
       "press": []
     },
@@ -376,8 +532,8 @@
       "title": "Big Screens",
       "medium": "Large Format Video, openFrameworks",
       "category": "code",
-      "thumbnail": "images/tech-screens-thumb.jpg",
-      "hero": "images/tech-screens-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "Formats & tools",
       "list": [
         "Times Square and Rockefeller Center displays",
@@ -386,8 +542,21 @@
         "openFrameworks for custom sync frameworks",
         "Export for billboard and cinema-scale formats"
       ],
-      "description": "Description of this work goes here.",
-      "gallery": [],
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
+      "description": "I produce work for some of the largest digital displays in the world, including Times Square, Rockefeller Center, and the IAC Building, which was the world's largest screen at the time. I know how to design for extreme aspect ratios and non-standard resolutions, manage synchronized multi-channel video output, and use openFrameworks to build custom playback and sync systems. Big screens demand a different way of thinking about image, motion, and scale.",
       "exhibitions": [],
       "press": []
     },
@@ -396,16 +565,29 @@
       "title": "Workflow Automation",
       "medium": "n8n, Monday.com, Webflow, Eventbrite",
       "category": "code",
-      "thumbnail": "images/tech-automation-thumb.jpg",
-      "hero": "images/tech-automation-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "Workflows I've built",
       "list": [
         "Monday.com → Webflow (live open/closed center status)",
         "Monday.com → Eventbrite (data sync)",
         "Eventbrite → Webflow (event publishing pipeline)"
       ],
-      "description": "Description of this work goes here.",
-      "gallery": [],
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
+      "description": "I design no-code and low-code automation pipelines that connect the tools organizations actually use. At NYC FIRST, I built workflows linking Monday.com, Webflow, and Eventbrite, automating event publishing, syncing center open/closed status to a live website, and eliminating manual data entry across platforms. I work with n8n for custom logic and use automation to save teams hours of repetitive work every week.",
       "exhibitions": [],
       "press": []
     },
@@ -414,16 +596,29 @@
       "title": "CAD",
       "medium": "Autodesk Fusion 360, Onshape",
       "category": "design",
-      "thumbnail": "images/tech-cad-thumb.jpg",
-      "hero": "images/tech-cad-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "Tools",
       "list": [
         "Autodesk Fusion 360 (primary)",
         "Onshape (teaching)",
         "Designing for CNC, 3D print, and laser output"
       ],
-      "description": "Description of this work goes here.",
-      "gallery": [],
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
+      "description": "I model in 3D using Autodesk Fusion 360 as my primary tool, designing parts for CNC routing, 3D printing, and laser cutting. I understand how to design for manufacturing, accounting for material tolerances, tool paths, and assembly. I also use Onshape in teaching contexts for its browser-based accessibility. CAD is how I move from an idea to something I can actually build.",
       "exhibitions": [],
       "press": []
     },
@@ -432,8 +627,8 @@
       "title": "Adobe Suite",
       "medium": "Illustrator, Premiere, After Effects, Express",
       "category": "design",
-      "thumbnail": "images/tech-adobe-thumb.jpg",
-      "hero": "images/tech-adobe-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "Tools",
       "list": [
         "Adobe Illustrator — Adobe Certified Professional",
@@ -441,8 +636,21 @@
         "Adobe After Effects — motion graphics",
         "Adobe Express — teaching tool"
       ],
-      "description": "Description of this work goes here.",
-      "gallery": [],
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
+      "description": "I'm an Adobe Certified Professional in Graphic Design and Illustration using Adobe Illustrator, a tool I use daily for vector artwork, fabrication files, and print-ready design. I edit and produce video in Adobe Premiere and create motion graphics in After Effects. Across the full Creative Suite, I work with a level of fluency that comes from years of professional use and teaching.",
       "exhibitions": [],
       "press": []
     },
@@ -451,16 +659,29 @@
       "title": "Figma & UI Design",
       "medium": "Figma, Prototyping, Wireframing",
       "category": "design",
-      "thumbnail": "images/tech-figma-thumb.jpg",
-      "hero": "images/tech-figma-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "What I use it for",
       "list": [
         "Interface and product design",
         "Prototyping and wireframing",
         "Teaching Figma to students"
       ],
-      "description": "Description of this work goes here.",
-      "gallery": [],
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
+      "description": "I design interfaces and prototypes in Figma, from early wireframes through to polished, interactive mockups. I think in components, understand design systems, and move fluidly between UX thinking and visual design. I also use Figma as a teaching tool, introducing students to interface design and the language of product thinking.",
       "exhibitions": [],
       "press": []
     },
@@ -469,16 +690,29 @@
       "title": "Photography & Lighting",
       "medium": "DSLR, Studio Lighting",
       "category": "design",
-      "thumbnail": "images/tech-photo-thumb.jpg",
-      "hero": "images/tech-photo-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "What I can do",
       "list": [
         "DSLR camera operation",
         "Studio lighting setup",
         "Portrait and documentation photography"
       ],
-      "description": "Description of this work goes here.",
-      "gallery": [],
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
+      "description": "I shoot with DSLR cameras and know how to set up and control studio lighting for portraits, product, and documentation work. I understand exposure, composition, and light as both technical and creative variables. Photography is part of how I document my own projects, from performance and fabrication work to events and student showcases.",
       "exhibitions": [],
       "press": []
     },
@@ -487,8 +721,8 @@
       "title": "AI Tools & Workflows",
       "medium": "Claude, ChatGPT, Flora, Generative Image Tools",
       "category": "code",
-      "thumbnail": "images/tech-ai-thumb.jpg",
-      "hero": "images/tech-ai-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "Tools & platforms",
       "list": [
         "Large language models (Claude, ChatGPT, etc.)",
@@ -496,8 +730,21 @@
         "AI-assisted coding and prototyping",
         "Prompt engineering and workflow integration"
       ],
-      "description": "Description of this work goes here.",
-      "gallery": [],
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
+      "description": "I work with AI tools not just as a user but as someone thinking critically about how they fit into creative and educational workflows. I use large language models, generative image and video tools, and AI-assisted coding daily, and I build workflows that put these tools to practical use. I'm also actively thinking about what it means to teach in an era when these tools are available to everyone.",
       "exhibitions": [],
       "press": []
     },
@@ -506,8 +753,8 @@
       "title": "Video Editing & Production",
       "medium": "Adobe Premiere, After Effects",
       "category": "design",
-      "thumbnail": "images/tech-video-thumb.jpg",
-      "hero": "images/tech-video-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "Tools & skills",
       "list": [
         "Adobe Premiere Pro",
@@ -515,8 +762,21 @@
         "Video production for art documentation and events",
         "Export for large format and synchronized screen output"
       ],
-      "description": "Description of this work goes here.",
-      "gallery": [],
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
+      "description": "I edit video in Adobe Premiere Pro and create motion graphics in After Effects, working across documentary, art, and event contexts. I understand storytelling through editing: pacing, sound, color, and structure, and I deliver across a wide range of output formats, from social media to large-format synchronized screen installations.",
       "exhibitions": [],
       "press": []
     },
@@ -525,16 +785,29 @@
       "title": "Git & Version Control",
       "medium": "Git, GitHub",
       "category": "code",
-      "thumbnail": "images/tech-git-thumb.jpg",
-      "hero": "images/tech-git-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "What I use it for",
       "list": [
         "Git for version control",
         "GitHub for project hosting and collaboration",
         "Managing code across projects and with students"
       ],
-      "description": "Description of this work goes here.",
-      "gallery": [],
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
+      "description": "I use Git for version control across all my software projects, and GitHub for hosting, collaboration, and deployment. I'm comfortable with branching workflows, managing merge conflicts, using GitHub Pages for static site deployment, and bringing students into collaborative repositories. Version control is how I work cleanly and how I teach others to do the same.",
       "exhibitions": [],
       "press": []
     },
@@ -543,8 +816,8 @@
       "title": "Teaching & Curriculum Design",
       "medium": "Hands-on Technical Education",
       "category": "design",
-      "thumbnail": "images/tech-teaching-thumb.jpg",
-      "hero": "images/tech-teaching-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "What I teach",
       "list": [
         "Creative coding (p5.js)",
@@ -553,8 +826,21 @@
         "Figma and web development",
         "Curriculum design for hands-on technical education"
       ],
-      "description": "Description of this work goes here.",
-      "gallery": [],
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
+      "description": "I treat curriculum design as a creative practice, building courses around hands-on making with technical skills embedded in meaningful projects. I design and teach courses in <a href=\"project.html?section=education&id=creative-coding-edu\">creative coding</a>, <a href=\"project.html?section=education&id=web-dev-edu\">web development</a>, <a href=\"project.html?section=education&id=talking-fabrics\">e-textiles</a>, <a href=\"project.html?section=education&id=interaction-lab\">physical computing</a>, and interactive media at NYU, CUNY, and NYC FIRST STEM Centers. I believe the best technical education is grounded in curiosity, and I design learning experiences that make room for experimentation and productive failure.",
       "exhibitions": [],
       "press": []
     },
@@ -563,16 +849,29 @@
       "title": "Max/MSP",
       "medium": "MIDI, Interactive Audio, Max/MSP",
       "category": "code",
-      "thumbnail": "images/tech-maxmsp-thumb.jpg",
-      "hero": "images/tech-maxmsp-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "What I use it for",
       "list": [
         "Interactive audio and MIDI control",
         "Real-time media processing",
         "Connecting physical sensors to sound and visuals"
       ],
-      "description": "Description of this work goes here.",
-      "gallery": [],
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
+      "description": "Max/MSP is a visual programming environment for interactive audio and media, and I use it to connect physical inputs, sensors, MIDI controllers, and cameras to sound and visuals in real time. It's been part of my toolkit since studying at ITP, where real-time media processing was central to the program. I reach for it on live performance systems, installation work, and any project where audio and physical computing need to talk to each other.",
       "exhibitions": [],
       "press": []
     }
@@ -582,16 +881,29 @@
       "id": "fulbright",
       "title": "Fulbright Scholar",
       "medium": "New Media, Traditional Arts, Indonesia",
-      "thumbnail": "images/edu-fulbright-thumb.jpg",
-      "hero": "images/edu-fulbright-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "About the program",
       "list": [
         "Fulbright U.S. Scholar Program, 2018–2019",
         "Solo, Java, Indonesia",
         "Teaching new media tools and practices to traditional Javanese artists"
       ],
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
       "description": "Description goes here.",
-      "gallery": [],
       "exhibitions": [],
       "press": []
     },
@@ -599,16 +911,29 @@
       "id": "talking-fabrics",
       "title": "Talking Fabrics",
       "medium": "Graduate Course, ITP NYU / NYU Shanghai",
-      "thumbnail": "images/edu-talking-fabrics-thumb.jpg",
-      "hero": "images/edu-talking-fabrics-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "Where taught",
       "list": [
         "ITP, NYU — taught twice",
         "NYU Shanghai — taught three times",
         "2015–2018"
       ],
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
       "description": "Description goes here.",
-      "gallery": [],
       "exhibitions": [],
       "press": []
     },
@@ -616,15 +941,28 @@
       "id": "nime",
       "title": "New Interfaces in Musical Expression",
       "medium": "Graduate Course, NYU Shanghai",
-      "thumbnail": "images/edu-nime-thumb.jpg",
-      "hero": "images/edu-nime-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "Where taught",
       "list": [
         "NYU Shanghai — taught twice",
         "2015–2018"
       ],
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
       "description": "Description goes here.",
-      "gallery": [],
       "exhibitions": [],
       "press": []
     },
@@ -632,14 +970,27 @@
       "id": "interaction-lab",
       "title": "Interaction Lab",
       "medium": "Undergraduate Course, NYU Shanghai",
-      "thumbnail": "images/edu-interaction-lab-thumb.jpg",
-      "hero": "images/edu-interaction-lab-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "Where taught",
       "list": [
         "NYU Shanghai, 2015–2018"
       ],
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
       "description": "Description goes here.",
-      "gallery": [],
       "exhibitions": [],
       "press": []
     },
@@ -647,14 +998,27 @@
       "id": "comms-lab",
       "title": "Communications Lab",
       "medium": "Graduate Course, ITP NYU",
-      "thumbnail": "images/edu-comms-lab-thumb.jpg",
-      "hero": "images/edu-comms-lab-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "Where taught",
       "list": [
         "ITP, NYU"
       ],
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
       "description": "Description goes here.",
-      "gallery": [],
       "exhibitions": [],
       "press": []
     },
@@ -662,14 +1026,27 @@
       "id": "creative-coding-edu",
       "title": "Creative Coding",
       "medium": "Undergraduate Course, Queens College CUNY",
-      "thumbnail": "images/edu-creative-coding-thumb.jpg",
-      "hero": "images/edu-creative-coding-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "Where taught",
       "list": [
         "Queens College, CUNY"
       ],
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
       "description": "Description goes here.",
-      "gallery": [],
       "exhibitions": [],
       "press": []
     },
@@ -677,16 +1054,29 @@
       "id": "web-dev-edu",
       "title": "Web Development",
       "medium": "Undergraduate Course, Queens College / BMCC",
-      "thumbnail": "images/edu-web-dev-thumb.jpg",
-      "hero": "images/edu-web-dev-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "Where taught",
       "list": [
         "Web Development — Queens College, CUNY",
         "Web Development — Borough of Manhattan Community College (BMCC)",
         "Advanced Web Development — Borough of Manhattan Community College (BMCC)"
       ],
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
       "description": "Description goes here.",
-      "gallery": [],
       "exhibitions": [],
       "press": []
     },
@@ -694,14 +1084,27 @@
       "id": "multimedia-programming",
       "title": "Multimedia Programming",
       "medium": "Undergraduate Course, BMCC",
-      "thumbnail": "images/edu-multimedia-thumb.jpg",
-      "hero": "images/edu-multimedia-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "Where taught",
       "list": [
         "Borough of Manhattan Community College (BMCC)"
       ],
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
       "description": "Description goes here.",
-      "gallery": [],
       "exhibitions": [],
       "press": []
     },
@@ -709,14 +1112,27 @@
       "id": "thesis-edu",
       "title": "Thesis",
       "medium": "Undergraduate Course, Queens College CUNY",
-      "thumbnail": "images/edu-thesis-thumb.jpg",
-      "hero": "images/edu-thesis-hero.jpg",
+      "thumbnail": "images/placeholder-thumb.jpg",
+      "hero": "images/placeholder-hero.jpg",
       "list-title": "Where taught",
       "list": [
         "Queens College, CUNY"
       ],
+      "gallery": [
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        },
+        {
+          "thumb": "images/placeholder-gallery-thumb.jpg",
+          "full": "images/placeholder-gallery-full.jpg"
+        }
+      ],
       "description": "Description goes here.",
-      "gallery": [],
       "exhibitions": [],
       "press": []
     }

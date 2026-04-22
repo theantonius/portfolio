@@ -35,6 +35,33 @@
     font-style: italic;
 }
 
+/* NAME */
+.about-name {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 6px;
+}
+
+/* PHOTO */
+.about-pronunciation-guide {
+    font-size: 0.95rem;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 32px;
+}
+
+.about-photo {
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+    margin-bottom: 48px;
+}
+
 /* BIO */
 .about-bio p {
     font-size: 1rem;

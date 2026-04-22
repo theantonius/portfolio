@@ -3,8 +3,8 @@ id: xyz
 title: If We Were XYZ
 year: "2019"
 medium: Performance, EEG Data, Sound, Video
-thumbnail: images/art-archives-thumb.jpg
-hero: images/art-archives-hero.jpg
+thumbnail: images/placeholder-thumb.jpg
+hero: images/placeholder-hero.jpg
 list-title: Credits
 list:
   - Performance by Melati Suryodarmo
@@ -23,8 +23,15 @@ press:
   - title: "If We Were XYZ: Artistic Process"
     publication: Asia Society — Creative Common Ground
     url: https://asiasociety.org/creative-common-ground/if-we-were-xyz-artistic-process
+gallery:
+  - thumb: images/placeholder-gallery-thumb.jpg
+    full: images/placeholder-gallery-full.jpg
+  - thumb: images/placeholder-gallery-thumb.jpg
+    full: images/placeholder-gallery-full.jpg
+  - thumb: images/placeholder-gallery-thumb.jpg
+    full: images/placeholder-gallery-full.jpg
 ---
 
-If We Were XYZ is a three-hour durational performance by Indonesian artist Melati Suryodarmo, premiered at Asia Society Museum in October 2019 as part of the museum's interdisciplinary program Creative Common Ground. I served as the piece's artist-technologist: I built a self-devised sleep laboratory around Melati, recording EEG data while she slept, and then translated that raw neural data into the musical scores and visual systems that structured the performance. Vocalist and composer Jessika Kenney used the same dataset to write the piece's seven-part score — one movement for each dream.
+If We Were XYZ is a three-hour durational performance by Indonesian artist Melati Suryodarmo, premiered at Asia Society Museum in October 2019 as part of the museum's interdisciplinary program Creative Common Ground. I served as the piece's artist-technologist: I built a self-devised sleep laboratory around Melati, recording EEG data while she slept, and then translated that raw neural data into the musical scores and visual systems that structured the performance. I delivered the same dataset to Vocalist and composer Jessika Kenney, who wrote the piece's seven-part score based on each dream data.
 
-The work sits at the intersection of Javanese mysticism, neuroscience, and Freudian psychology, asking what it means when the subconscious is made material. It was, in many ways, a question about intimacy: what do you owe a collaborator who has handed you the raw signal of their dreaming mind, and what kind of translation is faithful to that trust?
+The work sits at the intersection of Javanese mysticism, neuroscience, and psychology, asking what it means when the subconscious is made material. It was, in many ways, a question about intimacy: what do you owe a collaborator who has handed you the raw signal of their dreaming mind, and what kind of translation is faithful to that trust?

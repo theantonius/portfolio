@@ -38,6 +38,7 @@ console.log('✓ projects.json');
 // Build about.json
 const { data, content } = matter(fs.readFileSync(path.join(CONTENT, 'about.md'), 'utf8'));
 const about = {
+  photo: data.photo || null,
   pronunciation: {
     name: data.pronunciation_name,
     guide: data.pronunciation_guide,
