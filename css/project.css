@@ -35,6 +35,18 @@
     transition: opacity 0.2s, transform 0.2s;
 }
 
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-caption {
+    font-size: 0.75rem;
+    color: #888;
+    margin-top: 6px;
+    line-height: 1.4;
+}
+
 .project-gallery-img:hover {
     opacity: 0.85;
     transform: scale(1.02);
@@ -112,12 +124,25 @@
 
 .lightbox-counter {
     position: fixed;
-    bottom: 20px;
+    bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 0.8rem;
     color: #aaa;
     font-family: var(--font);
+}
+
+.lightbox-caption {
+    position: fixed;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.8rem;
+    color: #ccc;
+    font-family: var(--font);
+    text-align: center;
+    max-width: 600px;
+    padding: 0 24px;
 }
 
 .project-back {
