@@ -172,7 +172,7 @@
           "full": "images/placeholder-gallery-full.jpg"
         }
       ],
-      "description": "Since the Shooting was an ongoing photographic practice of daily self-portraits featuring scars that run across my body from a bullet to the chest. It began the day I was released from Kings County Hospital in July 2013 and continued until the day of my shooter's trial.\n\nOn July 5, 2013 — the morning after the Fourth of July — a stranger came out of a passing car to shoot ata pregnant woman on my street in Bedford-Stuyvesant. The woman was shot in the leg, and the bullet that would have gone through her head hit me instead. The bullet went through me, between two ribs, narrowly missed my heart, and lodged itself in my stomach. I spent four days in a sedated coma and seven months in physical therapy. Three strangers kept me alive until the ambulance came: a barber who applied pressure to the wound, a neighbor who kept me awake by yelling at me, and a man on his way to a job interview who fanned me with his résumé.\n\nThe series began as a way to show my healing, one photograph a day, as a slow act of witnessing recovery from trauma. I carried the camera with me into hospital visits, onto planes, and into every apartment of every city I moved to. The scar became a reason to keep going. I continued the daily practice from the day I left the hospital through the day of my shooter's trial, and have continued making work in and around the series in the years since. I was also the first person photographed by Kathy Shorr for SHOT: 101 Survivors of Gun Violence in America.",
+      "description": "Since the Shooting was an ongoing photographic practice of daily self-portraits featuring scars that run across my body from a bullet to the chest. It began the day I was released from Kings County Hospital in July 2013 and continued until the day of my shooter's trial.\n\nOn July 5, 2013, on the morning after the Fourth of July, a stranger came out of a passing car to shoot ata pregnant woman one block away from my apartment. The woman was shot in the leg, and the bullet that would have gone through her head hit me instead. The bullet traveled between two ribs, narrowly missed my heart, and lodged itself in my stomach. Three strangers kept me alive until the ambulance came: a barber who applied pressure to the wound, a neighbor who kept me awake by yelling at me, and a man on his way to a job interview who fanned me with his résumé. I spent four days in a coma and seven months in physical therapy.\n\nThe series began as a way to show my healing, one photograph a day, as a slow act of witnessing recovery from trauma. I carried a camera with me into hospital visits, onto planes, and into every apartment of every city I moved to. The scar became a reason to keep going. I continued the daily practice from the day I left the hospital through the day of my shooter's trial, and have continued making work in and around the series in the years since. I was also the first person photographed by Kathy Shorr for SHOT: 101 Survivors of Gun Violence in America.",
       "exhibitions": []
     },
     {
@@ -223,7 +223,7 @@
           "full": "images/placeholder-gallery-full.jpg"
         }
       ],
-      "description": "If We Were XYZ is a three-hour durational performance by Indonesian artist Melati Suryodarmo, premiered at Asia Society Museum in October 2019 as part of the museum's interdisciplinary program Creative Common Ground. I served as the piece's artist-technologist: I built a self-devised sleep laboratory around Melati, recording EEG data while she slept, and then translated that raw neural data into the musical scores and visual systems that structured the performance. Vocalist and composer Jessika Kenney used the same dataset to write the piece's seven-part score — one movement for each dream.\n\nThe work sits at the intersection of Javanese mysticism, neuroscience, and Freudian psychology, asking what it means when the subconscious is made material. It was, in many ways, a question about intimacy: what do you owe a collaborator who has handed you the raw signal of their dreaming mind, and what kind of translation is faithful to that trust?"
+      "description": "If We Were XYZ is a three-hour durational performance by Indonesian artist Melati Suryodarmo, premiered at Asia Society Museum in October 2019 as part of the museum's interdisciplinary program Creative Common Ground. I served as the piece's artist-technologist: I built a self-devised sleep laboratory around Melati, recording EEG data while she slept, and then translated that raw neural data into the musical scores and visual systems that structured the performance. I delivered the same dataset to Vocalist and composer Jessika Kenney, who wrote the piece's seven-part score based on each dream data.\n\nThe work sits at the intersection of Javanese mysticism, neuroscience, and psychology, asking what it means when the subconscious is made material. It was, in many ways, a question about intimacy: what do you owe a collaborator who has handed you the raw signal of their dreaming mind, and what kind of translation is faithful to that trust?"
     },
     {
       "id": "archives",
@@ -276,8 +276,8 @@
       "title": "3D Printing",
       "medium": "FDM, SLA",
       "category": "fabrication",
-      "thumbnail": "images/placeholder-thumb.jpg",
-      "hero": "images/placeholder-hero.jpg",
+      "thumbnail": "https://img.antoni.us/3dprinting/3dprinting-thumb.jpg",
+      "hero": "https://img.antoni.us/3dprinting/3dprinting-hero.jpg",
       "list-title": "What I've made with it",
       "gallery": [
         {
@@ -293,7 +293,7 @@
           "full": "images/placeholder-gallery-full.jpg"
         }
       ],
-      "description": "I work with both FDM (fused deposition modeling) and SLA (resin) printing depending on what a project demands — FDM for structural parts and fast iteration, SLA for fine detail and smooth surfaces. I model for print in Fusion 360 and Onshape, dialing in tolerances, supports, and infill settings, and troubleshooting failed prints along the way. 3D printing is a core part of how I prototype and fabricate custom components for art and technology projects.",
+      "description": "I work with both FDM (fused deposition modeling) and SLA (resin) printing depending on what a project demands. FDM is great for structural parts and fast iteration, whereas SLA works well for fine detail and smooth surfaces. I model for print in Fusion 360 and Onshape, dialing in tolerances, supports, and infill settings using Cura or Bambu software, and troubleshooting failed prints along the way. 3D printing is a core part of how I prototype and fabricate custom components for art and technology projects.",
       "list": [],
       "exhibitions": [],
       "press": []
@@ -303,8 +303,8 @@
       "title": "Computer Numerical Control (CNC) Router",
       "medium": "ShopBot, Fusion 360",
       "category": "fabrication",
-      "thumbnail": "images/placeholder-thumb.jpg",
-      "hero": "images/placeholder-hero.jpg",
+      "thumbnail": "https://img.antoni.us/cnc/cnc-thumb.jpg",
+      "hero": "https://img.antoni.us/cnc/cnc-hero.jpg",
       "list-title": "What I've made with it",
       "gallery": [
         {
@@ -320,7 +320,7 @@
           "full": "images/placeholder-gallery-full.jpg"
         }
       ],
-      "description": "I operate ShopBot CNC routers for cutting, carving, and milling wood and other sheet materials. My workflow runs from design in Fusion 360 through CAM toolpath generation and into the machine, where I manage feeds, speeds, bit selection, and fixturing. CNC routing lets me work at a scale and precision that's impossible by hand, and I use it for everything from structural fabrication to decorative surface work.",
+      "description": "I operate ShopBot CNC routers for cutting, carving, and milling wood, foam, metal, polycarbonate and other sheet materials. I design in Fusion 360 through CAM toolpath generation and export g-code for machines, managing feeds, speeds, bit selection, and fixturing. CNC routing lets me work at a scale and precision that's impossible by hand, and I use it for everything from structural fabrication to decorative surface work.",
       "list": [],
       "exhibitions": [],
       "press": []
@@ -330,8 +330,8 @@
       "title": "Vinyl Cutter",
       "medium": "Cricut, Adobe Illustrator",
       "category": "fabrication",
-      "thumbnail": "images/placeholder-thumb.jpg",
-      "hero": "images/placeholder-hero.jpg",
+      "thumbnail": "https://img.antoni.us/vinyl/vinyl-thumb.jpg",
+      "hero": "https://img.antoni.us/vinyl/vinyl-hero.jpg",
       "list-title": "What I've made with it",
       "gallery": [
         {
@@ -347,7 +347,7 @@
           "full": "images/placeholder-gallery-full.jpg"
         }
       ],
-      "description": "I use Cricut and professional vinyl cutters for signage, stickers, iron-on transfers, stencils, and custom decals. I prepare files in Adobe Illustrator, handling node cleanup and path optimization to ensure clean cuts. It's a fast, versatile tool I reach for whenever a project needs sharp graphics on a physical surface.",
+      "description": "I use Cricut and professional vinyl cutters for signage, stickers, iron-on transfers, stencils, and custom decals. I prepare files in Adobe Illustrator and on the Cricut proprietry software, handling node cleanup and path optimization to ensure clean cuts. It's a fast, versatile tool I reach for whenever a project needs sharp graphics on a physical surface and I cannot use the laser cutter for fear of burning the material. It's also great for print-then-cut practices. I have had experience with other plotters as well.",
       "list": [],
       "exhibitions": [],
       "press": []
@@ -357,8 +357,8 @@
       "title": "Laser Cutter",
       "medium": "Epilog, Illustrator",
       "category": "fabrication",
-      "thumbnail": "images/placeholder-thumb.jpg",
-      "hero": "images/placeholder-hero.jpg",
+      "thumbnail": "https://img.antoni.us/laser/laser-thumb.jpg",
+      "hero": "https://img.antoni.us/laser/laser-hero.jpg",
       "list-title": "What I've made with it",
       "gallery": [
         {
@@ -374,7 +374,7 @@
           "full": "images/placeholder-gallery-full.jpg"
         }
       ],
-      "description": "I work on Epilog laser cutters for cutting and engraving across wood, acrylic, leather, fabric, and paper. I prepare files in Illustrator, managing cut versus engrave layers, power and speed settings, and kerf compensation for tight-fitting assemblies. Laser cutting is one of my most-used fabrication tools: precise, repeatable, and fast, and I apply it to everything from product prototyping to art installations.",
+      "description": "I use laser cutters for cutting and engraving across wood, acrylic, leather, fabric, and paper. I prepare files in Illustrator, managing cut versus engrave layers, power and speed settings, and kerf compensation for tight-fitting assemblies. Laser cutting is one of my most-used fabrication tools: precise, repeatable, and fast, and I apply it to everything from product prototyping to art installations. I have experience with Epilog, glowforge, and Trotec laser cutters.",
       "list": [],
       "exhibitions": [],
       "press": []
@@ -401,7 +401,7 @@
           "full": "images/placeholder-gallery-full.jpg"
         }
       ],
-      "description": "I'm comfortable moving from schematic to working circuit, breadboarding, soldering, and debugging electronics for interactive and wearable projects. I work with Arduino-based microcontrollers, select and wire sensors, design for power constraints, and solder everything from through-hole components to surface-mount repairs. Electronics prototyping is how my physical computing and e-textile projects come alive.",
+      "description": "I'm comfortable moving from schematic to working circuit, breadboarding, soldering, and debugging electronics for interactive and wearable projects. I work with microcontrollers, select and wire sensors, design for power constraints, and solder everything from through-hole components to surface-mount repairs. Electronics prototyping is how my physical computing and e-textile projects come alive. I also model circuits using TinkerCad, Cirkit Designer, and Fusion software.",
       "list": [],
       "exhibitions": [],
       "press": []
@@ -411,8 +411,8 @@
       "title": "Sewing and E-Textiles",
       "medium": "Soft Circuits, Smart Fabrics",
       "category": "fabrication",
-      "thumbnail": "images/placeholder-thumb.jpg",
-      "hero": "images/placeholder-hero.jpg",
+      "thumbnail": "https://img.antoni.us/textiles/textiles-thumb.jpg",
+      "hero": "https://img.antoni.us/textiles/textiles-hero.jpg",
       "list-title": "What I've made with it",
       "gallery": [
         {
@@ -461,7 +461,7 @@
           "full": "images/placeholder-gallery-full.jpg"
         }
       ],
-      "description": "Physical computing is the practice of building systems that sense and respond to the physical world, and it's been central to my work for over a decade. I design and build with Arduino, Raspberry Pi, and a range of sensors, connecting the digital and physical through hardware I wire, solder, and code myself. I taught physical computing at NYU Shanghai and work with students at all levels, from first breadboard to finished interactive installation.",
+      "description": "Physical computing is the practice of building systems that sense and respond to the physical world, and it has been central to my work for over a decade and a half. I design and build with Arduino, Raspberry Pi,ESP32 and a range of sensors, connecting the digital and physical through hardware I wire, solder, and code myself. I taught physical computing at NYU Shanghai and work with students at all levels, from first breadboard to finished interactive installation.",
       "exhibitions": [],
       "press": []
     },
@@ -556,7 +556,7 @@
           "full": "images/placeholder-gallery-full.jpg"
         }
       ],
-      "description": "I produce work for some of the largest digital displays in the world, including Times Square, Rockefeller Center, and the IAC Building, which was the world's largest screen at the time. I know how to design for extreme aspect ratios and non-standard resolutions, manage synchronized multi-channel video output, and use openFrameworks to build custom playback and sync systems. Big screens demand a different way of thinking about image, motion, and scale.",
+      "description": "I produce work for some of the largest digital displays in the world, including public billboards such as those in Times Square and conference center multi-displays. I know how to design for extreme aspect ratios and non-standard resolutions, manage synchronized multi-channel video output, and use openFrameworks to build custom playback and sync systems. Big screens demand a different way of thinking about image, motion, and scale.",
       "exhibitions": [],
       "press": []
     },

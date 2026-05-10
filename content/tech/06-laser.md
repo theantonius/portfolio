@@ -3,8 +3,8 @@ id: laser
 title: Laser Cutter
 medium: Epilog, Illustrator
 category: fabrication
-thumbnail: images/placeholder-thumb.jpg
-hero: images/placeholder-hero.jpg
+thumbnail: https://img.antoni.us/laser/laser-thumb.jpg
+hero: https://img.antoni.us/laser/laser-hero.jpg
 list-title: What I've made with it
 gallery:
   - thumb: images/placeholder-gallery-thumb.jpg

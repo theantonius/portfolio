@@ -5,6 +5,26 @@ const matter = require('gray-matter');
 const ROOT = path.join(__dirname, '..');
 const CONTENT = path.join(ROOT, 'content');
 
+const R2 = 'https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/';
+
+// Expand a bare path like "postpapa/thumb.jpg" to a full R2 URL.
+// Leaves http:// URLs and images/ local paths untouched.
+function r2(val) {
+  if (!val) return val;
+  if (typeof val === 'string') {
+    if (val.startsWith('http') || val.startsWith('images/')) return val;
+    return R2 + val;
+  }
+  // gallery array — each item is a string or { thumb, full, caption }
+  if (Array.isArray(val)) {
+    return val.map(item => {
+      if (typeof item === 'string') return r2(item);
+      return { ...item, thumb: r2(item.thumb), full: r2(item.full) };
+    });
+  }
+  return val;
+}
+
 function readSection(section) {
   const dir = path.join(CONTENT, section);
   return fs.readdirSync(dir)
@@ -14,9 +34,11 @@ function readSection(section) {
       const { data, content } = matter(fs.readFileSync(path.join(dir, f), 'utf8'));
       return {
         ...data,
+        thumbnail: r2(data.thumbnail),
+        hero: r2(data.hero),
         description: content.trim(),
         list: data.list || [],
-        gallery: data.gallery || [],
+        gallery: r2(data.gallery || []),
         exhibitions: data.exhibitions || [],
         press: data.press || [],
       };
@@ -38,7 +60,7 @@ console.log('✓ projects.json');
 // Build about.json
 const { data, content } = matter(fs.readFileSync(path.join(CONTENT, 'about.md'), 'utf8'));
 const about = {
-  photo: data.photo || null,
+  photo: r2(data.photo) || null,
   pronunciation: {
     name: data.pronunciation_name,
     guide: data.pronunciation_guide,

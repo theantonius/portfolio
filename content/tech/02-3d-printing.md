@@ -3,8 +3,8 @@ id: 3d-printing
 title: 3D Printing
 medium: FDM, SLA
 category: fabrication
-thumbnail: images/placeholder-thumb.jpg
-hero: images/placeholder-hero.jpg
+thumbnail: https://img.antoni.us/3dprinting/3dprinting-thumb.jpg
+hero: https://img.antoni.us/3dprinting/3dprinting-hero.jpg
 list-title: What I've made with it
 gallery:
   - thumb: images/placeholder-gallery-thumb.jpg
