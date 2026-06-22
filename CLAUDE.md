@@ -248,6 +248,33 @@ CV sections with no entries are automatically hidden.
 
 ---
 
+## Landing Page "Recently" System
+
+The front page (`index.html`) uses the section-page layout: dark sidebar + light `#fafafa` content area headed "Recently" (accent: orange `--accent` `#e05c00`). No hero video.
+
+Content lives in `content/recent.md` and compiles to `recent.json` via `npm run build`. Never edit `recent.json` directly.
+
+```markdown
+---
+intro: One-line sidebar blurb shown on the landing page.
+items:
+  - lead: Short punchy headline
+    date: May 2026         # optional — month/year, or a range like "2025–26"
+    detail: One-sentence detail.
+    link: art.html        # optional — makes the headline clickable
+---
+```
+
+- `intro` fills the sidebar `.about` paragraph on the landing page only.
+- `date` is optional per item. Use month/year ("May 2026") or a range for ongoing work ("2025–26"); renders as a small uppercase label above the headline (`.recent-date`).
+- `link` is optional per item. Internal paths (`art.html`, `project.html?...`) or full `https://` URLs both work; external URLs open in a new tab. Styled via `a.recent-link` in `section.css` (accent hover + ↗ arrow).
+- `image` is optional per item. Bare R2 paths (`project/thumb.jpg`) expand to full R2 URLs; full `https://` URLs and animated GIFs also work. Renders as a horizontal banner above the headline (`.recent-thumb`, 16:9, `object-fit: cover`). Recommended export: 1200 × 675px.
+- `items` render as the `.recent-list` (styled in `section.css`: `.recent-item` / `.recent-lead` / `.recent-detail`).
+- Order items most career-forward first; aim for ~6.
+- `index.html` fetches `recent.json` and populates the list + intro via JS.
+
+---
+
 ## Git & Deployment
 
 - Repo: github.com/theantonius/portfolio

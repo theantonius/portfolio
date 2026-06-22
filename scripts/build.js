@@ -74,3 +74,21 @@ fs.writeFileSync(
   JSON.stringify(about, null, 2)
 );
 console.log('✓ about.json');
+
+// Build recent.json (landing page "Recently" highlights)
+const recentSrc = matter(fs.readFileSync(path.join(CONTENT, 'recent.md'), 'utf8'));
+const recent = {
+  intro: recentSrc.data.intro || '',
+  items: (recentSrc.data.items || []).map(i => ({
+    lead: i.lead || '',
+    detail: i.detail || '',
+    link: i.link || '',
+    date: i.date || '',
+    image: r2(i.image || ''),
+  })),
+};
+fs.writeFileSync(
+  path.join(ROOT, 'recent.json'),
+  JSON.stringify(recent, null, 2)
+);
+console.log('✓ recent.json');

@@ -140,6 +140,82 @@ body.section-page {
 }
 
 /* =============================
+   RECENTLY (landing page)
+   ============================= */
+.recent-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.recent-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-left: 18px;
+    border-left: 3px solid var(--accent);
+}
+
+.recent-thumb {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 6px;
+    background: #eee;
+    margin-bottom: 10px;
+}
+
+.recent-date {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #999;
+}
+
+.recent-lead {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.35;
+    color: #222;
+}
+
+a.recent-link {
+    color: #222;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a.recent-link:hover {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a.recent-link::after {
+    content: " \2197";
+    font-size: 0.75em;
+    color: var(--accent);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+a.recent-link:hover::after {
+    opacity: 1;
+}
+
+.recent-detail {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: #777;
+}
+
+/* =============================
    RESPONSIVE
    ============================= */
 @media (max-width: 640px) {
@@ -164,8 +240,37 @@ body.section-page {
         order: -1;
     }
 
+    /* Home page mobile order: name + tagline + intro first (above the fold),
+       then the Recently list, then nav + contacts pushed to the bottom.
+       display:contents lets the sidebar's children reorder alongside the
+       content; each block keeps the dark sidebar background. */
+    body.home .sidebar {
+        display: contents;
+    }
+
+    body.home .sidebar-head,
+    body.home .about,
+    body.home .section-links,
+    body.home .contact-links {
+        background: var(--sidebar-bg);
+    }
+
+    body.home .sidebar-head { order: 1; padding: 32px 24px 18px; }
+    body.home .about        { order: 2; padding: 0 24px 30px; }
+    body.home .section-content { order: 3; }
+    body.home .section-links { order: 4; padding: 30px 24px 18px; }
+    body.home .contact-links { order: 5; margin-top: 0; padding: 0 24px 36px; }
+
+    /* Prevent child margins from poking through and revealing a hairline */
+    body.home .sidebar-head .tagline { margin-bottom: 0; }
+    body.home .about p { margin: 0; }
+
     .project-grid {
         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
         gap: 20px;
+    }
+
+    .recent-lead {
+        font-size: 1.05rem;
     }
 }

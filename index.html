@@ -6,24 +6,23 @@
     <title>antoni.us/wiriadjaja - Portfolio of Antonius Wiriadjaja</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/section.css" />
   </head>
-  <body class="landing">
+  <body class="section-page home">
 
-    <div class="landing-container">
+    <div class="section-container">
 
-      <!-- RIGHT PANEL -->
-      <div class="landing-panel">
-
-        <div class="landing-top">
-          <h1 class="name">antoni.us/wiriadjaja</h1>
+      <!-- SIDEBAR -->
+      <div class="sidebar">
+        <div class="sidebar-head">
+          <a href="index.html" class="name">antoni.us/wiriadjaja</a>
           <p class="tagline">making things <span id="tagline-cycle" style="transition: opacity 0.5s ease;"></span></p>
         </div>
 
         <div class="about">
-          <p>I'm an artist, creative technologist and educator based in New York.</p>
+          <p id="intro-text">I'm an artist, creative technologist and educator based in New York.</p>
         </div>
 
-        <!-- SECTION LINKS -->
         <nav class="section-links">
           <a href="art.html" class="section-link">/art</a>
           <a href="tech.html" class="section-link">/tech</a>
@@ -31,22 +30,54 @@
           <a href="about.html" class="section-link">/about</a>
         </nav>
 
-        <!-- CONTACT LINKS -->
         <div class="contact-links">
           <a href="mailto:hi@antoni.us">Email</a>
           <a href="https://linkedin.com/in/theantonius" target="_blank">LinkedIn</a>
           <a href="https://github.com/theantonius" target="_blank">GitHub</a>
         </div>
+      </div>
 
-      </div>
-            <!-- HERO VIDEO -->
-      <div class="hero">
-        <video class="hero-img" autoplay muted loop playsinline>
-          <source src="https://www.dropbox.com/scl/fi/9ur3c81mhw0yzictcqqno/allgen_masks.mp4?rlkey=8q0xnugo4vcljwjr3bvx7bnfu&st=8enlxhke&raw=1" type="video/mp4" />
-        </video>
-      </div>
+      <!-- MAIN CONTENT -->
+      <main class="section-content">
+        <h2 class="section-title" style="--section-color: var(--accent);">Recently</h2>
+
+        <ul class="recent-list" id="recent-list">
+          <!-- Populated by JS from recent.json -->
+        </ul>
+      </main>
 
     </div>
+
+    <script>
+      async function loadRecent() {
+        const res = await fetch('recent.json');
+        const data = await res.json();
+
+        if (data.intro) {
+          const intro = document.getElementById('intro-text');
+          if (intro) intro.textContent = data.intro;
+        }
+
+        const list = document.getElementById('recent-list');
+        list.innerHTML = (data.items || []).map(i => {
+          const external = /^https?:\/\//.test(i.link);
+          const lead = i.link
+            ? `<a class="recent-lead recent-link" href="${i.link}"${external ? ' target="_blank" rel="noopener"' : ''}>${i.lead}</a>`
+            : `<span class="recent-lead">${i.lead}</span>`;
+          const date = i.date ? `<span class="recent-date">${i.date}</span>` : '';
+          const image = i.image ? `<img class="recent-thumb" src="${i.image}" alt="" loading="lazy" />` : '';
+          return `
+          <li class="recent-item">
+            ${image}
+            ${date}
+            ${lead}
+            <span class="recent-detail">${i.detail}</span>
+          </li>`;
+        }).join('');
+      }
+
+      loadRecent();
+    </script>
 
     <script src="js/script.js"></script>
   </body>
