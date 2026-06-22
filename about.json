@@ -1,12 +1,12 @@
 {
-  "photo": "images/placeholder-photo.jpg",
+  "photo": "https://img.antoni.us/about/selfie.PNG",
   "pronunciation": {
     "name": "Antonius Wiriadjaja",
     "guide": "an-toh-nee-US · wee-ree-ya-ja-YAH"
   },
   "bio": [
     "Antonius Wiriadjaja is an artist, creative technologist, and educator based in New York City. His medium includes performance art, digital fabrication, and interactive media. His work explores identity, embodiment, and surviving trauma with humor.",
-    "He has taught at NYU in New York, NYU in Berlin, NYU Shanghai, CUNY BMCC, and CUNY Queens College. He works with NYC FIRST STEM Centers across the boroughs. As a Fulbright U.S. Scholar, he taught new media to traditional artists in Solo, Java, Indonesia."
+    "He has taught at the School of Visual Arts, NYU (in New York, Berlin, and Shanghai), CUNY BMCC, and CUNY Queens College, and works with NYC FIRST STEM Centers across the boroughs. As a Fulbright U.S. Scholar, he taught new media to traditional artists in Solo, Java, Indonesia."
   ],
   "contact": {
     "email": "hi@antoni.us"
@@ -15,11 +15,11 @@
     "education": [
       {
         "year": "2010–2012",
-        "entry": "Master's — Interactive Telecommunications Program (ITP), NYU Tisch School of the Arts, New York, NY"
+        "entry": "MPS — Interactive Telecommunications Program (ITP), NYU Tisch School of the Arts, New York, NY"
       },
       {
         "year": "2001–2005",
-        "entry": "B.A. — Cognitive Science, Hampshire College, Amherst, MA"
+        "entry": "B.A. — Cognitive Science & Creative Writing, Hampshire College, Amherst, MA"
       },
       {
         "year": "1995–2001",
@@ -33,25 +33,106 @@
       }
     ],
     "solo": [],
-    "group": [],
+    "group": [
+      {
+        "year": "2027",
+        "entry": "Moss kunstforening, Moss, Norway (upcoming)"
+      },
+      {
+        "year": "2026",
+        "entry": "RGB Montreal, 5th Edition, Montreal, Canada"
+      },
+      {
+        "year": "2026",
+        "entry": "Artcrush, SOMO Taxi Top Screen Network, New York, NY"
+      },
+      {
+        "year": "2024",
+        "entry": "Paris Photo Week, Paris, France"
+      },
+      {
+        "year": "2023",
+        "entry": "UN Food Systems Summit, Rome, Italy"
+      },
+      {
+        "year": "2023",
+        "entry": "The Nonfungible Conference, Lisbon, Portugal"
+      },
+      {
+        "year": "2022",
+        "entry": "House of Wisdom, Sharjah, United Arab Emirates"
+      },
+      {
+        "year": "2022",
+        "entry": "TED Gallery, Vancouver, Canada"
+      },
+      {
+        "year": "2022",
+        "entry": "SXSW Gallery, Austin, TX"
+      },
+      {
+        "year": "2021",
+        "entry": "Shoreditch Billboard, London, England"
+      },
+      {
+        "year": "2019",
+        "entry": "If We Were XYZ — with Melati Suryodarmo & Jessika Kenney, Asia Society, New York, NY"
+      },
+      {
+        "year": "2019",
+        "entry": "VIGIL — project by Jenny Holzer, Creative Time, New York, NY"
+      }
+    ],
     "teaching": [
+      {
+        "year": "2026–present",
+        "entry": "Adjunct Faculty, BFA Design, School of Visual Arts, New York, NY"
+      },
       {
         "year": "2025–present",
         "entry": "Program Associate & Instructor, NYC FIRST STEM Centers, New York, NY"
       },
       {
-        "year": "2014–present",
-        "entry": "Adjunct Faculty, CUNY BMCC and Queens College, New York, NY"
+        "year": "2022–present",
+        "entry": "Adjunct Assistant Professor, Art & Design, CUNY Queens College, New York, NY"
       },
       {
-        "year": "2012–2018",
-        "entry": "Assistant Arts Professor & Assistant Director of Operations of Interactive Media Arts, NYU Tisch ITP and NYU Shanghai, Shanghai, China"
+        "year": "2014–2021",
+        "entry": "Adjunct Faculty, CUNY BMCC, New York, NY"
+      },
+      {
+        "year": "2018–2019",
+        "entry": "Fulbright U.S. Scholar, Institut Seni Indonesia Surakarta, Indonesia"
+      },
+      {
+        "year": "2015–2018",
+        "entry": "Assistant Arts Professor & Assistant Director, Interactive Media Arts, NYU Shanghai, China"
+      },
+      {
+        "year": "2016",
+        "entry": "Instructor, Creative Computing, NYU Berlin, Germany"
+      },
+      {
+        "year": "2013–2015",
+        "entry": "Adjunct Faculty, NYU Tisch ITP, New York, NY"
       }
     ],
     "awards": [
       {
+        "year": "2019–2020",
+        "entry": "Visiting Scholar in Residence, NYU Shanghai"
+      },
+      {
+        "year": "2019–2020",
+        "entry": "AIFIS Research Fellow, Institut Seni Indonesia Surakarta, Indonesia"
+      },
+      {
         "year": "2018–2019",
-        "entry": "Fulbright U.S. Scholar Teaching Award"
+        "entry": "Fulbright U.S. Scholar Award"
+      },
+      {
+        "year": "2012–2014",
+        "entry": "Research Resident, NYU Tisch ITP, New York, NY"
       },
       {
         "year": "2012",
@@ -70,6 +151,45 @@
         "entry": "Class of 1937 Award, Boston Latin School"
       }
     ],
-    "press": []
+    "publications": [
+      {
+        "year": "2017",
+        "entry": "“Response to Jimmy Santiago Baca's A Morning Shooting,” in Bullets into Bells: Poets & Citizens Respond to Gun Violence (Beacon Press)"
+      },
+      {
+        "year": "2013",
+        "entry": "“Gamelan Sampul: Laptop Sleeve Gamelan,” poster session, NIME 2013, Daejeon/Seoul, South Korea"
+      },
+      {
+        "year": "2009",
+        "entry": "Wilkinson, D., et al. “Unilateral damage to the right cerebral hemisphere disrupts the apprehension of whole faces and their component parts.” Neuropsychologia 47(7)"
+      }
+    ],
+    "press": [
+      {
+        "year": "2022",
+        "entry": "Artnet News — “The Instagram-Favorite Artist Who Makes Masks Out of Food Is the Star of a New Show”"
+      },
+      {
+        "year": "2022",
+        "entry": "Washington Square News — “Q&A: Foodmasku on channeling emotions into food mask art”"
+      },
+      {
+        "year": "2020",
+        "entry": "The New York Times — “5 Art Accounts to Follow on Instagram Now”"
+      },
+      {
+        "year": "2020",
+        "entry": "CBC Radio, As It Happens — “Why this N.Y. artist is spending the pandemic turning his meals into face masks”"
+      },
+      {
+        "year": "",
+        "entry": "UN SDG Action Campaign — “From Farm to Face: How Foodmasku's Art Unites Creativity and Sustainable Food Systems”"
+      },
+      {
+        "year": "",
+        "entry": "Additional coverage: AJ+, BBC, Hyperallergic, Chronogram, Al Ahram, Yale Theater magazine"
+      }
+    ]
   }
 }

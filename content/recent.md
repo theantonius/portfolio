@@ -21,6 +21,7 @@ items:
     detail: Before the New Museum's grand reopening, NEW INC tapped my colleagues and me to build its Fabrication Lab, so members can now laser-cut, 3D-print, and even embroider physical prototypes.
   - lead: Built an AI agent that ships website updates without touching code
     date: April 2026
+    image: https://img.antoni.us/recently/recently-monday.jpg
     detail: My colleagues used to wait on a single developer just to update their public schedule, so I built a system that turns their Monday.com updates into published Webflow pages in seconds.
 
 ---
