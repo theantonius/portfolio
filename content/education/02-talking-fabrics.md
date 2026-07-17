@@ -1,7 +1,7 @@
 ---
 id: talking-fabrics
 title: Talking Fabrics
-medium: Graduate Course, ITP NYU / NYU Shanghai
+medium: Undergraduate and Graduate Course, ITP NYU / NYU Shanghai
 thumbnail: images/placeholder-thumb.jpg
 hero: images/placeholder-hero.jpg
 list-title: Where taught

@@ -1,7 +1,7 @@
 ---
 id: nime
 title: New Interfaces in Musical Expression
-medium: Graduate Course, NYU Shanghai
+medium: Undergraduate Course, NYU Shanghai
 thumbnail: images/placeholder-thumb.jpg
 hero: images/placeholder-hero.jpg
 list-title: Where taught
