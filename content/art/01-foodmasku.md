@@ -13,8 +13,13 @@ list:
   - '"Farm-to-Face" was commissioned for the UN SDG Action Campaign''s UNITE TO ACT digital exhibition and unveiled at the 2023 UN SDG Action Awards, on the margins of the UN Food Systems Summit'
   - The "Dining In" performance — two guests eating a meal off the artist's face — went viral multiple times across TikTok and Instagram, accumulating tens of millions of views and later featured on MTV's Ridiculousness
 gallery:
-  - images/art-mask-01.jpg
-  - images/art-mask-02.jpg
+  - thumb: https://img.antoni.us/foodmasku/foodmasku-01-thumb.jpg
+    full: https://img.antoni.us/foodmasku/foodmasku-01-full.jpg
+    caption: Times Square, New York
+  - thumb: https://img.antoni.us/foodmasku/foodmasku-02-thumb.jpg
+    full: https://img.antoni.us/foodmasku/foodmasku-02-full.jpg
+  - thumb: https://img.antoni.us/foodmasku/foodmasku-03-thumb.jpg
+    full: https://img.antoni.us/foodmasku/foodmasku-03-full.jpg
 exhibitions:
   - SXSW, NFT Gallery, Austin, TX — Livestream in Your Head (live performance with William Cobbing) — 2022
   - The Invisible Dog Art Center, Brooklyn, NY — Nafas (Dining In performance) — September 10 – October 15, 2022
