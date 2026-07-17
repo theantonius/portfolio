@@ -479,6 +479,17 @@ a.recent-link:hover::after {
     overflow: hidden;
 }
 
+.tech-row-photo {
+    display: block;
+    width: 100%;
+    max-width: 680px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 6px;
+    background: #eee;
+    margin: 12px 4px 8px;
+}
+
 .tech-row-desc {
     font-size: 0.92rem;
     line-height: 1.75;

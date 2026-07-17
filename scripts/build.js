@@ -36,6 +36,7 @@ function readSection(section) {
         ...data,
         thumbnail: r2(data.thumbnail),
         hero: r2(data.hero),
+        photo: r2(data.photo),
         description: content.trim(),
         list: data.list || [],
         gallery: r2(data.gallery || []),

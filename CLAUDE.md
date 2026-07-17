@@ -173,8 +173,9 @@ Run `npm run build` after saving.
 **Where fields surface now:**
 - Art: everything surfaces in the modal.
 - Tech: `title`, `medium`, `category`, `description` surface on the page.
-  Thumbnails/heroes/galleries in tech markdown are currently unused (kept in
-  the data for the future).
+  Optional `photo:` field shows a 16:9 image inside the expanded accordion row
+  (loaded only on first expand). Thumbnails/heroes/galleries in tech markdown
+  are currently unused (kept in the data for the future).
 - Education: only `title` and `medium` surface. Everything else unused.
 
 ### Recently (`content/recent.md`)

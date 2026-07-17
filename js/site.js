@@ -119,6 +119,9 @@ function renderTech(projects) {
           .filter(Boolean)
           .map(para => `<p>${para}</p>`)
           .join("");
+        const photo = p.photo
+          ? `<img class="tech-row-photo" data-src="${p.photo}" alt="${p.title}" />`
+          : "";
         return `
         <div class="tech-row reveal">
           <button class="tech-row-head" aria-expanded="false">
@@ -128,6 +131,7 @@ function renderTech(projects) {
           </button>
           <div class="tech-row-body">
             <div class="tech-row-body-inner">
+              ${photo}
               <div class="tech-row-desc">${desc}</div>
             </div>
           </div>
@@ -141,6 +145,12 @@ function renderTech(projects) {
       const row = head.parentElement;
       const open = row.classList.toggle("open");
       head.setAttribute("aria-expanded", open);
+      // load the photo only on first expand — keeps initial page light
+      const photo = row.querySelector(".tech-row-photo[data-src]");
+      if (open && photo) {
+        photo.src = photo.dataset.src;
+        photo.removeAttribute("data-src");
+      }
     });
   });
 }
