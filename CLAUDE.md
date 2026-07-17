@@ -8,9 +8,13 @@ Use this file to brief Claude at the start of a new session.
 
 Personal portfolio site for Antonius Wiriadjaja (antoni.us/wiriadjaja).
 An artist, creative technologist, and educator based in New York City.
-Tagline cycles through: think / teach / weird / grow / provocative / connect / matter / learn.
+Tagline cycles randomly through ~36 endings ("making things ___").
 
 Live at: https://antoni.us (GitHub Pages, HTTPS enforced, custom domain via CNAME)
+
+**July 2026 redesign: the site is now a ONE-PAGE portfolio.** All content lives
+in `index.html` as scrollable sections. The old multi-page files remain only as
+redirect stubs for legacy links.
 
 ---
 
@@ -18,112 +22,123 @@ Live at: https://antoni.us (GitHub Pages, HTTPS enforced, custom domain via CNAM
 
 ```
 portfolio/
-  index.html              — Landing page with looping hero video
-  art.html                — /art section (project grid)
-  tech.html               — /tech section (three-category tab layout)
-  education.html          — /education section (project grid)
-  about.html              — /about page (bio, CV, pronunciation, contact)
-  project.html            — Universal project detail template (reads URL params)
+  index.html              — THE site. One page, all sections
+  art.html                — redirect stub → /#art
+  tech.html               — redirect stub → /#tech
+  education.html          — redirect stub → /#education
+  about.html              — redirect stub → /#about
+  project.html            — redirect stub; maps ?section=art&id=x → /#art/x
   projects.json           — Compiled project data (do not edit directly)
   about.json              — Compiled about page data (do not edit directly)
+  recent.json             — Compiled Recently data (do not edit directly)
   css/
-    style.css             — Global styles (variables, landing page, shared, mobile touch targets)
-    section.css           — Section page styles (sidebar, grid, cards)
-    project.css           — Project detail page styles + lightbox modal
-    about.css             — About page styles
+    site.css              — ALL styles (variables, nav, panels, modal, lightbox, responsive)
   js/
-    script.js             — Tagline cycling
+    site.js               — ALL behavior (data loading, rendering, tagline, scroll, modal, lightbox)
   content/
-    about.md              — About page source (YAML frontmatter + markdown body)
+    about.md              — About source (YAML frontmatter + markdown body)
+    recent.md             — Recently source
     art/                  — Art project markdown files (01-foodmasku.md, etc.)
-    tech/                 — Tech project markdown files (with category field)
-    education/            — Education project markdown files
+    tech/                 — Tech entry markdown files (with category field)
+    education/            — Education entry markdown files
   scripts/
-    build.js              — Node.js build script: compiles content/*.md → projects.json + about.json
-  videos/                 — Store MP4 files here for hero cycling
-  images/                 — Local fallback images (most images now on Cloudflare R2)
+    build.js              — Node.js build: compiles content/*.md → *.json (unchanged)
+  images/                 — Local fallback images (most images on Cloudflare R2)
   CLAUDE.md               — This file
-  README.md               — GitHub README
   package.json            — npm scripts (npm run build)
 ```
 
 ---
 
-## Sections
+## One-Page Layout
 
-Three main sections plus about:
-- **/art** — art projects (accent: golden yellow `#f0c030`)
-- **/tech** — creative tech capabilities, split into three categories (accent: lavender `#c880e8`)
-- **/education** — courses and teaching (accent: mint green `#70d882`)
-- **/about** — bio, CV, pronunciation, contact (accent: light grey `#cccccc`)
+Section order in `index.html`:
+
+1. **Hero** (`#top`) — full-viewport dark `#1f1f1f`. Name + cycling tagline +
+   intro (intro text comes from `recent.md` `intro` field), pinned top-left.
+   Scroll hint bottom center. Staggered fade-in on load.
+2. **Recently** (`#recently`, accent `#e05c00`) — list from `recent.json`.
+3. **Art** (`#art`, accent `#f0c030`) — card grid. Clicking a card opens a
+   slide-over **modal** (hero, description, list, exhibitions, press, gallery
+   with lightbox, external link). Hash-routed: `/#art/foodmasku` is a
+   shareable deep link. Escape / backdrop click / × closes.
+4. **Tech** (`#tech`, accent `#c880e8`) — accordion rows grouped into
+   Fabrication / Code & Creative Tools / Design & Media. Row head = title +
+   medium; click expands description. No images, no detail pages.
+5. **Education** (`#education`, accent `#70d882`) — plain list, title + medium.
+   No detail pages.
+6. **About** (`#about`, accent `#999`) — photo + name + pronunciation + bio +
+   contact, then full CV in 2-column layout (1 col mobile). From `about.json`.
+7. **Footer** — dark strip: name + Email / LinkedIn / GitHub.
+
+### Navigation & scroll behavior
+
+- Fixed top nav, hidden during hero, slides in after ~70% of hero is scrolled.
+  Name left, section links right. Active link takes current section's accent.
+- `--live` CSS variable on `:root` holds the current section accent (JS swaps
+  it on scroll; scroll listener picks last section whose top passed the upper
+  third of the viewport).
+- Gentle snap: `scroll-snap-type: y proximity` on `html` (desktop only —
+  disabled under 640px, where it fights long sections).
+- Reveal animation: `.reveal` elements fade-up via IntersectionObserver;
+  siblings stagger 70ms apart (capped at 8 steps). Respects
+  `prefers-reduced-motion`.
+- Mobile nav shrink: compresses when scrolling down, restores scrolling up.
+
+### Data loading
+
+`js/site.js` fetches `recent.json`, `projects.json`, `about.json` in parallel
+on load and renders every section. No build change was needed — the markdown →
+JSON pipeline is untouched.
+
+### Legacy redirects
+
+Old URLs keep working:
+- `art.html` → `/#art` (same for tech/education/about)
+- `project.html?section=art&id=foodmasku` → `/#art/foodmasku`
+- `project.html?section=tech&id=*` → `/#tech` (tech/education details folded into sections)
 
 ---
 
 ## Design Decisions
 
 ### Colors
-- Sidebar/panel background: `#1f1f1f`
-- Content area background: `#fafafa` (light, gallery-style)
-- Accent colors:
-  - /art → `#f0c030` (golden yellow)
-  - /tech → `#c880e8` (lavender)
-  - /education → `#70d882` (mint green)
-  - /about → `#cccccc` (light grey)
-- Contact links hover: `#cccccc` (light grey)
-- Sidebar width: `300px` (consistent across all pages)
+- Dark panels (hero, nav, footer): `#1f1f1f`
+- Content background: `#fafafa`
+- Accents: recently `#e05c00`, art `#f0c030`, tech `#c880e8`,
+  education `#70d882`, about `#999999`
+- All defined as CSS variables in `css/site.css` `:root`
 
 ### Fonts
 - Headlines: Raleway 700 (Google Fonts)
 - Body: Roboto 400/500 (Google Fonts)
-- Loaded via Google Fonts link in each HTML file's `<head>`
-
-### Layout
-- Landing page: dark sidebar (right) + full-bleed looping hero video (left)
-- Section pages: dark sidebar (left) + light content area `#fafafa` with project grid (right)
-- Project detail page: same sidebar (left) + full project info (right)
-- All sidebars are identical: name (links to index), tagline, about blurb, nav links, contact links
-- Sidebar gap: `36px` (matches landing panel exactly)
-- Mobile: content area floats to top (`order: -1`), sidebar below — applies to all pages
-- Mobile nav links: vertical stack, 48px min touch targets, accent-colored left border per section
-
-### Hero Video (index.html)
-- Single looping Dropbox-hosted MP4 (autoplay, muted, loop, playsinline)
-- Direct link uses `raw=1` param for streaming
-- Plan: cycle randomly between multiple videos with crossfade
-- Videos stored in `videos/` folder
-- On mobile: hero appears above the sidebar panel; top of video cropped (`object-position: center 75%`)
 
 ### Images
-- Hosted on Cloudflare R2 — hotlinked directly in markdown frontmatter
-- Base URL pattern: `https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/[project]/[filename].jpg`
-- Recommended sizes:
-  - Thumbnail: 800 × 600px (4:3) — JPG
-  - Hero: 1400 × 600px (~7:3) — JPG
-  - Gallery: 800 × 800px (1:1) — JPG
-  - Use PNG only for images with transparency
+- Hosted on Cloudflare R2 — hotlinked in markdown frontmatter
+- Base URL: `https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/[project]/[filename].jpg`
+- Newer images use `https://img.antoni.us/...`
+- Recommended sizes: thumbnail 800×600 (4:3), hero 1400×600, gallery 800×800,
+  recently banners 1200×675 (16:9)
+- All rendered images use `loading="lazy"` except modal hero
+- Only art cards (5), recently banners, and the about photo load with the page;
+  tech and education render no images
 
-### Lightbox (project.html)
-- Gallery images show as square thumbnails in a grid
-- Clicking a thumbnail opens a full-size image in a dark overlay modal
-- Each gallery item supports separate thumb and full URLs:
-  ```yaml
-  gallery:
-    - thumb: https://...r2.dev/project/01_thumb.jpg
-      full: https://...r2.dev/project/01_full.jpg
-  ```
-- Left/right arrows to browse, Escape or click outside to close
-- Counter shown at bottom (e.g. "2 / 6")
-- Falls back gracefully if only a plain string URL is provided
+### Art modal gallery / lightbox
+- Gallery items: plain string URL or `{ thumb, full, caption }`
+- Lightbox: arrows/keys to browse, Escape or click outside to close, counter +
+  optional caption
 
 ---
 
-## Content Authoring System
+## Content Authoring System (unchanged)
 
-Content is written in Markdown and compiled to JSON via `npm run build`. Never edit `projects.json` or `about.json` directly — they are generated files.
+Content is markdown, compiled to JSON via `npm run build`. Never edit
+`projects.json`, `about.json`, or `recent.json` directly.
 
 ### Adding or editing a project
 
-Create or edit a `.md` file in `content/art/`, `content/tech/`, or `content/education/`. Files are numbered for ordering (e.g. `01-foodmasku.md`).
+Create/edit a `.md` file in `content/art/`, `content/tech/`, or
+`content/education/`. Files are numbered for ordering (e.g. `01-foodmasku.md`).
 
 ```markdown
 ---
@@ -137,10 +152,10 @@ hero: https://...r2.dev/project/hero.jpg
 list-title: Heading for bulleted list
 list:
   - Bullet one
-  - Bullet two
 gallery:
   - thumb: https://...r2.dev/project/01_thumb.jpg
     full: https://...r2.dev/project/01_full.jpg
+    caption: Optional caption
 exhibitions:
   - Venue, City — Year
 press:
@@ -150,163 +165,79 @@ press:
 link: https://optional-external-link.com
 ---
 
-Description text goes here as the markdown body.
+Description text as the markdown body. Blank lines split paragraphs.
 ```
 
-Run `npm run build` after saving. No new HTML needed ever.
-Card thumbnail falls back to `hero` if `thumbnail` is not set.
-Empty fields are automatically hidden on the project page.
-Year is optional — omit for tech and education entries (templates handle missing year gracefully).
+Run `npm run build` after saving.
 
-### Project page layout (top to bottom):
-1. Back link (← /section)
-2. Hero image (full width)
-3. Title + year/medium meta (year omitted if not set)
-4. Description text
-5. Bulleted list (list-title + list)
-6. Exhibited at (exhibitions)
-7. Press
-8. Gallery grid (square thumbnails, click to open lightbox)
-9. External link (if present)
+**Where fields surface now:**
+- Art: everything surfaces in the modal.
+- Tech: `title`, `medium`, `category`, `description` surface on the page.
+  Thumbnails/heroes/galleries in tech markdown are currently unused (kept in
+  the data for the future).
+- Education: only `title` and `medium` surface. Everything else unused.
 
----
-
-## /tech Section — Category System
-
-Tech entries require a `category` field. The /tech page has a sticky tab bar with three anchor sections:
-
-- `category: fabrication` → Fabrication section
-- `category: code` → Code & Creative Tools section
-- `category: design` → Design & Media section
-
-### Current /tech entries:
-
-**Fabrication**
-- Computerized Embroidery (Brother/Singer machines, digitization)
-- 3D Printing (FDM, SLA)
-- CNC Router (ShopBot, Fusion 360)
-- Vinyl Cutter (Cricut, Illustrator)
-- Laser Cutter (Epilog, Illustrator)
-- Electronics Prototyping (Breadboarding, Soldering, Arduino)
-- Sewing and E-Textiles (Soft Circuits, Smart Fabrics)
-
-**Code & Creative Tools**
-- Physical Computing / pcomp (Arduino, Raspberry Pi, Sensors)
-- Creative Coding (JavaScript, p5.js, Three.js)
-- Web Development (HTML, CSS, JavaScript)
-- Big Screens (Large Format Video, openFrameworks)
-- Workflow Automation (n8n, Monday.com, Webflow, Eventbrite)
-- AI Tools & Workflows (Claude, ChatGPT, Flora, Generative Image Tools)
-- Git & Version Control (Git, GitHub)
-- Max/MSP (MIDI, Interactive Audio)
-
-**Design & Media**
-- CAD (Autodesk Fusion 360, Onshape)
-- Adobe Suite (Illustrator certified, Premiere, After Effects, Express)
-- Figma & UI Design (Figma, Prototyping, Wireframing)
-- Photography & Lighting (DSLR, Studio Lighting)
-- Video Editing & Production (Adobe Premiere, After Effects)
-- Teaching & Curriculum Design (Hands-on Technical Education)
-
----
-
-## /education Section — Course Entries
-
-Education entries are individual courses/programs, not topic areas. No year field.
-Medium describes the level and institution.
-
-### Current /education entries:
-1. **Fulbright Scholar** — New Media, Traditional Arts, Indonesia (2018–2019, Solo, Java)
-2. **Talking Fabrics** — Graduate Course, ITP NYU / NYU Shanghai (ITP ×2, Shanghai ×3, 2015–2018)
-3. **New Interfaces in Musical Expression (NIME)** — Graduate Course, NYU Shanghai (×2, 2015–2018)
-4. **Interaction Lab** — Undergraduate Course, NYU Shanghai (2015–2018)
-5. **Communications Lab** — Graduate Course, ITP NYU
-6. **Creative Coding** — Undergraduate Course, Queens College CUNY
-7. **Web Development** — Undergraduate Course, Queens College / BMCC (includes Advanced Web Dev)
-8. **Multimedia Programming** — Undergraduate Course, BMCC
-9. **Thesis** — Undergraduate Course, Queens College CUNY
-
-NYU Shanghai: 2015–2018. Left for Fulbright 2018–2019.
-
----
-
-## /art Section — Current Projects
-
-- foodmasku (2020–2025) — Performance, Photography, Video and Food
-- Post Papa (2025)
-- Since the Shooting (2023)
-- We Become XYZ (2019)
-- Other Work (2009–2019)
-
----
-
-## About Page Data System
-
-All about page content lives in `content/about.md`. YAML frontmatter holds structured data; the markdown body becomes the bio paragraphs. Run `npm run build` after editing.
-
-CV sections with no entries are automatically hidden.
-
----
-
-## Landing Page "Recently" System
-
-The front page (`index.html`) uses the section-page layout: dark sidebar + light `#fafafa` content area headed "Recently" (accent: orange `--accent` `#e05c00`). No hero video.
-
-Content lives in `content/recent.md` and compiles to `recent.json` via `npm run build`. Never edit `recent.json` directly.
+### Recently (`content/recent.md`)
 
 ```markdown
 ---
-intro: One-line sidebar blurb shown on the landing page.
+intro: One-line blurb — ALSO used as the hero intro paragraph.
 items:
   - lead: Short punchy headline
-    date: May 2026         # optional — month/year, or a range like "2025–26"
+    date: May 2026         # optional
     detail: One-sentence detail.
-    link: art.html        # optional — makes the headline clickable
+    link: art.html         # optional; legacy page links auto-map to hashes
+    image: https://...     # optional 16:9 banner
 ---
 ```
 
-- `intro` fills the sidebar `.about` paragraph on the landing page only.
-- `date` is optional per item. Use month/year ("May 2026") or a range for ongoing work ("2025–26"); renders as a small uppercase label above the headline (`.recent-date`).
-- `link` is optional per item. Internal paths (`art.html`, `project.html?...`) or full `https://` URLs both work; external URLs open in a new tab. Styled via `a.recent-link` in `section.css` (accent hover + ↗ arrow).
-- `image` is optional per item. Bare R2 paths (`project/thumb.jpg`) expand to full R2 URLs; full `https://` URLs and animated GIFs also work. Renders as a horizontal banner above the headline (`.recent-thumb`, 16:9, `object-fit: cover`). Recommended export: 1200 × 675px.
-- `items` render as the `.recent-list` (styled in `section.css`: `.recent-item` / `.recent-lead` / `.recent-detail`).
-- Order items most career-forward first; aim for ~6.
-- `index.html` fetches `recent.json` and populates the list + intro via JS.
+- Legacy `link` values (`art.html`, `project.html?section=art&id=x`) are
+  mapped to hash links (`#art`, `#art/x`) at render time — old values keep
+  working.
+- Order most career-forward first; aim for ~6 items, 3-4 images max.
+
+### About (`content/about.md`)
+
+YAML frontmatter (photo, pronunciation, contact, cv sections) + markdown body
+→ bio paragraphs. Empty CV sections auto-hide.
+
+---
+
+## /tech Categories
+
+`category:` field required on tech entries:
+- `fabrication` → Fabrication
+- `code` → Code & Creative Tools
+- `design` → Design & Media
+
+Current entries: 21 across the three groups (embroidery, 3D printing, CNC,
+vinyl, laser, electronics, e-textiles / pcomp, creative coding, web, big
+screens, automation, AI tools, git, Max/MSP / CAD, Adobe, Figma, photography,
+video, teaching).
+
+---
+
+## /education Entries
+
+Individual courses/programs, no year field. Medium = level + institution.
+Current: Fulbright, Talking Fabrics, NIME, Interaction Lab, Comms Lab,
+Creative Coding, Web Development, Multimedia Programming, Thesis.
 
 ---
 
 ## Git & Deployment
 
-- Repo: github.com/theantonius/portfolio
-- Branch: main
-- Deployed via GitHub Pages with custom domain (CNAME: antoni.us)
-- HTTPS enforced via GitHub Pages settings
+- Repo: github.com/theantonius/portfolio — branch: main
+- GitHub Pages, custom domain (CNAME: antoni.us), HTTPS enforced
 - SSH configured on MacBook Air — push with just `git push`
-- To push from Cowork session: not possible directly; commit here, then `git push` from terminal
+- From Cowork session: commit here, then `git push` from terminal
 
 ---
 
 ## Things Still To Do
 
-- [ ] Fill in descriptions in all content/*.md files
-- [ ] Upload hero/thumbnail images to Cloudflare R2 for all tech and education entries
-- [ ] Add gallery images (thumb + full) to art projects
-- [ ] Add more videos to videos/ folder and build crossfade cycling JS
-- [ ] Fill in real CV data in content/about.md (solo/group exhibitions, certifications, press)
-- [ ] Consider adding CV download link on about page
-- [ ] Test on real mobile devices
-- [ ] Decide what to do with Teaching & Curriculum Design in /tech (odd fit in Design & Media)
-
----
-
-## Key CSS Variables (style.css)
-
-```css
---sidebar-width: 300px;
---sidebar-bg: #1f1f1f;
---sidebar-text: #f0f0f0;
---accent: #e05c00;
---content-bg: #fafafa;
---font: 'Roboto', Arial, sans-serif;
---font-heading: 'Raleway', Arial, sans-serif;
-```
+- [ ] Test the one-pager on real mobile devices
+- [ ] Fill in remaining description text in content/*.md (education entries especially)
+- [ ] Add gallery images (thumb + full) to remaining art projects
+- [ ] Consider a CV download link in the about section
+- [ ] Consider OpenGraph/social preview image in index.html head

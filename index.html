@@ -3,82 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>antoni.us/wiriadjaja - Portfolio of Antonius Wiriadjaja</title>
+    <title>antoni.us/wiriadjaja — Portfolio of Antonius Wiriadjaja</title>
+    <meta name="description" content="Antonius Wiriadjaja — artist, creative technologist, and educator based in New York City." />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/section.css" />
+    <link rel="stylesheet" href="css/site.css" />
   </head>
-  <body class="section-page home">
+  <body>
 
-    <div class="section-container">
-
-      <!-- SIDEBAR -->
-      <div class="sidebar">
-        <div class="sidebar-head">
-          <a href="index.html" class="name">antoni.us/wiriadjaja</a>
-          <p class="tagline">making things <span id="tagline-cycle" style="transition: opacity 0.5s ease;"></span></p>
-        </div>
-
-        <div class="about">
-          <p id="intro-text">I'm an artist, creative technologist and educator based in New York.</p>
-        </div>
-
-        <nav class="section-links">
-          <a href="art.html" class="section-link">/art</a>
-          <a href="tech.html" class="section-link">/tech</a>
-          <a href="education.html" class="section-link">/education</a>
-          <a href="about.html" class="section-link">/about</a>
-        </nav>
-
-        <div class="contact-links">
-          <a href="mailto:hi@antoni.us">Email</a>
-          <a href="https://linkedin.com/in/theantonius" target="_blank">LinkedIn</a>
-          <a href="https://github.com/theantonius" target="_blank">GitHub</a>
-        </div>
+    <!-- TOP NAV (appears after hero) -->
+    <nav class="topnav" id="topnav" aria-label="Sections">
+      <a href="#top" class="topnav-name">antoni.us/wiriadjaja</a>
+      <div class="topnav-links">
+        <a href="#recently" class="topnav-link">/recently</a>
+        <a href="#art" class="topnav-link">/art</a>
+        <a href="#tech" class="topnav-link">/tech</a>
+        <a href="#education" class="topnav-link">/education</a>
+        <a href="#about" class="topnav-link">/about</a>
       </div>
+    </nav>
 
-      <!-- MAIN CONTENT -->
-      <main class="section-content">
-        <h2 class="section-title" style="--section-color: var(--accent);"><a href="index.html" class="section-title-domain">antoni.us</a>/recently</h2>
+    <!-- HERO -->
+    <header class="hero-panel" id="top">
+      <div class="hero-inner">
+        <span class="hero-name">antoni.us/wiriadjaja</span>
+        <p class="hero-tagline">making things <span id="tagline-cycle"></span></p>
+        <p class="hero-intro" id="hero-intro">I'm an artist, creative technologist and educator based in New York.</p>
+      </div>
+      <span class="hero-scroll-hint">scroll</span>
+    </header>
 
-        <ul class="recent-list" id="recent-list">
-          <!-- Populated by JS from recent.json -->
-        </ul>
-      </main>
+    <!-- RECENTLY -->
+    <section class="panel" id="recently">
+      <div class="panel-inner">
+        <h2 class="panel-title"><span class="domain">antoni.us</span>/recently</h2>
+        <ul class="recent-list" id="recent-list"></ul>
+      </div>
+    </section>
 
+    <!-- ART -->
+    <section class="panel" id="art">
+      <div class="panel-inner">
+        <h2 class="panel-title"><span class="domain">antoni.us</span>/art</h2>
+        <div class="art-grid" id="art-grid"></div>
+      </div>
+    </section>
+
+    <!-- TECH -->
+    <section class="panel" id="tech">
+      <div class="panel-inner">
+        <h2 class="panel-title"><span class="domain">antoni.us</span>/tech</h2>
+        <div id="tech-groups"></div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="panel" id="education">
+      <div class="panel-inner">
+        <h2 class="panel-title"><span class="domain">antoni.us</span>/education</h2>
+        <ul class="edu-list" id="edu-list"></ul>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="panel" id="about">
+      <div class="panel-inner">
+        <h2 class="panel-title"><span class="domain">antoni.us</span>/about</h2>
+        <div id="about-content"></div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <span class="footer-name">antoni.us/wiriadjaja</span>
+      <div class="footer-links">
+        <a href="mailto:hi@antoni.us">Email</a>
+        <a href="https://linkedin.com/in/theantonius" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/theantonius" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </footer>
+
+    <!-- ART MODAL -->
+    <div class="modal" id="art-modal" role="dialog" aria-modal="true">
+      <div class="modal-backdrop"></div>
+      <div class="modal-panel" id="art-modal-panel"></div>
     </div>
 
-    <script>
-      async function loadRecent() {
-        const res = await fetch('recent.json');
-        const data = await res.json();
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close">×</button>
+      <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous">‹</button>
+      <img src="" alt="" class="lightbox-img" id="lightbox-img" />
+      <button class="lightbox-next" id="lightbox-next" aria-label="Next">›</button>
+      <span class="lightbox-counter" id="lightbox-counter"></span>
+      <span class="lightbox-caption" id="lightbox-caption"></span>
+    </div>
 
-        if (data.intro) {
-          const intro = document.getElementById('intro-text');
-          if (intro) intro.textContent = data.intro;
-        }
-
-        const list = document.getElementById('recent-list');
-        list.innerHTML = (data.items || []).map(i => {
-          const external = /^https?:\/\//.test(i.link);
-          const lead = i.link
-            ? `<a class="recent-lead recent-link" href="${i.link}"${external ? ' target="_blank" rel="noopener"' : ''}>${i.lead}</a>`
-            : `<span class="recent-lead">${i.lead}</span>`;
-          const date = i.date ? `<span class="recent-date">${i.date}</span>` : '';
-          const image = i.image ? `<img class="recent-thumb" src="${i.image}" alt="" loading="lazy" />` : '';
-          return `
-          <li class="recent-item">
-            ${image}
-            ${date}
-            ${lead}
-            <span class="recent-detail">${i.detail}</span>
-          </li>`;
-        }).join('');
-      }
-
-      loadRecent();
-    </script>
-
-    <script src="js/script.js"></script>
+    <script src="js/site.js"></script>
   </body>
 </html>
