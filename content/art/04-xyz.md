@@ -3,8 +3,8 @@ id: xyz
 title: If We Were XYZ
 year: "2019"
 medium: Performance, EEG Data, Sound, Video
-thumbnail: images/placeholder-thumb.jpg
-hero: images/placeholder-hero.jpg
+thumbnail: https://img.antoni.us/xyz/xyz-thumb.jpg
+hero: https://img.antoni.us/xyz/xyz-hero.jpg
 list-title: Credits
 list:
   - Performance by Melati Suryodarmo
@@ -24,12 +24,14 @@ press:
     publication: Asia Society — Creative Common Ground
     url: https://asiasociety.org/creative-common-ground/if-we-were-xyz-artistic-process
 gallery:
-  - thumb: images/placeholder-gallery-thumb.jpg
-    full: images/placeholder-gallery-full.jpg
-  - thumb: images/placeholder-gallery-thumb.jpg
-    full: images/placeholder-gallery-full.jpg
-  - thumb: images/placeholder-gallery-thumb.jpg
-    full: images/placeholder-gallery-full.jpg
+  - thumb: https://img.antoni.us/xyz/xyz-1-thumb.jpg
+    full: https://img.antoni.us/xyz/xyz-1-full.jpg
+  - thumb: https://img.antoni.us/xyz/xyz-2-thumb.jpg
+    full: https://img.antoni.us/xyz/xyz-2-full.jpg
+  - thumb: https://img.antoni.us/xyz/xyz-3-thumb.jpg
+    full: https://img.antoni.us/xyz/xyz-3-full.jpg
+  - thumb: https://img.antoni.us/xyz/xyz-4-thumb.jpg
+    full: https://img.antoni.us/xyz/xyz-4-full.jpg
 ---
 
 If We Were XYZ is a three-hour durational performance by Indonesian artist Melati Suryodarmo, premiered at Asia Society Museum in October 2019 as part of the museum's interdisciplinary program Creative Common Ground. I served as the piece's artist-technologist: I built a self-devised sleep laboratory around Melati, recording EEG data while she slept, and then translated that raw neural data into the musical scores and visual systems that structured the performance. I delivered the same dataset to Vocalist and composer Jessika Kenney, who wrote the piece's seven-part score based on each dream data.
