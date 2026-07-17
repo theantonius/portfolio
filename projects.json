@@ -878,6 +878,16 @@
   ],
   "education": [
     {
+      "id": "partnering-with-ai",
+      "title": "Partnering with AI",
+      "medium": "Undergraduate Course, School of Visual Arts",
+      "description": "An undergraduate course at the School of Visual Arts teaching design students how to work with AI as a creative partner. Taught fall and spring, 2026–2027 academic year.",
+      "list": [],
+      "gallery": [],
+      "exhibitions": [],
+      "press": []
+    },
+    {
       "id": "fulbright",
       "title": "Fulbright Scholar",
       "medium": "New Media, Traditional Arts, Indonesia",
@@ -910,7 +920,7 @@
     {
       "id": "talking-fabrics",
       "title": "Talking Fabrics",
-      "medium": "Graduate Course, ITP NYU / NYU Shanghai",
+      "medium": "Undergraduate and Graduate Course, ITP NYU / NYU Shanghai",
       "thumbnail": "images/placeholder-thumb.jpg",
       "hero": "images/placeholder-hero.jpg",
       "list-title": "Where taught",
@@ -940,7 +950,7 @@
     {
       "id": "nime",
       "title": "New Interfaces in Musical Expression",
-      "medium": "Graduate Course, NYU Shanghai",
+      "medium": "Undergraduate Course, NYU Shanghai",
       "thumbnail": "images/placeholder-thumb.jpg",
       "hero": "images/placeholder-hero.jpg",
       "list-title": "Where taught",
