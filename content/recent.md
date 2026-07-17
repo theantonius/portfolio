@@ -8,9 +8,6 @@ items:
     date: June 2026
     image: https://img.antoni.us/recently/recently-mbd.jpg
     detail: I built a teacher-facing prototype using computer vision and machine learning for K–2 math and literacy as part of Multilingual by Design, a national initiative backed by the Gates Foundation and others.
-  - lead: Rebuilding STEM education for NYC kids
-    date: June 2026
-    detail: I helped redesign a first-of-its-kind robotics curriculum for NYC high school students.
   - lead: My art took over NYC taxis
     date: May 2026
     image: https://img.antoni.us/recently/recently-taxi.jpg

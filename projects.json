@@ -257,32 +257,6 @@
         }
       ],
       "description": "If We Were XYZ is a three-hour durational performance by Indonesian artist Melati Suryodarmo, premiered at Asia Society Museum in October 2019 as part of the museum's interdisciplinary program Creative Common Ground. I served as the piece's artist-technologist: I built a self-devised sleep laboratory around Melati, recording EEG data while she slept, and then translated that raw neural data into the musical scores and visual systems that structured the performance. I delivered the same dataset to Vocalist and composer Jessika Kenney, who wrote the piece's seven-part score based on each dream data.\n\nThe work sits at the intersection of Javanese mysticism, neuroscience, and psychology, asking what it means when the subconscious is made material. It was, in many ways, a question about intimacy: what do you owe a collaborator who has handed you the raw signal of their dreaming mind, and what kind of translation is faithful to that trust?"
-    },
-    {
-      "id": "archives",
-      "title": "Other Work",
-      "year": "2009-2019",
-      "medium": "Medium / Format",
-      "thumbnail": "images/placeholder-thumb.jpg",
-      "hero": "images/placeholder-hero.jpg",
-      "gallery": [
-        {
-          "thumb": "images/placeholder-gallery-thumb.jpg",
-          "full": "images/placeholder-gallery-full.jpg"
-        },
-        {
-          "thumb": "images/placeholder-gallery-thumb.jpg",
-          "full": "images/placeholder-gallery-full.jpg"
-        },
-        {
-          "thumb": "images/placeholder-gallery-thumb.jpg",
-          "full": "images/placeholder-gallery-full.jpg"
-        }
-      ],
-      "description": "Description of this work goes here.",
-      "list": [],
-      "exhibitions": [],
-      "press": []
     }
   ],
   "tech": [
