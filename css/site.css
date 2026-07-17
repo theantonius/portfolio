@@ -150,7 +150,15 @@ a {
     min-height: 100svh;
     scroll-snap-align: start;
     padding: 96px max(6vw, 24px) 80px;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
+
+/* subtle accent-tinted backgrounds separate the sections */
+#recently  { background: #fbf4ee; }
+#art       { background: #fbf7ea; }
+#tech      { background: #f7f2fa; }
+#education { background: #f0f8f1; }
+#about     { background: #f4f4f4; }
 
 .panel-inner {
     max-width: 1000px;
@@ -166,7 +174,7 @@ a {
 }
 
 .panel-title .domain {
-    opacity: 0.35;
+    opacity: 0.6;
 }
 
 /* =============================
@@ -235,20 +243,16 @@ a {
     bottom: 28px;
     left: 50%;
     transform: translateX(-50%);
-    color: #777;
-    font-size: 0.78rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
+    color: #999;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 6px;
+    justify-content: center;
     animation: heroFade 1s ease 1.2s both;
 }
 
 .hero-scroll-hint::after {
     content: "↓";
-    font-size: 1rem;
+    font-size: 1.4rem;
     animation: bob 2s ease-in-out infinite;
 }
 
