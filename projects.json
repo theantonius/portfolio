@@ -121,8 +121,8 @@
       "title": "Since the Shooting",
       "year": "2013-present",
       "medium": "Photography, Writing",
-      "thumbnail": "images/placeholder-thumb.jpg",
-      "hero": "images/placeholder-hero.jpg",
+      "thumbnail": "https://img.antoni.us/shooting/shooting-thumb.jpg",
+      "hero": "https://img.antoni.us/shooting/shooting-hero.jpg",
       "list-title": "Background",
       "list": [
         "On July 5, 2013, I was shot by a stranger on a Brooklyn street while walking to the subway from my apartment in Bedford-Stuyvesant. The bullet was meant for someone else; it passed between two ribs, narrowly missed my heart, and lodged in my stomach.",
@@ -160,16 +160,34 @@
       "link": "https://gunsurvivor.antoni.us/",
       "gallery": [
         {
-          "thumb": "images/placeholder-gallery-thumb.jpg",
-          "full": "images/placeholder-gallery-full.jpg"
+          "thumb": "https://img.antoni.us/shooting/shooting-01-thumb.jpg",
+          "full": "https://img.antoni.us/shooting/shooting-01-full.jpg",
+          "caption": "July 30, 2013"
         },
         {
-          "thumb": "images/placeholder-gallery-thumb.jpg",
-          "full": "images/placeholder-gallery-full.jpg"
+          "thumb": "https://img.antoni.us/shooting/shooting-02-thumb.jpg",
+          "full": "https://img.antoni.us/shooting/shooting-02-full.jpg",
+          "caption": "August 1, 2013"
         },
         {
-          "thumb": "images/placeholder-gallery-thumb.jpg",
-          "full": "images/placeholder-gallery-full.jpg"
+          "thumb": "https://img.antoni.us/shooting/shooting-03-thumb.jpg",
+          "full": "https://img.antoni.us/shooting/shooting-03-full.jpg",
+          "caption": "August 3, 2013"
+        },
+        {
+          "thumb": "https://img.antoni.us/shooting/shooting-04-thumb.jpg",
+          "full": "https://img.antoni.us/shooting/shooting-04-full.jpg",
+          "caption": "August 5, 2013"
+        },
+        {
+          "thumb": "https://img.antoni.us/shooting/shooting-05-thumb.jpg",
+          "full": "https://img.antoni.us/shooting/shooting-05-full.jpg",
+          "caption": "August 8, 2013"
+        },
+        {
+          "thumb": "https://img.antoni.us/shooting/shooting-06-thumb.jpg",
+          "full": "https://img.antoni.us/shooting/shooting-06-full.jpg",
+          "caption": "August 10, 2013"
         }
       ],
       "description": "Since the Shooting was an ongoing photographic practice of daily self-portraits featuring scars that run across my body from a bullet to the chest. It began the day I was released from Kings County Hospital in July 2013 and continued until the day of my shooter's trial.\n\nOn July 5, 2013, on the morning after the Fourth of July, a stranger came out of a passing car to shoot ata pregnant woman one block away from my apartment. The woman was shot in the leg, and the bullet that would have gone through her head hit me instead. The bullet traveled between two ribs, narrowly missed my heart, and lodged itself in my stomach. Three strangers kept me alive until the ambulance came: a barber who applied pressure to the wound, a neighbor who kept me awake by yelling at me, and a man on his way to a job interview who fanned me with his résumé. I spent four days in a coma and seven months in physical therapy.\n\nThe series began as a way to show my healing, one photograph a day, as a slow act of witnessing recovery from trauma. I carried a camera with me into hospital visits, onto planes, and into every apartment of every city I moved to. The scar became a reason to keep going. I continued the daily practice from the day I left the hospital through the day of my shooter's trial, and have continued making work in and around the series in the years since. I was also the first person photographed by Kathy Shorr for SHOT: 101 Survivors of Gun Violence in America.",

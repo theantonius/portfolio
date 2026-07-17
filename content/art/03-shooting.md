@@ -3,8 +3,8 @@ id: shooting
 title: Since the Shooting
 year: "2013-present"
 medium: Photography, Writing
-thumbnail: images/placeholder-thumb.jpg
-hero: images/placeholder-hero.jpg
+thumbnail: https://img.antoni.us/shooting/shooting-thumb.jpg
+hero: https://img.antoni.us/shooting/shooting-hero.jpg
 list-title: Background
 list:
   - On July 5, 2013, I was shot by a stranger on a Brooklyn street while walking to the subway from my apartment in Bedford-Stuyvesant. The bullet was meant for someone else; it passed between two ribs, narrowly missed my heart, and lodged in my stomach.
@@ -29,12 +29,24 @@ press:
     url: https://hyperallergic.com/372690/101-unflinching-portraits-of-survivors-of-us-gun-violence/
 link: https://gunsurvivor.antoni.us/
 gallery:
-  - thumb: images/placeholder-gallery-thumb.jpg
-    full: images/placeholder-gallery-full.jpg
-  - thumb: images/placeholder-gallery-thumb.jpg
-    full: images/placeholder-gallery-full.jpg
-  - thumb: images/placeholder-gallery-thumb.jpg
-    full: images/placeholder-gallery-full.jpg
+  - thumb: https://img.antoni.us/shooting/shooting-01-thumb.jpg
+    full: https://img.antoni.us/shooting/shooting-01-full.jpg
+    caption: July 30, 2013
+  - thumb: https://img.antoni.us/shooting/shooting-02-thumb.jpg
+    full: https://img.antoni.us/shooting/shooting-02-full.jpg
+    caption: August 1, 2013
+  - thumb: https://img.antoni.us/shooting/shooting-03-thumb.jpg
+    full: https://img.antoni.us/shooting/shooting-03-full.jpg
+    caption: August 3, 2013
+  - thumb: https://img.antoni.us/shooting/shooting-04-thumb.jpg
+    full: https://img.antoni.us/shooting/shooting-04-full.jpg
+    caption: August 5, 2013
+  - thumb: https://img.antoni.us/shooting/shooting-05-thumb.jpg
+    full: https://img.antoni.us/shooting/shooting-05-full.jpg
+    caption: August 8, 2013
+  - thumb: https://img.antoni.us/shooting/shooting-06-thumb.jpg
+    full: https://img.antoni.us/shooting/shooting-06-full.jpg
+    caption: August 10, 2013
 ---
 
 Since the Shooting was an ongoing photographic practice of daily self-portraits featuring scars that run across my body from a bullet to the chest. It began the day I was released from Kings County Hospital in July 2013 and continued until the day of my shooter's trial.
