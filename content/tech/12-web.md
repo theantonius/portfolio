@@ -19,4 +19,4 @@ gallery:
     full: images/placeholder-gallery-full.jpg
 ---
 
-I build websites and web applications from scratch in HTML, CSS, and JavaScript, without reaching for frameworks when they're not needed. I understand layout, performance, responsive design, and accessibility, and I'm equally comfortable building a polished static site or a more complex data-driven interface. I teach <a href="project.html?section=education&id=web-dev-edu">Web Development</a> at Queens College and BMCC, and this portfolio itself is hand-coded.
+I build websites and web applications from scratch in HTML, CSS, and JavaScript, without reaching for frameworks when they're not needed. I understand layout, performance, responsive design, and accessibility, and I'm equally comfortable building a polished static site or a more complex data-driven interface. I teach Web Development at Queens College and BMCC, and this portfolio itself is hand-coded.

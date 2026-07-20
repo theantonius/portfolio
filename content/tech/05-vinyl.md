@@ -4,7 +4,7 @@ title: Vinyl Cutter
 medium: Cricut, Adobe Illustrator
 category: fabrication
 thumbnail: https://img.antoni.us/vinyl/vinyl-thumb.jpg
-hero: https://img.antoni.us/vinyl/vinyl-hero.jpg
+photo: https://img.antoni.us/vinyl/vinyl-hero.jpg
 list-title: What I've made with it
 gallery:
   - thumb: images/placeholder-gallery-thumb.jpg

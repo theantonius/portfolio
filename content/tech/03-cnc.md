@@ -4,7 +4,7 @@ title: Computer Numerical Control (CNC) Router
 medium: ShopBot, Fusion 360
 category: fabrication
 thumbnail: https://img.antoni.us/cnc/cnc-thumb.jpg
-hero: https://img.antoni.us/cnc/cnc-hero.jpg
+photo: https://img.antoni.us/cnc/cnc-hero.jpg
 list-title: What I've made with it
 gallery:
   - thumb: images/placeholder-gallery-thumb.jpg
