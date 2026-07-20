@@ -284,7 +284,7 @@
       "medium": "FDM, SLA",
       "category": "fabrication",
       "thumbnail": "https://img.antoni.us/3dprinting/3dprinting-thumb.jpg",
-      "hero": "https://img.antoni.us/3dprinting/3dprinting-hero.jpg",
+      "photo": "https://img.antoni.us/3dprinting/3dprinting-hero.jpg",
       "list-title": "What I've made with it",
       "gallery": [
         {
@@ -311,7 +311,7 @@
       "medium": "ShopBot, Fusion 360",
       "category": "fabrication",
       "thumbnail": "https://img.antoni.us/cnc/cnc-thumb.jpg",
-      "hero": "https://img.antoni.us/cnc/cnc-hero.jpg",
+      "photo": "https://img.antoni.us/cnc/cnc-hero.jpg",
       "list-title": "What I've made with it",
       "gallery": [
         {
@@ -338,7 +338,7 @@
       "medium": "Cricut, Adobe Illustrator",
       "category": "fabrication",
       "thumbnail": "https://img.antoni.us/vinyl/vinyl-thumb.jpg",
-      "hero": "https://img.antoni.us/vinyl/vinyl-hero.jpg",
+      "photo": "https://img.antoni.us/vinyl/vinyl-hero.jpg",
       "list-title": "What I've made with it",
       "gallery": [
         {
@@ -365,7 +365,7 @@
       "medium": "Epilog, Illustrator",
       "category": "fabrication",
       "thumbnail": "https://img.antoni.us/laser/laser-thumb.jpg",
-      "hero": "https://img.antoni.us/laser/laser-hero.jpg",
+      "photo": "https://img.antoni.us/laser/laser-hero.jpg",
       "list-title": "What I've made with it",
       "gallery": [
         {
@@ -419,7 +419,7 @@
       "medium": "Soft Circuits, Smart Fabrics",
       "category": "fabrication",
       "thumbnail": "https://img.antoni.us/textiles/textiles-thumb.jpg",
-      "hero": "https://img.antoni.us/textiles/textiles-hero.jpg",
+      "photo": "https://img.antoni.us/textiles/textiles-hero.jpg",
       "list-title": "What I've made with it",
       "gallery": [
         {
@@ -530,7 +530,7 @@
           "full": "images/placeholder-gallery-full.jpg"
         }
       ],
-      "description": "I build websites and web applications from scratch in HTML, CSS, and JavaScript, without reaching for frameworks when they're not needed. I understand layout, performance, responsive design, and accessibility, and I'm equally comfortable building a polished static site or a more complex data-driven interface. I teach <a href=\"project.html?section=education&id=web-dev-edu\">Web Development</a> at Queens College and BMCC, and this portfolio itself is hand-coded.",
+      "description": "I build websites and web applications from scratch in HTML, CSS, and JavaScript, without reaching for frameworks when they're not needed. I understand layout, performance, responsive design, and accessibility, and I'm equally comfortable building a polished static site or a more complex data-driven interface. I teach Web Development at Queens College and BMCC, and this portfolio itself is hand-coded.",
       "exhibitions": [],
       "press": []
     },
