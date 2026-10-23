@@ -40,6 +40,9 @@ cv:
       entry: "If We Were XYZ — with Melati Suryodarmo & Jessika Kenney, Asia Society, New York, NY"
     - year: "2019"
       entry: "VIGIL — project by Jenny Holzer, Creative Time, New York, NY"
+  film:
+    - year: "2026"
+      entry: "Gays Against Guns — Cast, with John Waters. Premiered at NewFest, New York, NY"
   teaching:
     - year: "2026–present"
       entry: "Adjunct Faculty, BFA Design, School of Visual Arts, New York, NY"

@@ -1,5 +1,4 @@
 ---
-intro: I'm an artist, creative technologist and educator based in New York. I build things fast, teach people how, and put art in public spaces.
 items:
   - lead: Teaching Design students how to work with AI
     date: Upcoming 2026-2027

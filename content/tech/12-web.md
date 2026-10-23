@@ -3,6 +3,7 @@ id: web
 title: Web Development
 medium: HTML, CSS, JavaScript
 category: code
+rank: 6
 thumbnail: images/placeholder-thumb.jpg
 hero: images/placeholder-hero.jpg
 list-title: What I build with it

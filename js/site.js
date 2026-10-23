@@ -55,7 +55,88 @@ function mapLink(link) {
 // ================================
 // RENDERERS
 // ================================
-let artProjects = [];
+const projectsBySection = { art: [], tech: [], education: [] };
+let featuredIds = new Set();
+
+// Silent card loops retain still posters for reduced motion and failed playback.
+const previewMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+const previewObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    entry.target.dataset.inView = String(entry.isIntersecting);
+  });
+  syncPreviewPlayback();
+});
+
+function syncPreviewPlayback() {
+  document.querySelectorAll("video[data-preview]").forEach(video => {
+    const play = video.dataset.inView === "true" &&
+      !previewMotion.matches && !document.hidden && !modal.classList.contains("open");
+    if (play) video.play().catch(() => {}); // Poster stays visible if autoplay is blocked.
+    else video.pause();
+  });
+}
+
+document.addEventListener("visibilitychange", syncPreviewPlayback);
+previewMotion.addEventListener("change", syncPreviewPlayback);
+
+function wirePreviews(container) {
+  container.querySelectorAll("video[data-preview]").forEach(video => previewObserver.observe(video));
+}
+
+function previewHtml(src, poster, title) {
+  if (!src || previewMotion.matches) {
+    return poster ? `<img src="${poster}" alt="${title}" loading="lazy" />` : "";
+  }
+  return `<video data-preview muted loop playsinline preload="none" poster="${poster || ""}" aria-hidden="true" tabindex="-1"><source src="${src}" type="video/mp4" /></video>`;
+}
+
+// one card: image/video (or placeholder block) + title + summary
+function cardHtml(p, section, opts = {}) {
+  const img = opts.image || p.thumbnail || p.hero;
+  const title = opts.title || p.title;
+  const thumb = previewHtml(p.previewVideo, img, p.title)
+    || `<span class="card-placeholder">${title}</span>`;
+  return `
+    <button class="art-card reveal${opts.big ? " feat-big" : ""}" data-section="${section}" data-id="${p.id}" aria-haspopup="dialog">
+      <div class="art-card-thumb">${thumb}</div>
+      <h3>${title}</h3>
+      <p>${p.summary ? p.summary : (p.year ? p.year + " — " : "") + p.medium}</p>
+    </button>`;
+}
+
+function wireCards(container) {
+  wirePreviews(container);
+  container.querySelectorAll(".art-card").forEach(card => {
+    card.addEventListener("click", () => {
+      const s = card.dataset.section;
+      location.hash = s === "education" ? "#education" : "#" + s + "/" + card.dataset.id;
+    });
+  });
+}
+
+function renderFeatured(featured) {
+  const intro = document.getElementById("hero-intro");
+  if (intro && featured.intro) intro.textContent = featured.intro;
+
+  const L = featured.links || {};
+  const links = [
+    L.resume   && `<a href="${L.resume}" target="_blank" rel="noopener">Résumé</a>`,
+    L.email    && `<a href="mailto:${L.email}">Email</a>`,
+    L.linkedin && `<a href="${L.linkedin}" target="_blank" rel="noopener">LinkedIn</a>`,
+    L.github   && `<a href="${L.github}" target="_blank" rel="noopener">GitHub</a>`,
+  ].filter(Boolean);
+  document.getElementById("hero-links").innerHTML = links.join('<span class="sep">·</span>');
+
+  // featured items don't repeat in their own section grid
+  featuredIds = new Set((featured.items || []).map(i => i.section + "/" + i.id));
+  const grid = document.getElementById("featured-grid");
+  grid.innerHTML = (featured.items || []).map(item => {
+    const p = (projectsBySection[item.section] || []).find(x => x.id === item.id);
+    return p ? cardHtml(p, item.section, item) : "";
+  }).join("");
+  wireCards(grid);
+
+}
 
 function renderRecently(data) {
   if (data.intro) {
@@ -63,6 +144,7 @@ function renderRecently(data) {
     if (intro) intro.textContent = data.intro;
   }
   const list = document.getElementById("recent-list");
+  if (!list) return; // Recently section removed from the page (Oct 2026)
   list.innerHTML = (data.items || []).map(i => {
     const link = mapLink(i.link);
     const external = /^https?:\/\//.test(link);
@@ -82,32 +164,29 @@ function renderRecently(data) {
 }
 
 function renderArt(projects) {
-  artProjects = projects;
   const grid = document.getElementById("art-grid");
-  grid.innerHTML = projects.map(p => `
-    <button class="art-card reveal" data-id="${p.id}" aria-haspopup="dialog">
-      <div class="art-card-thumb">
-        <img src="${p.thumbnail || p.hero}" alt="${p.title}" loading="lazy" />
-      </div>
-      <h3>${p.title}</h3>
-      <p>${p.year ? p.year + " — " : ""}${p.medium}</p>
-    </button>
-  `).join("");
+  grid.innerHTML = projects.filter(p => !featuredIds.has("art/" + p.id)).map(p => cardHtml(p, "art")).join("");
+  wireCards(grid);
+}
 
-  grid.querySelectorAll(".art-card").forEach(card => {
-    card.addEventListener("click", () => {
-      location.hash = "#art/" + card.dataset.id;
-    });
-  });
+function renderTechProjects(projects) {
+  const grid = document.getElementById("tech-grid");
+  if (!grid) return; // /tech section parked (Oct 2026)
+  grid.innerHTML = projects.filter(p => p.category === "project" && !featuredIds.has("tech/" + p.id)).map(p => cardHtml(p, "tech")).join("");
+  wireCards(grid);
 }
 
 function renderTech(projects) {
   const groups = {
-    fabrication: { title: "Fabrication", items: [] },
     code:        { title: "Code & Creative Tools", items: [] },
+    fabrication: { title: "Fabrication", items: [] },
     design:      { title: "Design & Media", items: [] },
   };
-  projects.forEach(p => { if (groups[p.category]) groups[p.category].items.push(p); });
+  // optional rank: puts priority skills first; the rest keep file order
+  const ranked = projects.map((p, i) => ({ p, i }))
+    .sort((a, b) => (a.p.rank || 999) - (b.p.rank || 999) || a.i - b.i)
+    .map(x => x.p);
+  ranked.forEach(p => { if (groups[p.category]) groups[p.category].items.push(p); });
 
   const wrap = document.getElementById("tech-groups");
   wrap.innerHTML = Object.values(groups).map(g => `
@@ -171,6 +250,7 @@ function renderAbout(data) {
     { key: "certification", label: "Certifications" },
     { key: "solo",          label: "Solo Exhibitions" },
     { key: "group",         label: "Group Exhibitions" },
+    { key: "film",          label: "Film" },
     { key: "teaching",      label: "Teaching" },
     { key: "awards",        label: "Awards & Residencies" },
     { key: "publications",  label: "Publications" },
@@ -244,6 +324,7 @@ const SECTION_ACCENTS = {
   recently:  "#e05c00",
   art:       "#f0c030",
   tech:      "#c880e8",
+  skills:    "#c880e8",
   education: "#70d882",
   about:     "#999999",
 };
@@ -251,7 +332,8 @@ const SECTION_ACCENTS = {
 function initNav() {
   const nav = document.getElementById("topnav");
   const links = nav.querySelectorAll(".topnav-link");
-  const sections = ["recently", "art", "tech", "education", "about"]
+  const sections = ["tech", "skills", "education", "art", "about"]
+    .filter(id => document.getElementById(id))
     .map(id => document.getElementById(id));
   const hero = document.getElementById("top");
 
@@ -291,14 +373,17 @@ function initNav() {
 const modal = document.getElementById("art-modal");
 const modalPanel = document.getElementById("art-modal-panel");
 let modalOpenId = null;
+let modalSection = null;
 
-function openArtModal(id) {
-  const project = artProjects.find(p => p.id === id);
+function openArtModal(section, id) {
+  const project = (projectsBySection[section] || []).find(p => p.id === id);
   if (!project) return;
   modalOpenId = id;
+  modalSection = section;
 
-  const heroHtml = project.hero
-    ? `<img src="${project.hero}" alt="${project.title}" class="modal-hero" />` : "";
+  const heroHtml = project.heroVideo
+    ? `<video class="modal-hero" muted loop playsinline preload="metadata" ${previewMotion.matches ? "" : "autoplay"} poster="${project.hero || project.thumbnail || ""}" aria-label="${project.title} demonstration"><source src="${project.heroVideo}" type="video/mp4" /></video>`
+    : project.hero ? `<img src="${project.hero}" alt="${project.title}" class="modal-hero" />` : "";
 
   const descHtml = (project.description || "")
     .split(/\n\n+/)
@@ -343,6 +428,12 @@ function openArtModal(id) {
       }).join("")}
     </div>` : "";
 
+  const projectLinks = Array.isArray(project.links) ? project.links.filter(l => l && l.url && l.label) : [];
+  const projectLinksHtml = projectLinks.length ? `
+    <ul class="modal-links">
+      ${projectLinks.map(l => `<li><a href="${l.url}" target="_blank" rel="noopener">${l.label}</a></li>`).join("")}
+    </ul>` : "";
+
   const linkHtml = project.link
     ? `<a href="${project.link}" target="_blank" rel="noopener" class="modal-ext-link">View project ↗</a>` : "";
 
@@ -351,6 +442,7 @@ function openArtModal(id) {
     ${heroHtml}
     <h2 class="modal-title">${project.title}</h2>
     <p class="modal-meta">${project.year ? project.year + " — " : ""}${project.medium}</p>
+    ${projectLinksHtml}
     ${descHtml}
     ${listHtml}
     ${exhibitionsHtml}
@@ -367,6 +459,7 @@ function openArtModal(id) {
   });
 
   modal.classList.add("open");
+  syncPreviewPlayback();
   document.body.style.overflow = "hidden";
   modalPanel.scrollTop = 0;
   document.title = `Antoni.us — ${project.title}`;
@@ -376,17 +469,25 @@ function closeArtModal() {
   if (!modalOpenId) return;
   modalOpenId = null;
   modal.classList.remove("open");
+  modalPanel.querySelectorAll("video").forEach(video => video.pause());
+  syncPreviewPlayback();
   document.body.style.overflow = "";
   document.title = "antoni.us/wiriadjaja — Portfolio of Antonius Wiriadjaja";
-  if (location.hash.startsWith("#art/")) {
-    history.replaceState(null, "", "#art");
+  if (/^#(art|tech)\//.test(location.hash)) {
+    if (modalSection === "art") {
+      history.replaceState(null, "", "#art");
+    } else {
+      // tech projects open from Featured (the /tech section is parked): go back to the top
+      history.replaceState(null, "", location.pathname + location.search);
+      window.scrollTo(0, 0);
+    }
   }
 }
 
 function handleHash() {
-  const m = location.hash.match(/^#art\/([\w-]+)$/);
+  const m = location.hash.match(/^#(art|tech)\/([\w-]+)$/);
   if (m) {
-    openArtModal(m[1]);
+    openArtModal(m[1], m[2]);
   } else if (modalOpenId) {
     closeArtModal();
   }
@@ -457,17 +558,22 @@ document.addEventListener("keydown", e => {
 // INIT
 // ================================
 async function init() {
-  const [recentRes, projectsRes, aboutRes] = await Promise.all([
-    fetch("recent.json"),
+  const [projectsRes, aboutRes, featuredRes] = await Promise.all([
     fetch("projects.json"),
     fetch("about.json"),
+    fetch("featured.json"),
   ]);
-  const recent = await recentRes.json();
   const projects = await projectsRes.json();
   const about = await aboutRes.json();
+  const featured = await featuredRes.json();
 
-  renderRecently(recent);
-  renderArt(projects.art || []);
+  projectsBySection.art = (projects.art || []).filter(p => !p.hidden); // hidden: true keeps a file off the site
+  projectsBySection.tech = projects.tech || [];
+  projectsBySection.education = projects.education || [];
+
+  renderFeatured(featured);
+  renderArt(projectsBySection.art);
+  renderTechProjects(projects.tech || []);
   renderTech(projects.tech || []);
   renderEducation(projects.education || []);
   renderAbout(about);
@@ -475,7 +581,7 @@ async function init() {
   initReveals();
   initNav();
 
-  // open modal if page loaded with #art/<id>
+  // open modal if page loaded with #art/<id> or #tech/<id>
   handleHash();
 }
 

@@ -1,11 +1,79 @@
 {
   "art": [
     {
+      "id": "gays-against-guns",
+      "hidden": true,
+      "title": "Gays Against Guns",
+      "year": "2026",
+      "medium": "Film with John Waters — Cast",
+      "exhibitions": [
+        "NewFest, New York, NY — 2026"
+      ],
+      "description": "TBD",
+      "list": [],
+      "gallery": [],
+      "press": []
+    },
+    {
+      "id": "xyz",
+      "title": "If We Were XYZ",
+      "year": "2019",
+      "medium": "Performance, EEG Data, Sound, Video",
+      "thumbnail": "https://img.antoni.us/xyz/xyz-thumb.jpg",
+      "hero": "https://img.antoni.us/xyz/xyz-hero.jpg",
+      "list-title": "Credits",
+      "list": [
+        "Performance by Melati Suryodarmo",
+        "Sound and vocal composition by Jessika Kenney",
+        "EEG data, custom sleep-lab instrumentation, and sonification / visualization by Antonius Oki Wiriadjaja",
+        "Commissioned by Asia Society Museum for Creative Common Ground"
+      ],
+      "exhibitions": [
+        "Asia Society Museum, New York — If We Were XYZ (premiere, commissioned by Creative Common Ground) — October 18–19, 2019"
+      ],
+      "press": [
+        {
+          "title": "A Performer Uses Brain-Mapping Technology to Scan Her Dreams",
+          "publication": "Hyperallergic",
+          "url": "https://hyperallergic.com/521598/melati-suryodarmo-if-we-were-xyz/"
+        },
+        {
+          "title": "If We Were XYZ",
+          "publication": "Asia Society",
+          "url": "https://asiasociety.org/new-york/events/if-we-were-xyz"
+        },
+        {
+          "title": "If We Were XYZ: Artistic Process",
+          "publication": "Asia Society — Creative Common Ground",
+          "url": "https://asiasociety.org/creative-common-ground/if-we-were-xyz-artistic-process"
+        }
+      ],
+      "gallery": [
+        {
+          "thumb": "https://img.antoni.us/xyz/xyz-1-thumb.jpg",
+          "full": "https://img.antoni.us/xyz/xyz-1-full.jpg"
+        },
+        {
+          "thumb": "https://img.antoni.us/xyz/xyz-2-thumb.jpg",
+          "full": "https://img.antoni.us/xyz/xyz-2-full.jpg"
+        },
+        {
+          "thumb": "https://img.antoni.us/xyz/xyz-3-thumb.jpg",
+          "full": "https://img.antoni.us/xyz/xyz-3-full.jpg"
+        },
+        {
+          "thumb": "https://img.antoni.us/xyz/xyz-4-thumb.jpg",
+          "full": "https://img.antoni.us/xyz/xyz-4-full.jpg"
+        }
+      ],
+      "description": "If We Were XYZ is a three-hour durational performance by Indonesian artist Melati Suryodarmo, premiered at Asia Society Museum in October 2019 as part of the museum's interdisciplinary program Creative Common Ground. I served as the piece's artist-technologist: I built a self-devised sleep laboratory around Melati, recording EEG data while she slept, and then translated that raw neural data into the musical scores and visual systems that structured the performance. I delivered the same dataset to Vocalist and composer Jessika Kenney, who wrote the piece's seven-part score based on each dream data.\n\nThe work sits at the intersection of Javanese mysticism, neuroscience, and psychology, asking what it means when the subconscious is made material. It was, in many ways, a question about intimacy: what do you owe a collaborator who has handed you the raw signal of their dreaming mind, and what kind of translation is faithful to that trust?"
+    },
+    {
       "id": "foodmasku",
       "title": "foodmasku",
       "year": "2020-2025",
       "medium": "Performance, Photography, Video, NFT and Food",
-      "thumbnail": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/foodmasku/foodmasku-thumb.jpg",
+      "thumbnail": "https://img.antoni.us/foodmasku/foodmasku-hero.gif",
       "hero": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/foodmasku/foodmasku-hero.jpg",
       "list-title": "Highlights",
       "list": [
@@ -72,60 +140,6 @@
       ],
       "link": "https://www.foodmasku.com",
       "description": "foodmasku is an ongoing performance, photography, and video series in which I make meals into masks and then eat them. It began in April 2020, during the early weeks of COVID lockdown, when a colleague's stuck pickle filter on a Zoom call prompted me to put kale on my face. It was the first I'd heard laughter in weeks. I felt it was important to find joy through art again. And so, a daily art practice was born.\n\nOver the years the project has grown into a body of work at the intersection of trauma, food waste, and responsible consumption. The UN commissioned me to make a series on sustainable food systems, using the face as a site for meditating on how food reaches our tables, and what we choose to do with it when it arrives. Farm-to-Face was unveiled at the 2023 UN SDG Action Awards alongside the UN Food Systems Summit.\n\nThe series has also lived an unruly second life online. A performance staged at The Invisible Dog Art Center where two guests quietly eating dinner off my face was cut, recaptioned, and recirculated across TikTok and Instagram, racking up tens of millions of views and a segment on MTV's Ridiculousness. The runaway clip is frequently paired with fabricated captions about a \"restaurant paying $10,000 a month for rich people to eat off your face,\" a viral rumor I continue to publicly debunk. The real piece is about labor, food inequality, and who gets to be seen at the table."
-    },
-    {
-      "id": "postpapa",
-      "title": "Post Papa",
-      "year": "2025",
-      "medium": "Drawing / Sketch, Post-Its",
-      "thumbnail": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-thumb.jpg",
-      "hero": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-hero.jpg",
-      "gallery": [
-        {
-          "thumb": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-01.png",
-          "full": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-01.png",
-          "caption": "Post-it No. 1"
-        },
-        {
-          "thumb": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-02.png",
-          "full": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-02.png"
-        },
-        {
-          "thumb": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-03.png",
-          "full": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-03.png"
-        },
-        {
-          "thumb": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-04.png",
-          "full": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-04.png"
-        },
-        {
-          "thumb": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-05.png",
-          "full": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-05.png"
-        },
-        {
-          "thumb": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-06.png",
-          "full": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-06.png"
-        },
-        {
-          "thumb": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-07.png",
-          "full": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-07.png"
-        },
-        {
-          "thumb": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-08.png",
-          "full": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-08.png"
-        },
-        {
-          "thumb": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-09.png",
-          "full": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-09.png"
-        }
-      ],
-      "exhibitions": [
-        "Essex Art Center, Lawrence, MA — Post Papa (on view) — through September 13, 2025"
-      ],
-      "link": "https://www.facebook.com/p/Post-Papa-61577335592296/",
-      "description": "Post Papa is a sketch series that I drew on Post-its while sitting beside my father in hospice.\n\nThe work was exhibited at Essex Art Center in Lawrence, MA through September 13, 2025, with half of all proceeds supporting the center, a non-profit arts community in the Merrimack Valley.",
-      "list": [],
-      "press": []
     },
     {
       "id": "shooting",
@@ -205,58 +219,58 @@
       "exhibitions": []
     },
     {
-      "id": "xyz",
-      "title": "If We Were XYZ",
-      "year": "2019",
-      "medium": "Performance, EEG Data, Sound, Video",
-      "thumbnail": "https://img.antoni.us/xyz/xyz-thumb.jpg",
-      "hero": "https://img.antoni.us/xyz/xyz-hero.jpg",
-      "list-title": "Credits",
-      "list": [
-        "Performance by Melati Suryodarmo",
-        "Sound and vocal composition by Jessika Kenney",
-        "EEG data, custom sleep-lab instrumentation, and sonification / visualization by Antonius Oki Wiriadjaja",
-        "Commissioned by Asia Society Museum for Creative Common Ground"
-      ],
-      "exhibitions": [
-        "Asia Society Museum, New York — If We Were XYZ (premiere, commissioned by Creative Common Ground) — October 18–19, 2019"
-      ],
-      "press": [
-        {
-          "title": "A Performer Uses Brain-Mapping Technology to Scan Her Dreams",
-          "publication": "Hyperallergic",
-          "url": "https://hyperallergic.com/521598/melati-suryodarmo-if-we-were-xyz/"
-        },
-        {
-          "title": "If We Were XYZ",
-          "publication": "Asia Society",
-          "url": "https://asiasociety.org/new-york/events/if-we-were-xyz"
-        },
-        {
-          "title": "If We Were XYZ: Artistic Process",
-          "publication": "Asia Society — Creative Common Ground",
-          "url": "https://asiasociety.org/creative-common-ground/if-we-were-xyz-artistic-process"
-        }
-      ],
+      "id": "postpapa",
+      "title": "Post Papa",
+      "year": "2025",
+      "medium": "Drawing / Sketch, Post-Its",
+      "thumbnail": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-thumb.jpg",
+      "hero": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-hero.jpg",
       "gallery": [
         {
-          "thumb": "https://img.antoni.us/xyz/xyz-1-thumb.jpg",
-          "full": "https://img.antoni.us/xyz/xyz-1-full.jpg"
+          "thumb": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-01.png",
+          "full": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-01.png",
+          "caption": "Post-it No. 1"
         },
         {
-          "thumb": "https://img.antoni.us/xyz/xyz-2-thumb.jpg",
-          "full": "https://img.antoni.us/xyz/xyz-2-full.jpg"
+          "thumb": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-02.png",
+          "full": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-02.png"
         },
         {
-          "thumb": "https://img.antoni.us/xyz/xyz-3-thumb.jpg",
-          "full": "https://img.antoni.us/xyz/xyz-3-full.jpg"
+          "thumb": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-03.png",
+          "full": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-03.png"
         },
         {
-          "thumb": "https://img.antoni.us/xyz/xyz-4-thumb.jpg",
-          "full": "https://img.antoni.us/xyz/xyz-4-full.jpg"
+          "thumb": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-04.png",
+          "full": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-04.png"
+        },
+        {
+          "thumb": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-05.png",
+          "full": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-05.png"
+        },
+        {
+          "thumb": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-06.png",
+          "full": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-06.png"
+        },
+        {
+          "thumb": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-07.png",
+          "full": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-07.png"
+        },
+        {
+          "thumb": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-08.png",
+          "full": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-08.png"
+        },
+        {
+          "thumb": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-09.png",
+          "full": "https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/postpapa/postpapa-09.png"
         }
       ],
-      "description": "If We Were XYZ is a three-hour durational performance by Indonesian artist Melati Suryodarmo, premiered at Asia Society Museum in October 2019 as part of the museum's interdisciplinary program Creative Common Ground. I served as the piece's artist-technologist: I built a self-devised sleep laboratory around Melati, recording EEG data while she slept, and then translated that raw neural data into the musical scores and visual systems that structured the performance. I delivered the same dataset to Vocalist and composer Jessika Kenney, who wrote the piece's seven-part score based on each dream data.\n\nThe work sits at the intersection of Javanese mysticism, neuroscience, and psychology, asking what it means when the subconscious is made material. It was, in many ways, a question about intimacy: what do you owe a collaborator who has handed you the raw signal of their dreaming mind, and what kind of translation is faithful to that trust?"
+      "exhibitions": [
+        "Essex Art Center, Lawrence, MA — Post Papa (on view) — through September 13, 2025"
+      ],
+      "link": "https://www.facebook.com/p/Post-Papa-61577335592296/",
+      "description": "Post Papa is a sketch series that I drew on Post-its while sitting beside my father in hospice.\n\nThe work was exhibited at Essex Art Center in Lawrence, MA through September 13, 2025, with half of all proceeds supporting the center, a non-profit arts community in the Merrimack Valley.",
+      "list": [],
+      "press": []
     }
   ],
   "tech": [
@@ -391,6 +405,7 @@
       "title": "Electronics Prototyping",
       "medium": "Breadboarding, Soldering, Arduino",
       "category": "code",
+      "rank": 2,
       "thumbnail": "images/placeholder-thumb.jpg",
       "hero": "images/placeholder-hero.jpg",
       "list-title": "What I've made with it",
@@ -445,6 +460,7 @@
       "title": "Physical Computing",
       "medium": "Arduino, Raspberry Pi, Sensors",
       "category": "code",
+      "rank": 1,
       "thumbnail": "images/placeholder-thumb.jpg",
       "hero": "images/placeholder-hero.jpg",
       "list-title": "Tools & platforms",
@@ -477,6 +493,7 @@
       "title": "Creative Coding",
       "medium": "JavaScript, p5.js, Three.js",
       "category": "code",
+      "rank": 5,
       "thumbnail": "images/placeholder-thumb.jpg",
       "hero": "images/placeholder-hero.jpg",
       "list-title": "What I use it for",
@@ -508,6 +525,7 @@
       "title": "Web Development",
       "medium": "HTML, CSS, JavaScript",
       "category": "code",
+      "rank": 6,
       "thumbnail": "images/placeholder-thumb.jpg",
       "hero": "images/placeholder-hero.jpg",
       "list-title": "What I build with it",
@@ -572,6 +590,7 @@
       "title": "Workflow Automation",
       "medium": "n8n, Monday.com, Webflow, Eventbrite",
       "category": "code",
+      "rank": 4,
       "thumbnail": "images/placeholder-thumb.jpg",
       "hero": "images/placeholder-hero.jpg",
       "list-title": "Workflows I've built",
@@ -728,6 +747,7 @@
       "title": "AI Tools & Workflows",
       "medium": "Claude, ChatGPT, Flora, Generative Image Tools",
       "category": "code",
+      "rank": 3,
       "thumbnail": "images/placeholder-thumb.jpg",
       "hero": "images/placeholder-hero.jpg",
       "list-title": "Tools & platforms",
@@ -885,12 +905,15 @@
     {
       "id": "viam-robotics",
       "title": "Viam Robotics",
+      "summary": "Coded robot arms that hand blocks to each other, and taught high schoolers to build Viam robots.",
       "year": "2026",
       "medium": "Robotics, Python, Raspberry Pi, Viam",
-      "category": "code",
+      "category": "project",
       "photo": "https://img.antoni.us/viam/viam-hero.gif",
-      "thumbnail": "https://img.antoni.us/viam/viam-hero.jpg",
-      "hero": "https://img.antoni.us/viam/viam-hero.gif",
+      "thumbnail": "https://img.antoni.us/highlights/robot-arms-landscape-v2-poster-1920.png",
+      "hero": "https://img.antoni.us/highlights/robot-arms-landscape-v2-poster-1920.png",
+      "previewVideo": "https://img.antoni.us/highlights/robot-arms-landscape-v2.mp4",
+      "heroVideo": "https://img.antoni.us/highlights/robot-arms-landscape-v2.mp4",
       "list-title": "Highlights",
       "list": [
         "Worked with Viam to teach NYC FIRST high school students to make products for senior citizens",
@@ -901,9 +924,14 @@
       ],
       "gallery": [
         {
-          "thumb": "https://img.antoni.us/viam/viam-01-full.jpg",
-          "full": "https://img.antoni.us/viam/viam-01-full.jpg",
-          "caption": "Make Them Kiss"
+          "thumb": "https://img.antoni.us/viam/viam-03-thumb.png",
+          "full": "https://img.antoni.us/viam/viam-03-full.png",
+          "caption": "Stream Deck scenes run on a Python server that controls the arms through the Viam SDK."
+        },
+        {
+          "thumb": "https://img.antoni.us/viam/viam-04-thumb.png",
+          "full": "https://img.antoni.us/viam/viam-04-full.png",
+          "caption": "Scene 6 on the Stream Deck runs the robot-arm kiss sequence."
         },
         {
           "thumb": "https://img.antoni.us/viam/viam-02-full.jpg",
@@ -911,8 +939,158 @@
           "caption": "Block handover"
         }
       ],
-      "link": "https://www.hackster.io/antonius-wiriadjaja/make-them-kiss-two-robot-arms-a-stream-deck-and-viam-e8b867",
-      "description": "In spring 2026 we worked with <a target=\"_blank\" rel=\"noopener\" href=\"https://www.viam.com\">Viam</a> to teach NYC FIRST high school students to make products for senior citizens. Michael Lee from Viam taught the class, Shannon, the SVP of Product and Education at Viam, taught Python, and Nick helped people fix their Pis. Ian, an engineer at Viam, was our main contact for doing the semester long curriculum.\n\nThere were five products: one that helped remind them to drink water, one that helped them remember their keys as a message board, and one that would detect if they were falling. There were two others that didn't quite make it to the finish line.\n\nTo learn it myself, I converted a standalone Python script (potentiometer + PWM LED on a Raspberry Pi 4) into a Viam inline module. I redid their slides so we could teach it better: <a target=\"_blank\" rel=\"noopener\" href=\"https://docs.google.com/presentation/d/1xHEEp5IBeYdq9FMTQVpUIoS15hxl6-Eg7oWj9IPYUAM/edit?usp=sharing\">Ultrasonic Sensor & LED Display</a> and <a target=\"_blank\" rel=\"noopener\" href=\"https://docs.google.com/presentation/d/1sifDcC04yIni2IKJrinHNEEQapPI0W1zW8YBz2UMRjw/edit?usp=sharing\">Potentiometer and LED PWM</a>. Chelsy helped me redo the ultrasonic slides.\n\nI stayed connected, so I went to their open hours on Fridays in October and made a robot that could squeeze out ketchup. Then they invited NYC FIRST to come and test it out again, and I made two robot arms that could move and hand blocks to each other.\n\nI called it Make Them Kiss. I pressed the Stream Deck. I was originally planning on making them dance, but then a coworker said \"make them kiss\" and asked for the Lady and the Tramp scene, with robot arms. One Python server connects to both arms (armfarm 8, an xArm6, and armfarm 14, an xArm850) and keeps the connections open. Each Stream Deck key runs one scene. It went well. It's on <a target=\"_blank\" rel=\"noopener\" href=\"https://www.hackster.io/antonius-wiriadjaja/make-them-kiss-two-robot-arms-a-stream-deck-and-viam-e8b867\">Hackster</a>, <a target=\"_blank\" rel=\"noopener\" href=\"https://github.com/theantonius/make-them-kiss\">GitHub</a> and <a target=\"_blank\" rel=\"noopener\" href=\"https://youtu.be/sIzc23cfVqo\">YouTube</a>.\n\nThe hardest part was getting two robot arms to move together. I still didn't manage to get them to match their speed because they were different models.",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/theantonius/make-them-kiss"
+        },
+        {
+          "label": "Watch demo",
+          "url": "https://youtu.be/sIzc23cfVqo"
+        },
+        {
+          "label": "Build story",
+          "url": "https://www.hackster.io/antonius-wiriadjaja/make-them-kiss-two-robot-arms-a-stream-deck-and-viam-e8b867"
+        }
+      ],
+      "description": "In spring 2026 we worked with <a target=\"_blank\" rel=\"noopener\" href=\"https://www.viam.com\">Viam</a> to teach NYC FIRST high school students to make products for senior citizens. Michael Lee from Viam taught the class, Shannon, the SVP of Product and Education at Viam, taught Python, and Nick helped people fix their Pis. Ian, an engineer at Viam, was our main contact for doing the semester long curriculum.\n\nThere were five products: one that helped remind them to drink water, one that helped them remember their keys as a message board, and one that would detect if they were falling. There were two others that didn't quite make it to the finish line.\n\nTo learn it myself, I converted a standalone Python script (potentiometer + PWM LED on a Raspberry Pi 4) into a Viam inline module. I redid their slides so we could teach it better: <a target=\"_blank\" rel=\"noopener\" href=\"https://docs.google.com/presentation/d/1xHEEp5IBeYdq9FMTQVpUIoS15hxl6-Eg7oWj9IPYUAM/edit?usp=sharing\">Ultrasonic Sensor & LED Display</a> and <a target=\"_blank\" rel=\"noopener\" href=\"https://docs.google.com/presentation/d/1sifDcC04yIni2IKJrinHNEEQapPI0W1zW8YBz2UMRjw/edit?usp=sharing\">Potentiometer and LED PWM</a>. Chelsy helped me redo the ultrasonic slides.\n\nI stayed connected, so I went to their open hours on Fridays in October and made a robot that could squeeze out ketchup. Then they invited NYC FIRST to come and test it out again, and I made two robot arms that could move and hand blocks to each other.\n\nI called it Make Them Kiss. I pressed the Stream Deck. I was originally planning on making them dance, but then a coworker said \"make them kiss\" and asked for the Lady and the Tramp scene, with robot arms. One Python server connects to both arms (armfarm 8, an xArm6, and armfarm 14, an xArm850) and keeps the connections open. Each Stream Deck key runs one scene. It went well.\n\nThe hardest part was getting two robot arms to move together. I still didn't manage to get them to match their speed because they were different models.",
+      "exhibitions": [],
+      "press": []
+    },
+    {
+      "id": "multilingual-by-design",
+      "title": "LessonLift — Multilingual by Design",
+      "summary": "Built computer vision demos and a teacher-review prototype with two collaborators. Multilingual by Design finalist.",
+      "year": "2026",
+      "medium": "Computer Vision, MediaPipe, JavaScript, Interaction Design",
+      "category": "project",
+      "thumbnail": "https://img.antoni.us/highlights/lessonlift-poster-6s.jpg",
+      "hero": "https://img.antoni.us/highlights/lessonlift-poster-6s.jpg",
+      "previewVideo": "https://img.antoni.us/highlights/lessonlift.mp4",
+      "heroVideo": "https://img.antoni.us/highlights/lessonlift.mp4",
+      "gallery": [
+        {
+          "thumb": "https://img.antoni.us/mbd/lessonlift-01-thumb.png",
+          "full": "https://img.antoni.us/mbd/lessonlift-01-full.png",
+          "caption": "Interactive transcript-review prototype: teachers can replay recorded moments and accept, revise or remove prepared observations. Transcript entries and confidence flags are sample data."
+        },
+        {
+          "thumb": "https://img.antoni.us/mbd/lessonlift-02-thumb.png",
+          "full": "https://img.antoni.us/mbd/lessonlift-02-full.png",
+          "caption": "Per-student assessment and summary interface. Teacher interactions work in the browser; summary updates are simulated from prepared observations, not generated by a live language model."
+        },
+        {
+          "thumb": "https://img.antoni.us/mbd/lessonlift-03-thumb.png",
+          "full": "https://img.antoni.us/mbd/lessonlift-03-full.png",
+          "caption": "Proposed workflow connecting skill assessments, a teacher dashboard, teacher decisions and multilingual learning support. This diagram describes the intended product, not a fully implemented system."
+        },
+        {
+          "thumb": "https://img.antoni.us/mbd/lessonlift-04-thumb.png",
+          "full": "https://img.antoni.us/mbd/lessonlift-04-full.png",
+          "caption": "Proposed privacy architecture for classroom capture, local processing and de-identification. The complete capture, redaction and retention pipeline was not verified as implemented."
+        }
+      ],
+      "links": [
+        {
+          "label": "Try prototype",
+          "url": "https://lessonlift-prototype.theantonius.workers.dev/"
+        },
+        {
+          "label": "Teacher-review demo",
+          "url": "https://lessonlift-prototype.theantonius.workers.dev/transcript/"
+        },
+        {
+          "label": "Live hand tracking",
+          "url": "https://lessonlift-prototype.theantonius.workers.dev/handtracking/"
+        }
+      ],
+      "description": "Working with two collaborators from Integrow Math Solutions, I built technical prototypes for LessonLift through NYC FIRST. We explored how computer vision and teacher-reviewed observations could support K–2 math instruction for multilingual learners. Our project was selected as a finalist in the Multilingual by Design grant competition.\n\nThe demos include live finger tracking with MediaPipe running in the browser, recorded computer vision examples, and interactive teacher workflows. The latest interface pairs a recorded lesson with editable observations: teachers can replay a moment, accept or revise an observation, and record a per-student formative assessment.\n\nThe teacher-review demo uses prepared transcript entries and sample observations; summary updates are simulated in JavaScript. The live hand-tracking demo performs real on-device inference. These are separate demonstrations, rather than a complete system that automatically analyzes new classroom recordings and generates assessments or lesson plans.\n\nThe diagrams describe our proposed assessment and privacy workflows. They show the intended direction, including teacher review and local processing; the complete de-identification, storage and retention pipeline was not validated in this prototype.",
+      "list": [],
+      "exhibitions": [],
+      "press": []
+    },
+    {
+      "id": "ai-scheduler",
+      "title": "NYC FIRST Schedule & Events",
+      "summary": "Staff update events and hours in Monday.com; automated workflows publish changes to the website and events to Google Calendar.",
+      "year": "2026",
+      "medium": "Workflow Automation, n8n, Monday.com, Webflow, Google Calendar, JavaScript",
+      "category": "project",
+      "thumbnail": "https://img.antoni.us/scheduler/scheduler-thumb.png",
+      "hero": "https://img.antoni.us/scheduler/scheduler-hero.png",
+      "gallery": [
+        {
+          "thumb": "https://img.antoni.us/scheduler/scheduler-01-thumb.png",
+          "full": "https://img.antoni.us/scheduler/scheduler-01-full.png",
+          "caption": "Public events page with filters, registration links and calendar subscriptions."
+        },
+        {
+          "thumb": "https://img.antoni.us/scheduler/scheduler-02-thumb.png",
+          "full": "https://img.antoni.us/scheduler/scheduler-02-full.png",
+          "caption": "Events Calendar Workflow: Monday.com, n8n, Webflow, the public website and Google Calendar."
+        },
+        {
+          "thumb": "https://img.antoni.us/scheduler/scheduler-03-thumb.png",
+          "full": "https://img.antoni.us/scheduler/scheduler-03-full.png",
+          "caption": "n8n publishes event changes to Webflow and Google Calendar and writes their IDs back to Monday.com."
+        },
+        {
+          "thumb": "https://img.antoni.us/scheduler/scheduler-04-thumb.png",
+          "full": "https://img.antoni.us/scheduler/scheduler-04-full.png",
+          "caption": "Published events appear on the shared and relevant STEM Center calendars."
+        },
+        {
+          "thumb": "https://img.antoni.us/scheduler/scheduler-05-thumb.png",
+          "full": "https://img.antoni.us/scheduler/scheduler-05-full.png",
+          "caption": "Staff update weekly hours in Monday.com; the public walk-in hours update through n8n and Webflow."
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/NYC-FIRST/nycfirst-schedule"
+        },
+        {
+          "label": "Live calendar",
+          "url": "https://www.nycfirst.org/calendar-events"
+        }
+      ],
+      "description": "NYC FIRST staff needed a way to manage events, STEM Center hours, closures, and schedule changes without maintaining the same information across multiple platforms. Working with colleagues, I helped build a publishing system connecting Monday.com, n8n, Webflow, and Google Calendar.\n\nStaff submit and review updates in Monday.com. Self-hosted n8n workflows publish approved events to the website and calendars, while regular hours and schedule exceptions keep public opening information current. The public interface includes current open/closed status, event filters, registration links, and calendar subscriptions, using custom JavaScript and CSS hosted on Cloudflare Pages.\n\nThe system launched in September 2026. Subsequent optimization reduced event publishing from roughly 1–2 minutes to about nine seconds and reduced Monday.com API calls from about 1,138 to six per publish.",
+      "list": [],
+      "exhibitions": [],
+      "press": []
+    },
+    {
+      "id": "new-inc-fab-lab",
+      "title": "NEW INC Fabrication Lab",
+      "year": "2026",
+      "medium": "Digital Fabrication",
+      "category": "project",
+      "description": "Before the New Museum's grand reopening, NEW INC tapped my colleagues and me to build its Fabrication Lab, so members can now laser-cut, 3D-print, and even embroider physical prototypes.",
+      "list": [],
+      "gallery": [],
+      "exhibitions": [],
+      "press": []
+    },
+    {
+      "id": "pechakucha-player",
+      "title": "PechaKucha Player",
+      "medium": "Web, Google Slides",
+      "category": "project",
+      "description": "TBD",
+      "list": [],
+      "gallery": [],
+      "exhibitions": [],
+      "press": []
+    },
+    {
+      "id": "n8n-server",
+      "title": "n8n Server",
+      "medium": "Workflow Automation, Self-hosted",
+      "category": "project",
+      "description": "TBD",
+      "list": [],
+      "gallery": [],
       "exhibitions": [],
       "press": []
     }

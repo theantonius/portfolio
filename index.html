@@ -14,10 +14,9 @@
     <nav class="topnav" id="topnav" aria-label="Sections">
       <a href="#top" class="topnav-name">antoni.us/wiriadjaja</a>
       <div class="topnav-links">
-        <a href="#recently" class="topnav-link">/recently</a>
-        <a href="#art" class="topnav-link">/art</a>
-        <a href="#tech" class="topnav-link">/tech</a>
+        <a href="#skills" class="topnav-link">/skills</a>
         <a href="#education" class="topnav-link">/education</a>
+        <a href="#art" class="topnav-link">/art</a>
         <a href="#about" class="topnav-link">/about</a>
       </div>
     </nav>
@@ -26,32 +25,18 @@
     <header class="hero-panel" id="top">
       <div class="hero-inner">
         <span class="hero-name">antoni.us/wiriadjaja</span>
-        <p class="hero-tagline">making things <span id="tagline-cycle"></span></p>
-        <p class="hero-intro" id="hero-intro">I'm an artist, creative technologist and educator based in New York.</p>
+        <p class="hero-intro" id="hero-intro"></p>
+        <p class="hero-links" id="hero-links"></p>
+        <div class="featured-grid" id="featured-grid"></div>
       </div>
-      <span class="hero-scroll-hint" aria-hidden="true"></span>
     </header>
 
-    <!-- RECENTLY -->
-    <section class="panel" id="recently">
-      <div class="panel-inner">
-        <h2 class="panel-title"><span class="domain">antoni.us</span>/recently</h2>
-        <ul class="recent-list" id="recent-list"></ul>
-      </div>
-    </section>
+    <!-- TECH (projects) section parked until projects are ready: grid id="tech-grid" -->
 
-    <!-- ART -->
-    <section class="panel" id="art">
+    <!-- SKILLS (tech rows) -->
+    <section class="panel" id="skills">
       <div class="panel-inner">
-        <h2 class="panel-title"><span class="domain">antoni.us</span>/art</h2>
-        <div class="art-grid" id="art-grid"></div>
-      </div>
-    </section>
-
-    <!-- TECH -->
-    <section class="panel" id="tech">
-      <div class="panel-inner">
-        <h2 class="panel-title"><span class="domain">antoni.us</span>/tech</h2>
+        <h2 class="panel-title"><span class="domain">antoni.us</span>/skills</h2>
         <div id="tech-groups"></div>
       </div>
     </section>
@@ -60,8 +45,17 @@
     <section class="panel" id="education">
       <div class="panel-inner">
         <h2 class="panel-title"><span class="domain">antoni.us</span>/education</h2>
+        <p class="edu-schools reveal">NYU · NYU Shanghai · SVA · CUNY · NYC FIRST · Fulbright Scholar</p>
         <p class="panel-intro">Courses and programs I have taught:</p>
         <ul class="edu-list" id="edu-list"></ul>
+      </div>
+    </section>
+
+    <!-- ART -->
+    <section class="panel" id="art">
+      <div class="panel-inner">
+        <h2 class="panel-title"><span class="domain">antoni.us</span>/art</h2>
+        <div class="art-grid" id="art-grid"></div>
       </div>
     </section>
 
@@ -83,7 +77,7 @@
       </div>
     </footer>
 
-    <!-- ART MODAL -->
+    <!-- PROJECT MODAL (art + tech) -->
     <div class="modal" id="art-modal" role="dialog" aria-modal="true">
       <div class="modal-backdrop"></div>
       <div class="modal-panel" id="art-modal-panel"></div>

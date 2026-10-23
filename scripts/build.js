@@ -36,6 +36,8 @@ function readSection(section) {
         ...data,
         thumbnail: r2(data.thumbnail),
         hero: r2(data.hero),
+        previewVideo: r2(data.previewVideo),
+        heroVideo: r2(data.heroVideo),
         photo: r2(data.photo),
         description: content.trim(),
         list: data.list || [],
@@ -93,3 +95,25 @@ fs.writeFileSync(
   JSON.stringify(recent, null, 2)
 );
 console.log('✓ recent.json');
+
+// Build featured.json (hero featured cards: "section/id" references)
+const featSrc = matter(fs.readFileSync(path.join(CONTENT, 'featured.md'), 'utf8'));
+const featured = {
+  intro: featSrc.data.intro || '',
+  links: featSrc.data.links || {},
+  items: (featSrc.data.items || []).map(item => {
+    const obj = typeof item === 'string' ? { ref: item } : item;
+    const [section, id] = String(obj.ref).split('/');
+    return {
+      section, id,
+      title: obj.title || '',
+      image: r2(obj.image || ''),
+      big: !!obj.big,
+    };
+  }),
+};
+fs.writeFileSync(
+  path.join(ROOT, 'featured.json'),
+  JSON.stringify(featured, null, 2)
+);
+console.log('✓ featured.json');

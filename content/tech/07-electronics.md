@@ -3,6 +3,7 @@ id: electronics
 title: Electronics Prototyping
 medium: Breadboarding, Soldering, Arduino
 category: code
+rank: 2
 thumbnail: images/placeholder-thumb.jpg
 hero: images/placeholder-hero.jpg
 list-title: What I've made with it

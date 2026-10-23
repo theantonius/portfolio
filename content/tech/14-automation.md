@@ -3,6 +3,7 @@ id: automation
 title: Workflow Automation
 medium: n8n, Monday.com, Webflow, Eventbrite
 category: code
+rank: 4
 thumbnail: images/placeholder-thumb.jpg
 hero: images/placeholder-hero.jpg
 list-title: Workflows I've built

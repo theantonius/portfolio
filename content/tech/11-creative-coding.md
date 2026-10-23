@@ -3,6 +3,7 @@ id: creative-coding
 title: Creative Coding
 medium: JavaScript, p5.js, Three.js
 category: code
+rank: 5
 thumbnail: images/placeholder-thumb.jpg
 hero: images/placeholder-hero.jpg
 list-title: What I use it for

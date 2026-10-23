@@ -242,3 +242,38 @@ Creative Coding, Web Development, Multimedia Programming, Thesis.
 - [ ] Add gallery images (thumb + full) to remaining art projects
 - [ ] Consider a CV download link in the about section
 - [ ] Consider OpenGraph/social preview image in index.html head
+
+
+## Featured project media (October 23, 2026)
+
+Project Markdown is the source of truth; rebuild generated JSON with `npm run build`.
+Media is hosted on Cloudflare R2 through `https://img.antoni.us/`. Do not add
+media binaries to Git or replace these URLs with local repository paths.
+
+- Viam Robotics: video and poster in `highlights/`; gallery in `viam/`.
+- NYC FIRST Schedule & Events: thumbnail, hero and five gallery images in `scheduler/`.
+- LessonLift: existing video and poster in `highlights/`; four gallery image pairs
+  in `mbd/`, named `lessonlift-01-full.png` / `lessonlift-01-thumb.png` through `04`.
+
+`previewVideo` and `heroVideo` select card/modal MP4s; `thumbnail` and `hero`
+hold their still posters. Videos are silent inline loops without native controls
+or added pause/play preview text. Card videos pause offscreen, when the tab is
+hidden, and while a modal is open. Reduced-motion visitors see still cards;
+modal video autoplay is disabled for reduced motion.
+
+### LessonLift scope and attribution
+
+Source: `content/tech/25-multilingual-by-design.md`.
+Prototype hub: https://lessonlift-prototype.theantonius.workers.dev/
+
+- Built with two collaborators from Integrow Math Solutions through NYC FIRST;
+  finalist in Multilingual by Design. Do not disclose funding.
+- Live hand tracking uses MediaPipe in the browser.
+- Teacher-review screens use prepared transcript entries and sample observations;
+  summary updates are simulated in JavaScript, not live language-model inference.
+- Gallery 01: transcript review; 02: formative assessment and simulated summary;
+  03: proposed teacher workflow; 04: proposed privacy architecture.
+- Diagrams describe proposed designs. Do not claim the complete privacy pipeline,
+  automatic assessment or lesson generation, or classroom deployment was validated.
+- Gallery URLs use `mbd/`, not `lessonlift/`. Keep captions clear about prototype
+  behavior versus proposed features.

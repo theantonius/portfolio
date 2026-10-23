@@ -3,6 +3,7 @@ id: ai-tools
 title: AI Tools & Workflows
 medium: Claude, ChatGPT, Flora, Generative Image Tools
 category: code
+rank: 3
 thumbnail: images/placeholder-thumb.jpg
 hero: images/placeholder-hero.jpg
 list-title: Tools & platforms

@@ -3,7 +3,7 @@ id: foodmasku
 title: foodmasku
 year: "2020-2025"
 medium: Performance, Photography, Video, NFT and Food
-thumbnail: https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/foodmasku/foodmasku-thumb.jpg
+thumbnail: https://img.antoni.us/foodmasku/foodmasku-hero.gif
 hero: https://pub-4dfc13c1f83c4042ab9ec7b1d414b6ee.r2.dev/foodmasku/foodmasku-hero.jpg
 list-title: Highlights
 list:

@@ -3,6 +3,7 @@ id: pcomp
 title: Physical Computing
 medium: Arduino, Raspberry Pi, Sensors
 category: code
+rank: 1
 thumbnail: images/placeholder-thumb.jpg
 hero: images/placeholder-hero.jpg
 list-title: Tools & platforms

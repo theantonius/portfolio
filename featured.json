@@ -1,0 +1,32 @@
+{
+  "intro": "Creative Technologist. I work with hardware, software, and AI to build practical tools, create interactive experiences, and teach through hands-on making.",
+  "links": {
+    "resume": "",
+    "email": "hi@antoni.us",
+    "linkedin": "https://linkedin.com/in/theantonius",
+    "github": "https://github.com/theantonius"
+  },
+  "items": [
+    {
+      "section": "tech",
+      "id": "viam-robotics",
+      "title": "",
+      "image": "",
+      "big": true
+    },
+    {
+      "section": "tech",
+      "id": "ai-scheduler",
+      "title": "",
+      "image": "",
+      "big": false
+    },
+    {
+      "section": "tech",
+      "id": "multilingual-by-design",
+      "title": "",
+      "image": "",
+      "big": false
+    }
+  ]
+}
