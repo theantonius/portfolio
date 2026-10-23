@@ -2,3 +2,10 @@ node_modules/
 
 # Cowork session files
 .claude/
+
+# Claude output folders
+Portfolio/
+Claude outputs/
+
+# macOS
+.DS_Store

@@ -514,6 +514,18 @@ a.recent-link:hover::after {
     margin-bottom: 0;
 }
 
+.tech-row-desc a {
+    color: #1f1f1f;
+    text-decoration: underline;
+    text-decoration-color: var(--accent-tech);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+.tech-row-desc a:hover {
+    color: var(--accent-tech);
+}
+
 /* =============================
    EDUCATION
    ============================= */
