@@ -333,6 +333,7 @@ a {
    never intercepts clicks). Email keeps its permanent marker. */
 .hero-links a,
 .hero-sections a,
+.site-footer a,
 .topnav-link,
 .topnav-name {
     position: relative;
@@ -341,6 +342,7 @@ a {
 
 .hero-links a::before,
 .hero-sections a::before,
+.site-footer a::before,
 .topnav-link::before,
 .topnav-name::before {
     content: "";
@@ -364,6 +366,8 @@ a {
 .hero-links a:focus-visible::before,
 .hero-sections a:hover::before,
 .hero-sections a:focus-visible::before,
+.site-footer a:hover::before,
+.site-footer a:focus-visible::before,
 .topnav-link:hover::before,
 .topnav-link:focus-visible::before,
 .topnav-name:hover::before,
@@ -374,6 +378,7 @@ a {
 @media (prefers-reduced-motion: reduce) {
     .hero-links a::before,
     .hero-sections a::before,
+    .site-footer a::before,
     .topnav-link::before,
     .topnav-name::before { transition: none; }
 }
@@ -933,35 +938,46 @@ a.recent-link:hover::after {
 /* =============================
    FOOTER
    ============================= */
+/* matches the orchid top nav */
 .site-footer {
-    background: var(--dark);
-    color: #999;
-    padding: 36px max(6vw, 24px);
+    background: var(--orchid);
+    color: var(--aubergine);
+    border-top: 1px solid rgba(40, 20, 61, 0.25);
+    padding: 28px max(6vw, 24px);
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 8px 24px;
     flex-wrap: wrap;
-    font-size: 0.82rem;
+    font-size: 0.95rem;
 }
 
 .site-footer .footer-name {
-    font-family: var(--font-heading);
+    font-family: var(--font-name);
     font-weight: 700;
-    color: #fff;
+    letter-spacing: -0.02em;
 }
 
 .site-footer .footer-links {
     margin-left: auto;
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 0 20px;
 }
 
 .site-footer a {
-    transition: color 0.2s;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    color: var(--aubergine);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
 }
 
-.site-footer a:hover {
-    color: #fff;
+.site-footer a:focus-visible {
+    outline: 3px solid var(--aubergine);
+    outline-offset: 4px;
+    border-radius: 2px;
 }
 
 /* =============================
@@ -1286,13 +1302,23 @@ a.recent-link:hover::after {
     }
 
     .topnav {
-        padding: 0 16px;
-        gap: 12px;
+        padding: 0 10px 0 16px;
+        gap: 8px;
     }
 
+    /* phones: short name so all four section links fit, incl. /about */
     .topnav-name {
         font-size: 0.85rem;
     }
+    .topnav-name-rest { display: none; }
+
+    .topnav-links { gap: 0; }
+
+    .topnav-link {
+        font-size: 0.85rem;
+        padding: 8px 6px;
+    }
+    .topnav-link::before { left: 2px; right: 2px; }
 
     .topnav.shrink {
         height: 44px;

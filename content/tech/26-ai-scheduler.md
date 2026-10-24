@@ -7,6 +7,8 @@ medium: Workflow Automation, n8n, Monday.com, Webflow, Google Calendar, JavaScri
 category: project
 thumbnail: https://img.antoni.us/scheduler/scheduler-thumb.png
 hero: https://img.antoni.us/scheduler/scheduler-hero.png
+previewVideo: https://img.antoni.us/scheduler/scheduler-workflow-v2.mp4
+heroVideo: https://img.antoni.us/scheduler/scheduler-workflow-v2.mp4
 gallery:
   - thumb: https://img.antoni.us/scheduler/scheduler-01-thumb.png
     full: https://img.antoni.us/scheduler/scheduler-01-full.png
