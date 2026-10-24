@@ -434,7 +434,7 @@ function openArtModal(section, id) {
     <div class="modal-section">
       <h4 class="modal-label">Press</h4>
       <ul class="modal-list">
-        ${project.press.map(p => `<li><a href="${p.url}" target="_blank" rel="noopener">${p.title}</a> — ${p.publication}</li>`).join("")}
+        ${project.press.map(p => `<li>${p.url ? `<a href="${p.url}" target="_blank" rel="noopener">${p.title}</a>` : p.title} — ${p.publication}</li>`).join("")}
       </ul>
     </div>` : "";
 

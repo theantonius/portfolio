@@ -20,4 +20,4 @@ gallery:
     full: images/placeholder-gallery-full.jpg
 ---
 
-I write code as an artistic medium. Using JavaScript, p5.js, and Three.js, I build generative visuals, interactive browser-based experiences, and real-time graphics. I teach <a href="project.html?section=education&id=creative-coding-edu">Creative Coding</a> at Queens College CUNY, and my own practice uses code to explore pattern, motion, and emergent behavior. I'm comfortable with both structured programming and the looser, exploratory approach that generative work demands.
+I write code as an artistic medium. Using JavaScript, p5.js, and Three.js, I build generative visuals, interactive browser-based experiences, and real-time graphics. I teach Creative Coding at Queens College CUNY, and my own practice uses code to explore pattern, motion, and emergent behavior. I'm comfortable with both structured programming and the looser, exploratory approach that generative work demands.

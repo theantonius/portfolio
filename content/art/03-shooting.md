@@ -27,7 +27,6 @@ press:
   - title: "101 Unflinching Portraits of Survivors of US Gun Violence"
     publication: Hyperallergic
     url: https://hyperallergic.com/372690/101-unflinching-portraits-of-survivors-of-us-gun-violence/
-link: https://gunsurvivor.antoni.us/
 gallery:
   - thumb: https://img.antoni.us/shooting/shooting-01-thumb.jpg
     full: https://img.antoni.us/shooting/shooting-01-full.jpg

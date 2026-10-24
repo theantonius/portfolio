@@ -30,7 +30,6 @@ exhibitions:
 press:
   - title: "5 Instagram Art Accounts to Follow"
     publication: The New York Times
-    url: https://www.nytimes.com
   - title: "Why this N.Y. artist is spending the pandemic turning his meals into face masks"
     publication: CBC Radio — As It Happens
     url: https://www.cbc.ca/radio/asithappens/as-it-happens-the-friday-edition-1.5828644/why-this-n-y-artist-is-spending-the-pandemic-turning-his-meals-into-face-masks-1.5829046
@@ -45,7 +44,6 @@ press:
     url: https://medium.com/unite-to-act-blog-series/from-farm-to-table-how-foodmaskus-art-unites-creativity-and-sustainable-food-systems-2c98cdd91b77
   - title: "The internet thought allowing people to eat off your face was a job"
     publication: Jacaranda FM
-    url: https://www.jacarandafm.com/shows/workzone-2/internet-thought-allowing-people-eat-your-face-was-job/
 link: https://www.foodmasku.com
 ---
 

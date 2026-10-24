@@ -109,8 +109,7 @@
       "press": [
         {
           "title": "5 Instagram Art Accounts to Follow",
-          "publication": "The New York Times",
-          "url": "https://www.nytimes.com"
+          "publication": "The New York Times"
         },
         {
           "title": "Why this N.Y. artist is spending the pandemic turning his meals into face masks",
@@ -134,8 +133,7 @@
         },
         {
           "title": "The internet thought allowing people to eat off your face was a job",
-          "publication": "Jacaranda FM",
-          "url": "https://www.jacarandafm.com/shows/workzone-2/internet-thought-allowing-people-eat-your-face-was-job/"
+          "publication": "Jacaranda FM"
         }
       ],
       "link": "https://www.foodmasku.com",
@@ -182,7 +180,6 @@
           "url": "https://hyperallergic.com/372690/101-unflinching-portraits-of-survivors-of-us-gun-violence/"
         }
       ],
-      "link": "https://gunsurvivor.antoni.us/",
       "gallery": [
         {
           "thumb": "https://img.antoni.us/shooting/shooting-01-thumb.jpg",
@@ -450,7 +447,7 @@
           "full": "images/placeholder-gallery-full.jpg"
         }
       ],
-      "description": "I design and build e-textiles, garments and soft objects that incorporate electronics, sensors, and conductive materials. I sew by hand and machine, construct soft circuits using conductive thread and fabric sensors, and integrate microcontrollers into wearable form factors. The course <a href=\"project.html?section=education&id=talking-fabrics\">Talking Fabrics</a>, which I built and taught at ITP and NYU Shanghai, grew directly out of this practice, exploring what happens when traditional craft meets programmable systems.",
+      "description": "I design and build e-textiles, garments and soft objects that incorporate electronics, sensors, and conductive materials. I sew by hand and machine, construct soft circuits using conductive thread and fabric sensors, and integrate microcontrollers into wearable form factors. The course Talking Fabrics, which I built and taught at ITP and NYU Shanghai, grew directly out of this practice, exploring what happens when traditional craft meets programmable systems.",
       "list": [],
       "exhibitions": [],
       "press": []
@@ -516,7 +513,7 @@
           "full": "images/placeholder-gallery-full.jpg"
         }
       ],
-      "description": "I write code as an artistic medium. Using JavaScript, p5.js, and Three.js, I build generative visuals, interactive browser-based experiences, and real-time graphics. I teach <a href=\"project.html?section=education&id=creative-coding-edu\">Creative Coding</a> at Queens College CUNY, and my own practice uses code to explore pattern, motion, and emergent behavior. I'm comfortable with both structured programming and the looser, exploratory approach that generative work demands.",
+      "description": "I write code as an artistic medium. Using JavaScript, p5.js, and Three.js, I build generative visuals, interactive browser-based experiences, and real-time graphics. I teach Creative Coding at Queens College CUNY, and my own practice uses code to explore pattern, motion, and emergent behavior. I'm comfortable with both structured programming and the looser, exploratory approach that generative work demands.",
       "exhibitions": [],
       "press": []
     },
@@ -867,7 +864,7 @@
           "full": "images/placeholder-gallery-full.jpg"
         }
       ],
-      "description": "I treat curriculum design as a creative practice, building courses around hands-on making with technical skills embedded in meaningful projects. I design and teach courses in <a href=\"project.html?section=education&id=creative-coding-edu\">creative coding</a>, <a href=\"project.html?section=education&id=web-dev-edu\">web development</a>, <a href=\"project.html?section=education&id=talking-fabrics\">e-textiles</a>, <a href=\"project.html?section=education&id=interaction-lab\">physical computing</a>, and interactive media at NYU, CUNY, and NYC FIRST STEM Centers. I believe the best technical education is grounded in curiosity, and I design learning experiences that make room for experimentation and productive failure.",
+      "description": "I treat curriculum design as a creative practice, building courses around hands-on making with technical skills embedded in meaningful projects. I design and teach courses in creative coding, web development, e-textiles, physical computing, and interactive media at NYU, CUNY, and NYC FIRST STEM Centers. I believe the best technical education is grounded in curiosity, and I design learning experiences that make room for experimentation and productive failure.",
       "exhibitions": [],
       "press": []
     },
