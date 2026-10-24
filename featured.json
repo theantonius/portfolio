@@ -1,5 +1,6 @@
 {
-  "intro": "Creative Technologist. I work with hardware, software, and AI to build practical tools, create interactive experiences, and teach through hands-on making.",
+  "subtitle": "creative technologist",
+  "intro": "I work with hardware, software, and AI to build practical tools, create interactive experiences, and teach through hands-on making.",
   "links": {
     "resume": "",
     "email": "hi@antoni.us",
@@ -10,21 +11,40 @@
     {
       "section": "tech",
       "id": "viam-robotics",
-      "title": "",
+      "title": "Programming Robotic Arms",
+      "tools": [
+        "Viam platform",
+        "Python",
+        "UFACTORY arm"
+      ],
+      "alt": "Two robot arms passing a block between their grippers",
       "image": "",
       "big": true
     },
     {
       "section": "tech",
       "id": "ai-scheduler",
-      "title": "",
+      "title": "Workflow Automation",
+      "tools": [
+        "Monday.com",
+        "n8n",
+        "Webflow",
+        "Google API"
+      ],
+      "alt": "NYC FIRST events calendar and STEM Center hours interface",
       "image": "",
       "big": false
     },
     {
       "section": "tech",
       "id": "multilingual-by-design",
-      "title": "",
+      "title": "Education Tech",
+      "tools": [
+        "Computer vision",
+        "Rapid prototyping",
+        "UX design"
+      ],
+      "alt": "LessonLift computer vision demo tracking children's hands in a classroom",
       "image": "",
       "big": false
     }

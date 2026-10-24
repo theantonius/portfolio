@@ -104,6 +104,28 @@ function cardHtml(p, section, opts = {}) {
     </button>`;
 }
 
+// featured card: a real link to the project modal (hash-routed), heading + tools
+function featuredCardHtml(p, item) {
+  const href = item.section === "education" ? "#education" : `#${item.section}/${p.id}`;
+  const img = item.image || p.thumbnail || p.hero;
+  const alt = item.alt || p.title;
+  const title = item.title || p.title;
+  const media = p.previewVideo && !previewMotion.matches && !item.image
+    ? `<div class="feat-media" role="img" aria-label="${alt}">
+         <video data-preview muted loop playsinline preload="none" poster="${img || ""}" aria-hidden="true" tabindex="-1"><source src="${p.previewVideo}" type="video/mp4" /></video>
+       </div>`
+    : `<div class="feat-media">${img ? `<img src="${img}" alt="${alt}" loading="lazy" />` : ""}</div>`;
+  const tools = (item.tools && item.tools.length)
+    ? item.tools.map(t => `<span class="tool">${t}</span>`).join('<span class="tool-sep" aria-hidden="true"> · </span>')
+    : (p.summary || p.medium || "");
+  return `
+    <a class="feat-card${item.big ? " feat-big" : ""}" href="${href}">
+      ${media}
+      <h2 class="feat-title"><span class="marker">${title}</span></h2>
+      <p class="feat-tools">${tools}</p>
+    </a>`;
+}
+
 function wireCards(container) {
   wirePreviews(container);
   container.querySelectorAll(".art-card").forEach(card => {
@@ -117,24 +139,29 @@ function wireCards(container) {
 function renderFeatured(featured) {
   const intro = document.getElementById("hero-intro");
   if (intro && featured.intro) intro.textContent = featured.intro;
+  const subtitle = document.getElementById("hero-subtitle");
+  if (subtitle && featured.subtitle) subtitle.textContent = featured.subtitle;
 
   const L = featured.links || {};
   const links = [
     L.resume   && `<a href="${L.resume}" target="_blank" rel="noopener">Résumé</a>`,
-    L.email    && `<a href="mailto:${L.email}">Email</a>`,
+    L.email    && `<a href="mailto:${L.email}"><span class="marker marker-contact">Email</span></a>`,
     L.linkedin && `<a href="${L.linkedin}" target="_blank" rel="noopener">LinkedIn</a>`,
     L.github   && `<a href="${L.github}" target="_blank" rel="noopener">GitHub</a>`,
   ].filter(Boolean);
-  document.getElementById("hero-links").innerHTML = links.join('<span class="sep">·</span>');
+  document.getElementById("hero-links").innerHTML = links.join('<span class="sep" aria-hidden="true">·</span>');
 
   // featured items don't repeat in their own section grid
   featuredIds = new Set((featured.items || []).map(i => i.section + "/" + i.id));
   const grid = document.getElementById("featured-grid");
-  grid.innerHTML = (featured.items || []).map(item => {
+  const cards = (featured.items || []).map(item => {
     const p = (projectsBySection[item.section] || []).find(x => x.id === item.id);
-    return p ? cardHtml(p, item.section, item) : "";
-  }).join("");
-  wireCards(grid);
+    return p ? featuredCardHtml(p, item) : "";
+  });
+  // desktop: big card on the left, the rest stacked on the right
+  const [first = "", ...rest] = cards;
+  grid.innerHTML = first + (rest.length ? `<div class="feat-side">${rest.join("")}</div>` : "");
+  wirePreviews(grid);
 
 }
 

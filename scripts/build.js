@@ -99,6 +99,7 @@ console.log('✓ recent.json');
 // Build featured.json (hero featured cards: "section/id" references)
 const featSrc = matter(fs.readFileSync(path.join(CONTENT, 'featured.md'), 'utf8'));
 const featured = {
+  subtitle: featSrc.data.subtitle || '',
   intro: featSrc.data.intro || '',
   links: featSrc.data.links || {},
   items: (featSrc.data.items || []).map(item => {
@@ -107,6 +108,8 @@ const featured = {
     return {
       section, id,
       title: obj.title || '',
+      tools: obj.tools || [],
+      alt: obj.alt || '',
       image: r2(obj.image || ''),
       big: !!obj.big,
     };
